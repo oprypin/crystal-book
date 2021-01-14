@@ -143,3 +143,4 @@
         * [Strings](tutorials/basics/40_strings.md)
         * [Control Flow](tutorials/basics/50_control_flow.md)
         * [Methods](tutorials/basics/60_methods.md)
+* [API](api/)

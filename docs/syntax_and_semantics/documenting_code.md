@@ -156,9 +156,9 @@ end
 
 The compiler implicitly adds some admonitions to doc comments:
 
-* The [`@[Deprecated]`](https://crystal-lang.org/api/latest/Deprecated.html) annotation
+* The [`@[Deprecated]`][Deprecated] annotation
   adds a `DEPRECATED` admonition.
-* The [`@[Experimental]`](https://crystal-lang.org/api/latest/Experimental.html) annotation
+* The [`@[Experimental]`][Experimental] annotation
   adds an `EXPERIMENTAL` admonition.
 
 ## Directives

@@ -1,6 +1,6 @@
 # Annotations
 
-Annotations can be used to add metadata to certain features in the source code. Types, methods and instance variables may be annotated.  User-defined annotations, such as the standard library's [JSON::Field](https://crystal-lang.org/api/latest/JSON/Field.html), are defined using the `annotation` keyword.  A number of [built-in annotations](built_in_annotations.md) are provided by the compiler.
+Annotations can be used to add metadata to certain features in the source code. Types, methods and instance variables may be annotated.  User-defined annotations, such as the standard library's [JSON::Field][], are defined using the `annotation` keyword.  A number of [built-in annotations](built_in_annotations.md) are provided by the compiler.
 
 Users can define their own annotations using the `annotation` keyword, which works similarly to defining a `class` or `struct`.
 
@@ -41,7 +41,7 @@ A few applications for annotations:
 
 ### Object Serialization
 
-Have an annotation that when applied to an instance variable determines if that instance variable should be serialized, or with what key. Crystal's [`JSON::Serializable`](https://crystal-lang.org/api/latest/JSON/Serializable.html) and [`YAML::Serializable`](https://crystal-lang.org/api/latest/YAML/Serializable.html) are examples of this.
+Have an annotation that when applied to an instance variable determines if that instance variable should be serialized, or with what key. Crystal's [JSON::Serializable][] and [YAML::Serializable][] are examples of this.
 
 ### ORMs
 
@@ -93,7 +93,7 @@ end
 annotation_named_args # => {value: 2, name: "Jim"}
 ```
 
-Since this method returns a `NamedTupleLiteral`, all of the [methods](https://crystal-lang.org/api/latest/Crystal/Macros/NamedTupleLiteral.html) on that type are available for use.  Especially `#double_splat` which makes it easy to pass annotation arguments to methods.
+Since this method returns a `NamedTupleLiteral`, all of the [methods][Crystal::Macros::NamedTupleLiteral] on that type are available for use.  Especially `#double_splat` which makes it easy to pass annotation arguments to methods.
 
 ```crystal
 annotation MyAnnotation
@@ -153,7 +153,7 @@ end
 annotation_args # => {1, 2, 3, 4}
 ```
 
-Since the return type of `TupleLiteral` is iterable, we can rewrite the previous example in a better way.  By extension, all of the [methods](https://crystal-lang.org/api/latest/Crystal/Macros/TupleLiteral.html) on `TupleLiteral` are available for use as well.
+Since the return type of `TupleLiteral` is iterable, we can rewrite the previous example in a better way.  By extension, all of the [methods][Crystal::Macros::TupleLiteral] on `TupleLiteral` are available for use as well.
 
 ```crystal
 annotation MyAnnotation
@@ -177,7 +177,7 @@ annotation_read
 
 ## Reading
 
-Annotations can be read off of a [`TypeNode`](https://crystal-lang.org/api/latest/Crystal/Macros/TypeNode.html), [`Def`](https://crystal-lang.org/api/latest/Crystal/Macros/Def.html), or [`MetaVar`](https://crystal-lang.org/api/latest/Crystal/Macros/MetaVar.html) using the `.annotation(type : TypeNode)` method.  This method return an [`Annotation`](https://crystal-lang.org/api/master/Crystal/Macros/Annotation.html) object representing the applied annotation of the supplied type.
+Annotations can be read off of a [`TypeNode`][Crystal::Macros::TypeNode], [`Def`][Crystal::Macros::Def], or [`MetaVar`][Crystal::Macros::MetaVar] using the `.annotation(type : TypeNode)` method.  This method return an [`Annotation`][Crystal::Macros::Annotation] object representing the applied annotation of the supplied type.
 
 !!! note
     If multiple annotations of the same type are applied, the `.annotation` method will return the _last_ one.

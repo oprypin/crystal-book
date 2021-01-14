@@ -53,7 +53,7 @@ At start our CLI application will have two options:
 So, how does all this work? Well … magic! No, it’s not really magic! Just Crystal making our life easy.
 When our application starts, the block passed to `OptionParser#parse` gets executed. In that block we define all the options. After the block is executed, the parser will start consuming the arguments passed to the application, trying to match each one with the options defined by us. If an option matches then the block passed to `parser#on` gets executed!
 
-We can read all about `OptionParser` in [the official API documentation](https://crystal-lang.org/api/latest/OptionParser.html). And from there we are one click away from the source code ... the actual proof that it is not magic!
+We can read all about `OptionParser` in [the official API documentation][OptionParser]. And from there we are one click away from the source code ... the actual proof that it is not magic!
 
 Now, let's run our application. We have two ways [using the compiler](../using_the_compiler/README.md):
 
@@ -272,7 +272,7 @@ Easy, peasy! Let’s create a new application: the Fab Four will sing with us an
     puts "The Beatles are singing: 🎵#{user_input}🎶🎸🥁"
     ```
 
-The method [`gets`](https://crystal-lang.org/api/latest/toplevel.html#gets%28*args,**options%29-class-method) will **pause** the execution of the application, until the user finishes entering the input (pressing the `Enter` key).
+The method [`gets`][gets(*,**)] will **pause** the execution of the application, until the user finishes entering the input (pressing the `Enter` key).
 When the user presses `Enter`, then the execution will continue and `user_input` will have the user value.
 
 But what happen if the user doesn’t enter any value? In that case, we would get an empty string (if the user only presses `Enter`) or maybe a `Nil` value (if the input stream id closed, e.g. by pressing `Ctrl+D`).
@@ -326,7 +326,7 @@ So, we have to test for `Nil` and for `empty` and act naturally for each case:
 Now, we will focus on the second main topic: our application’s output.
 For starters, our applications already display information but (I think) we could do better. Let’s add more _life_ (i.e. colors!) to the outputs.
 
-And to accomplish this, we will be using the [`Colorize`](https://crystal-lang.org/api/latest/Colorize.html) module.
+And to accomplish this, we will be using the [`Colorize`][] module.
 
 Let’s build a really simple application that shows a string with colors! We will use yellow font on a black background:
 
@@ -368,7 +368,7 @@ For our second application, we will add a *text decoration* (`blink`in this case
 Let’s try the renewed application … and _hear_ the difference!!
 **Now** we have two fabulous apps!!
 
-You may find a list of **available colors** and **text decorations** in the [API documentation](https://crystal-lang.org/api/latest/Colorize.html).
+You may find a list of **available colors** and **text decorations** in the [API documentation][Colorize].
 
 ## Testing
 
