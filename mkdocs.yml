@@ -38,6 +38,7 @@ plugins:
           crystal_docs_flags:
             - --project-name=Crystal
             - crystal/src/docs_main.cr
+            - crystal/src/compiler/crystal.cr
   - literate-nav:
       nav_file: SUMMARY.md
   - section-index

@@ -12,7 +12,7 @@ build: ## Build website into build directory
 build: $(OUTPUT_DIR)
 
 $(OUTPUT_DIR): $(DOCS_FILES) $(MKDOCS) mkdocs.yml
-	$(MKDOCS) build -d $(OUTPUT_DIR) --strict
+	$(MKDOCS) build -d $(OUTPUT_DIR)
 
 .PHONY: serve
 serve: ## Run live-preview server
