@@ -35,7 +35,7 @@ jobs:
       - name: Disallow unchecked intra-site links
         run: make check_internal_links
       - name: Deploy to gh-pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/mkdocstrings'
+        if: (github.event_name == 'push' || github.event_name == 'schedule') && github.ref == 'refs/heads/mkdocstrings'
         uses: oprypin/push-to-gh-pages@v3
         with:
           publish_dir: site
