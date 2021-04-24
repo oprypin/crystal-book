@@ -35,6 +35,8 @@ def get_parts(typ):
     return parts[1:]
 
 
+nav_items = {}
+
 # For each type (e.g. "Foo::Bar")
 for typ in root.walk_types():
     if all(loc.filename.startswith("crystal/src/crystal/") for loc in typ.locations):
@@ -61,11 +63,14 @@ for typ in root.walk_types():
             parts = get_parts(sup) + parts
             typ2 = sup.lookup()
 
+    nav_items[tuple(parts)] = filename
+
+for parts, filename in sorted(nav_items.items()):
     add_to_nav("Compiler", *parts, filename)
 
 
 def build_nav(data, indentation=""):
-    for key, value in sorted(data.items()):
+    for key, value in data.items():
         if key != "":
             if "" in value:
                 yield f"{indentation}* [{key}]({value['']})\n"
