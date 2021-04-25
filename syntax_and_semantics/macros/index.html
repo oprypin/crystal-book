@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/macros/index.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
     
     
       
@@ -2429,7 +2429,7 @@ code that is pasted into a program. For example:</p>
 </code></pre></div>
 <p>Note that <code>:foo</code> was the result of the interpolation, because that's what was passed to the macro. You can use the method <a href="../../api/Crystal/Macros/ASTNode.html#Crystal::Macros::ASTNode#id"><code>ASTNode#id</code></a> in these cases, where you just need an identifier.</p>
 <h2 id="macro-calls">Macro calls<a class="headerlink" href="#macro-calls" title="Permanent link">&para;</a></h2>
-<p>You can invoke a <strong>fixed subset</strong> of methods on AST nodes at compile-time. These methods are documented in a fictitious <a href="../../api/Crystal/Macros.html#Crystal::Macros">Crystal::Macros</a> module.</p>
+<p>You can invoke a <strong>fixed subset</strong> of methods on AST nodes at compile-time. These methods are documented in a fictitious <a href="../../api/Crystal/Macros.html#Crystal::Macros"><code>Crystal::Macros</code></a> module.</p>
 <p>For example, invoking <a href="../../api/Crystal/Macros/ASTNode.html#Crystal::Macros::ASTNode#id"><code>ASTNode#id</code></a> in the above example solves the problem:</p>
 <div class="highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_method</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
   <span class="k">def</span> <span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>

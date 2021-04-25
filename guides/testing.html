@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/guides/testing.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
     
     
       
@@ -2790,7 +2790,7 @@
                 
                 
                 <h1 id="testing-crystal-code">Testing Crystal Code<a class="headerlink" href="#testing-crystal-code" title="Permanent link">&para;</a></h1>
-<p>Crystal comes with a fully-featured spec library in the <a href="../api/Spec.html#Spec"><code>Spec</code> module</a>. It provides a structure for writing executable examples of how your code should behave.</p>
+<p>Crystal comes with a fully-featured spec library in the <a href="../api/Spec.html#Spec"><code>Spec</code></a> module. It provides a structure for writing executable examples of how your code should behave.</p>
 <p>Inspired by <a href="http://rspec.info/">Rspec</a>, it includes a domain specific language (DSL) that allows you to write examples in a way similar to plain english.</p>
 <p>A basic spec looks something like this:</p>
 <div class="highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;spec&quot;</span>
@@ -2888,7 +2888,7 @@ Note that the identity expectation uses <code>.same?</code> which tests if <a hr
 <span class="k">end</span>
 </code></pre></div>
 <p>Tagging an example group (<code>describe</code> or <code>context</code>) extends to all of the contained examples.</p>
-<p>Multiple tags can be specified by giving an <a href="../api/Enumerable.html#Enumerable">Enumerable</a>, such as <a href="../api/Array.html#Array">Array</a> or <a href="../api/Set.html#Set">Set</a>.</p>
+<p>Multiple tags can be specified by giving an <a href="../api/Enumerable.html#Enumerable"><code>Enumerable</code></a>, such as <a href="../api/Array.html#Array"><code>Array</code></a> or <a href="../api/Set.html#Set"><code>Set</code></a>.</p>
 <h2 id="running-specs">Running specs<a class="headerlink" href="#running-specs" title="Permanent link">&para;</a></h2>
 <p>The Crystal compiler has a <code>spec</code> command with tools to constrain which examples get run and tailor the output. All specs of a project are compiled and executed through the command <code>crystal spec</code>.</p>
 <p>By convention, specs live in the <code>spec/</code> directory of a project. Spec files must end with <code>_spec.cr</code> to be recognizable as such by the compiler command.</p>

@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/guides/concurrency.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
     
     
       
@@ -2919,7 +2919,7 @@
 
 <span class="n">Fiber</span><span class="o">.</span><span class="n">yield</span>
 </code></pre></div>
-<p>Now it works because we are creating a <a href="../api/Proc.html#Proc">Proc</a> and we invoke it passing <code>i</code>, so the value gets copied and now the spawned fiber receives a copy.</p>
+<p>Now it works because we are creating a <a href="../api/Proc.html#Proc"><code>Proc</code></a> and we invoke it passing <code>i</code>, so the value gets copied and now the spawned fiber receives a copy.</p>
 <p>To avoid all this boilerplate, the standard library provides a <code>spawn</code> macro that accepts a call expression and basically rewrites it to do the above. Using it, we end up with:</p>
 <div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span>

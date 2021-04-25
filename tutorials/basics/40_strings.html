@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/tutorials/basics/40_strings.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
     
     
       
@@ -2645,7 +2645,7 @@ If the message was <code>Hello Crystal</code>, we wouldn't get the entire word <
 
 <span class="bp">p!</span> <span class="n">message</span><span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="n">message</span><span class="o">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">6</span> <span class="o">-</span> <span class="mi">1</span><span class="o">]</span>
 </code></pre></div>
-<p>There's an easier way to do that: The index accessor can be used with a <a href="../../api/Range.html#Range">Range</a>
+<p>There's an easier way to do that: The index accessor can be used with a <a href="../../api/Range.html#Range"><code>Range</code></a>
 of character indices. A range literal consists of a start value and an end value, connected by two dots (<code>..</code>).
 The first value indicates the start index of the substring, as before, but the second is the end index (as opposed to the length).
 Now we don't need to repeat the start index in the calculation, because the end index is just the size minus two

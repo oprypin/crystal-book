@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/exception_handling.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
     
     
       
@@ -2422,10 +2422,10 @@
 <div class="highlight"><pre><span></span><code><span class="nb">raise</span> <span class="s2">&quot;OH NO!&quot;</span>
 <span class="nb">raise</span> <span class="n">Exception</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Some error&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>The String version just creates a new <a href="../api/Exception.html#Exception">Exception</a> instance with that message.</p>
+<p>The String version just creates a new <a href="../api/Exception.html#Exception"><code>Exception</code></a> instance with that message.</p>
 <p>Only <code>Exception</code> instances or subclasses can be raised.</p>
 <h2 id="defining-custom-exceptions">Defining custom exceptions<a class="headerlink" href="#defining-custom-exceptions" title="Permanent link">&para;</a></h2>
-<p>To define a custom exception type, just subclass from <a href="../api/Exception.html#Exception">Exception</a>:</p>
+<p>To define a custom exception type, just subclass from <a href="../api/Exception.html#Exception"><code>Exception</code></a>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyException</span> <span class="o">&lt;</span> <span class="n">Exception</span>
 <span class="k">end</span>
 

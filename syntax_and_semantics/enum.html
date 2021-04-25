@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/enum.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
     
     
       
@@ -2393,7 +2393,7 @@
 <span class="n">Color</span><span class="o">::</span><span class="n">Red</span><span class="o">.</span><span class="n">value</span> <span class="c1"># :: UInt8</span>
 </code></pre></div>
 <p>Only integer types are allowed as the underlying type.</p>
-<p>All enums inherit from <a href="../api/Enum.html#Enum">Enum</a>.</p>
+<p>All enums inherit from <a href="../api/Enum.html#Enum"><code>Enum</code></a>.</p>
 <h2 id="flags-enums">Flags enums<a class="headerlink" href="#flags-enums" title="Permanent link">&para;</a></h2>
 <p>An enum can be marked with the <code>@[Flags]</code> annotation. This changes the default values:</p>
 <div class="highlight"><pre><span></span><code><span class="o">@[</span><span class="nd">Flags</span><span class="o">]</span>
@@ -2437,7 +2437,7 @@
 </code></pre></div>
 <p>Class variables are allowed, but instance variables are not.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Enums are a type-safe alternative to <a href="../api/Symbol.html#Symbol">Symbol</a>. For example, an API's method can specify a <a href="type_restrictions.html">type restriction</a> using an enum type:</p>
+<p>Enums are a type-safe alternative to <a href="../api/Symbol.html#Symbol"><code>Symbol</code></a>. For example, an API's method can specify a <a href="type_restrictions.html">type restriction</a> using an enum type:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">paint</span><span class="p">(</span><span class="n">color</span> <span class="p">:</span> <span class="n">Color</span><span class="p">)</span>
   <span class="k">case</span> <span class="n">color</span>
   <span class="k">when</span> <span class="n">Color</span><span class="o">::</span><span class="n">Red</span>
