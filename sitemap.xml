@@ -8,6 +8,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/getting_started/index.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/using_the_compiler/index.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -21,6 +25,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/platform_support.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/index.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -96,6 +104,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/literals/index.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/assignment.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -140,6 +152,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/if.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/unless.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -156,6 +172,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/while.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/until.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -165,6 +185,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/or.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/control_expressions.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -232,6 +256,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/inheritance.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/class_methods.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -241,6 +269,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/finalize.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/classes_and_methods.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -280,7 +312,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/blocks_and_procs.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/alias.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/types_and_methods.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -316,6 +356,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/type_reflection.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/macros/macro_methods.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -328,7 +372,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/macros/index.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/annotations/built_in_annotations.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/annotations/index.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -352,7 +404,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/low_level_primitives.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/cross-compilation.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/compile_time_flags.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -365,6 +425,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/c_bindings/to_unsafe.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/c_bindings/fun.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -400,6 +464,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/c_bindings/index.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/syntax_and_semantics/unsafe.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -424,6 +492,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/guides/writing_shards.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/guides/ci/gh-actions.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -433,6 +505,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/guides/ci/circleci.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/guides/ci/index.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -449,6 +525,14 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/database/transactions.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/database/index.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/guides/index.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -476,7 +560,7 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://oprypin.github.io/crystal-book/api/index.html</loc>
+     <loc>https://oprypin.github.io/crystal-book/tutorials/basics/index.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -492,7 +576,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Atomic.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Base64/Error.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Base64.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -504,11 +596,23 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Benchmark/BM.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Benchmark/IPS/Entry.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Benchmark/IPS/Job.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Benchmark/IPS.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Benchmark.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -548,7 +652,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Channel.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Char/Reader.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Char.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -580,6 +692,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Colorize.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Comparable.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -604,6 +720,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Compress/Deflate.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Compress/Gzip/Error.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -620,6 +740,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Compress/Gzip.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Compress/Zip/CompressionMethod.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -632,6 +756,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Compress/Zip/File.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Compress/Zip/FileInfo.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -640,7 +768,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Compress/Zip/Reader.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Compress/Zip/Writer/Entry.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Compress/Zip/Writer.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Compress/Zip.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -656,11 +796,23 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Compress/Zlib.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Compress.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crypto/Bcrypt/Error.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crypto/Bcrypt/Password.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crypto/Bcrypt.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -672,11 +824,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crypto.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/MacroInterpreter/MacroVarKey.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/MacroInterpreter/ReplaceBlockVarsTransformer.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/MacroInterpreter.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -936,6 +1096,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Macros.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Program/CompiledMacroRun.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -953,6 +1117,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/CSV/Builder/Row.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/CSV/Builder.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -977,6 +1145,14 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/CSV/Token/Kind.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/CSV/Token.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/CSV.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1020,6 +1196,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Digest.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Dir.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1036,6 +1216,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Enum.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Enumerable/Chunk/Alone.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1044,7 +1228,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Enumerable/Chunk.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Enumerable/EmptyError.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Enumerable.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1104,6 +1296,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/File.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/FileUtils.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1113,6 +1309,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Float/Primitive.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Float.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1132,7 +1332,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/GC.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Hash/Entry.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Hash.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1152,11 +1360,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/HTTP/Client.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/HTTP/CompressHandler.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/HTTP/Cookie/SameSite.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/HTTP/Cookie.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1188,7 +1404,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/HTTP/FormData.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/HTTP/Handler/HandlerProc.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/HTTP/Handler.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1224,7 +1448,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/HTTP/Server.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/HTTP/StaticFileHandler/DirectoryListing.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/HTTP/StaticFileHandler.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1236,7 +1468,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/HTTP/WebSocket.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/HTTP/WebSocketHandler.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/HTTP.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1249,6 +1489,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/INI/ParseException.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/INI.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1265,6 +1509,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Int/Unsigned.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Int.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1320,11 +1568,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/IO/ByteFormat.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/IO/Delimited.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/IO/Digest/DigestMode.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/IO/Digest.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1376,6 +1632,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/IO.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/IPSocket.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1392,7 +1652,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Iterator.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/JSON/Any/Type.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/JSON/Any.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1424,6 +1692,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/JSON/Builder.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/JSON/Error.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1452,6 +1724,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/JSON/PullParser.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/JSON/Serializable/Options.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1464,6 +1740,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/JSON/Serializable.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/JSON/SerializableError.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1472,11 +1752,23 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/JSON/Token.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/JSON.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/KeyError.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Levenshtein/Finder.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Levenshtein.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1512,7 +1804,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/LLVM/ABI/X86_64.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/LLVM/ABI/X86_Win64.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/LLVM/ABI.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1592,6 +1892,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/LLVM/FunctionPassManager.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/LLVM/GenericValue.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1621,6 +1925,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/LLVM/Metadata/Type.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/LLVM/Metadata.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1680,7 +1988,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/LLVM/Type.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/LLVM/Value/Kind.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/LLVM/Value.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1689,6 +2005,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/LLVM/VerifierFailureAction.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/LLVM.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1721,6 +2041,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Log/Dispatcher/Spec.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Log/Dispatcher.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1760,6 +2084,14 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Log/Metadata/Value.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Log/Metadata.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Log/Severity.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1773,6 +2105,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Log/SyncDispatcher.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Log.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1800,7 +2136,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/MIME/Multipart.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/MIME.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Mutex/Protection.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Mutex.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1828,6 +2176,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Number.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/OAuth/AccessToken.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1844,11 +2196,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/OAuth.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/OAuth2/AccessToken/Bearer.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/OAuth2/AccessToken/Mac.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/OAuth2/AccessToken.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1868,6 +2228,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/OAuth2.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Object.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1880,11 +2244,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/OpenSSL/Cipher.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/OpenSSL/Digest/Error.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/OpenSSL/Digest/UnsupportedError.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/OpenSSL/Digest.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1916,6 +2288,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/OpenSSL/SSL/Context.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/OpenSSL/SSL/Error.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1944,11 +2320,23 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/OpenSSL/SSL/Socket.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/OpenSSL/SSL/VerifyMode.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/OpenSSL/SSL/X509VerifyFlags.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/OpenSSL/SSL.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/OpenSSL.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -1964,6 +2352,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/OptionParser.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/OverflowError.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -1976,7 +2368,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Path.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Pointer/Appender.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Pointer.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2012,6 +2412,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Process.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Random/ISAAC.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2021,6 +2425,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Random/Secure.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Random.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2040,11 +2448,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Regex.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/RuntimeError.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/SemanticVersion/Prerelease.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/SemanticVersion.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2065,6 +2481,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Socket/Addrinfo/Error.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Socket/Addrinfo.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2108,6 +2528,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Socket.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Spec/Context.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2116,7 +2540,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Spec/Example.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Spec/ExampleGroup/Procsy.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Spec/ExampleGroup.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2140,6 +2572,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Spec.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/StaticArray.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2148,11 +2584,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Steppable.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/String/Builder.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/String/RawConverter.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/String.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2176,11 +2620,27 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/System/Group.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/System/User/NotFoundError.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/System/User.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/System.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/SystemError/ClassMethods.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/SystemError.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2217,6 +2677,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Termios/OutputMode.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Termios.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2268,6 +2732,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Time/Format.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Time/Location/InvalidLocationNameError.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2284,11 +2752,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Time/Location.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Time/MonthSpan.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Time/Span.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Time.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2328,6 +2804,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Unicode.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Union.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2348,7 +2828,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/URI/Params.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/URI/Punycode.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/URI.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2361,6 +2849,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/UUID/Version.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/UUID.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2404,6 +2896,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/XML/Node.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/XML/NodeSet.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2416,6 +2912,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/XML/Reader.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/XML/SaveOptions.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2424,7 +2924,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/XML.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/YAML/Any/Type.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/YAML/Any.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2480,6 +2988,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/YAML/Nodes.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/YAML/ParseContext.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2504,6 +3016,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/YAML/Schema.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/YAML/SequenceStyle.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2517,6 +3033,18 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/YAML/Serializable/Unmapped.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/YAML/Serializable.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/YAML.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/index.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2564,6 +3092,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/BinaryOp.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Block.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2577,6 +3109,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Call/RetryLookupWithLiterals.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Call.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2612,7 +3148,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/ControlExpression.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/External.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Def.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2653,6 +3197,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/HashLiteral/Entry.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/HashLiteral.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2740,6 +3288,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/NamedTupleLiteral.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/NilLiteral.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2769,6 +3321,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/TupleIndexer.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Primitive.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2809,6 +3365,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Select/When.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Select.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2884,6 +3444,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/UnaryExpression.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Underscore.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2912,6 +3476,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Var.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/VisibilityModifier.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -2932,7 +3500,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/ASTNode.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/AbstractDefChecker/ReplacePathWithTypeVar.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/AbstractDefChecker.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2960,11 +3536,23 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Codegen/Target.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Codegen.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Command/CompilerConfig.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Command/FormatCommand.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Command.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -2981,6 +3569,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Compiler/Source.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Compiler.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3009,6 +3601,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/CrystalPath/NotFoundError.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/CrystalPath.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3108,7 +3704,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Doc/Markdown/Parser.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Doc/Markdown/Renderer.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Doc/Markdown.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3160,6 +3764,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Doc.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/MethodTraceException.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -3177,6 +3785,18 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/UndefinedMacroMethodError.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/TypeException.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/CodeError.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Error.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3224,7 +3844,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/ExhaustivenessChecker.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/ExpandResult/Expansion/MacroImplementation.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/ExpandResult/Expansion.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/ExpandResult.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3249,6 +3881,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/JSONHierarchyPrinter.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/HierarchyPrinter.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3328,11 +3964,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Init.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/InstanceVarContainer.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/InstanceVarInitializerContainer/InstanceVarInitializer.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/InstanceVarInitializerContainer.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3345,6 +3989,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/LLVMTyper/TypeCache.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/LLVMTyper.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3385,6 +4033,14 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Parser/Unclosed.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Parser.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Lexer.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3448,6 +4104,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Playground/AgentInstrumentorTransformer.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Playground/EnvironmentHandler.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -3476,6 +4136,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Playground/PlaygroundPage.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Playground/Server.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -3489,6 +4153,14 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Playground/WorkbookIndexPage/Item.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Playground/WorkbookIndexPage.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Playground.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3532,6 +4204,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/TablePrint.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Token/DelimiterState.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -3540,7 +4216,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Token.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/CleanupTransformer/ClosuredVarsCollector.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/CleanupTransformer.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3549,6 +4233,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Normalizer.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Transformer.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3580,7 +4268,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/TupleInstanceType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/GenericClassInstanceType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/GenericModuleInstanceType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/GenericInstanceType.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3593,6 +4293,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/SymbolLiteralType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/LiteralType.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3632,6 +4336,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/GenericClassType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/MetaclassType.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -3664,6 +4372,14 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/PrimitiveType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/ClassType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/EnumType.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -3688,6 +4404,18 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Program.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/NonGenericModuleType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/ModuleType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/NoReturnType.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -3697,6 +4425,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/VoidType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/NamedType.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3728,11 +4460,19 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/UnionType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/VirtualMetaclassType.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/VirtualType.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Type.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3753,6 +4493,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/TypeDeclarationProcessor/TypeDeclarationWithLocation.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/TypeDeclarationProcessor.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3784,6 +4528,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/TypeFilter.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/TypeFilters.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -3801,6 +4549,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/VirtualTypeLookup/Change.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/VirtualTypeLookup.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3844,6 +4596,10 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/CodeGenVisitor.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/ContextVisitor.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
@@ -3869,6 +4625,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Formatter/HeredocInfo.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Formatter.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3900,7 +4660,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/InstanceVarsInitializerVisitor.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/MainVisitor/InstanceVarsCollector.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/MainVisitor.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3912,7 +4680,15 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/TopLevelVisitor.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/TypeDeclarationVisitor/TypeDeclarationWithLocation.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/TypeDeclarationVisitor.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -3936,11 +4712,27 @@
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/TypeGuessVisitor.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/SemanticVisitor.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/ToSVisitor.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal/Visitor.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://oprypin.github.io/crystal-book/api/Crystal/Warnings.html</loc>
+     <lastmod>2021-04-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://oprypin.github.io/crystal-book/api/Crystal.html</loc>
      <lastmod>2021-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url>

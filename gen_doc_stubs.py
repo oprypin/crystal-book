@@ -25,8 +25,8 @@ def add_to_nav(*items):
 
 
 with mkdocs_gen_files.open("api/index.md", "w") as f:
-    print(f"# ::: ::", file=f)
-add_to_nav("API", "Top-level namespace", "api/index.md")
+    print(f"# Top-level namespace\n\n# ::: ::", file=f)
+add_to_nav("API", "api/index.md")
 
 
 def get_parts(typ):
