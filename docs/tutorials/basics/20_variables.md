@@ -23,9 +23,9 @@ The name of a variable always starts with a lowercase [Unicode](https://en.wikip
 
 ## Type
 
-The type of a variable is automatically inferred by the compiler. In the above example, it's [String][].
+The type of a variable is automatically inferred by the compiler. In the above example, it's [`String`][].
 
-You can verify this with [typeof][]:
+You can verify this with [`typeof`][]:
 
 ```{.crystal .crystal-play}
 message = "Hello Penny!"
@@ -34,7 +34,7 @@ p! typeof(message)
 ```
 
 !!! note
-    [p!][] is similar to `puts` as it prints the value to the standard output, but it also prints the expression in code. This makes it a useful tool for inspecting the state of a Crystal program and debugging.
+    [`p!`][] is similar to `puts` as it prints the value to the standard output, but it also prints the expression in code. This makes it a useful tool for inspecting the state of a Crystal program and debugging.
 
 ## Reassigning a Value
 

@@ -317,8 +317,8 @@ The receiver can't be anything else than a variable or call.
 Index accessors are used to query a value by index or key, for example an array
 item or map entry. The nilable variant `[]?` is supposed to return `nil` when
 the index is not found, while the non-nilable variant raises in that case.
-Implementations in the standard-library usually raise [KeyError][]
-or [IndexError][].
+Implementations in the standard-library usually raise [`KeyError`][]
+or [`IndexError`][].
 
 | Operator | Description | Example | Overloadable |
 |---|---|---|---|

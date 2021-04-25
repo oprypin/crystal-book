@@ -11,7 +11,7 @@ lib X
 end
 ```
 
-Then you can pass a function (a [Proc][]) like this:
+Then you can pass a function (a [`Proc`][]) like this:
 
 ```crystal
 f = ->(x : Int32) { x + 1 }

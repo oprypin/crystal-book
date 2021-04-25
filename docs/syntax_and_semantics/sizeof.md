@@ -7,7 +7,7 @@ sizeof(Int32) # => 4
 sizeof(Int64) # => 8
 ```
 
-For [Reference][] types, the size is the same as the size of a pointer:
+For [`Reference`][] types, the size is the same as the size of a pointer:
 
 ```crystal
 # On a 64 bits machine

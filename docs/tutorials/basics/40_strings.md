@@ -252,7 +252,7 @@ message = "Hello World!"
 p! message[6, message.size - 6 - 1]
 ```
 
-There's an easier way to do that: The index accessor can be used with a [Range][]
+There's an easier way to do that: The index accessor can be used with a [`Range`][]
 of character indices. A range literal consists of a start value and an end value, connected by two dots (`..`).
 The first value indicates the start index of the substring, as before, but the second is the end index (as opposed to the length).
 Now we don't need to repeat the start index in the calculation, because the end index is just the size minus two

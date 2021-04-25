@@ -39,8 +39,10 @@ markupsafe==1.1.1
     #   jinja2
     #   mkdocstrings
     #   mkdocstrings-crystal
-mkdocs-autorefs==0.1.1
-    # via mkdocstrings
+git+https://github.com/mkdocstrings/autorefs@master
+    # via
+    #   -r requirements.in
+    #   mkdocstrings
 mkdocs-gen-files==0.3.1
     # via -r requirements.in
 mkdocs-literate-nav==0.3.0

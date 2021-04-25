@@ -11,13 +11,13 @@ raise "OH NO!"
 raise Exception.new("Some error")
 ```
 
-The String version just creates a new [Exception][] instance with that message.
+The String version just creates a new [`Exception`][] instance with that message.
 
 Only `Exception` instances or subclasses can be raised.
 
 ## Defining custom exceptions
 
-To define a custom exception type, just subclass from [Exception][]:
+To define a custom exception type, just subclass from [`Exception`][]:
 
 ```crystal
 class MyException < Exception

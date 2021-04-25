@@ -1,6 +1,7 @@
 git+https://github.com/mkdocs/mkdocs@master
 mkdocs-material
 mkdocstrings-crystal
+git+https://github.com/mkdocstrings/autorefs@master
 mkdocs-literate-nav
 mkdocs-section-index
 mkdocs-gen-files

@@ -1,6 +1,6 @@
 # pointerof
 
-The `pointerof` expression returns a [Pointer][] that points to the contents of a variable or instance variable.
+The `pointerof` expression returns a [`Pointer`][] that points to the contents of a variable or instance variable.
 
 An example with a variable:
 

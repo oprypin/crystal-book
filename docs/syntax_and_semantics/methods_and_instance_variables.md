@@ -63,7 +63,7 @@ john.age = 32
 john.age # => 32
 ```
 
-For more information on getter and setter macros, see the standard library documentation for [Object#getter][Object:getter], [Object#setter][Object:setter], and [Object#property][Object:property].
+For more information on getter and setter macros, see the standard library documentation for [`Object#getter`][], [`Object#setter`][], and [`Object#property`][].
 
 As a side note, we can define `become_older` inside the original `Person` definition, or in a separate definition: Crystal combines all definitions into a single class. The following works just fine:
 

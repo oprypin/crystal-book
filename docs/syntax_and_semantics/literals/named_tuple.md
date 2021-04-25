@@ -1,6 +1,6 @@
 # NamedTuple
 
-A [NamedTuple][] is typically created with a named tuple literal:
+A [`NamedTuple`][] is typically created with a named tuple literal:
 
 ```crystal
 tuple = {name: "Crystal", year: 2011} # NamedTuple(name: String, year: Int32)

@@ -1,6 +1,6 @@
 # String
 
-A [String][] represents an immutable sequence of UTF-8 characters.
+A [`String`][] represents an immutable sequence of UTF-8 characters.
 
 A String is typically created with a string literal enclosing UTF-8 characters in double quotes (`"`):
 
@@ -66,7 +66,7 @@ b = 2
 "sum: #{a} + #{b} = #{a + b}" # => "sum: 1 + 2 = 3"
 ```
 
-String interpolation is also possible with [String#%][String#%(other)].
+String interpolation is also possible with [`String#%`][String#%(other)].
 
 Any expression may be placed inside the interpolated section, but it’s best to keep the expression small for readability.
 
@@ -77,7 +77,7 @@ Interpolation can be disabled by escaping the `#` character with a backslash or 
 %q(#{a + b}) # => "#{a + b}"
 ```
 
-Interpolation is implemented using a [String::Builder][] and invoking `Object#to_s(IO)` on each expression enclosed by `#{...}`. The expression `"sum: #{a} + #{b} = #{a + b}"` is equivalent to:
+Interpolation is implemented using a [`String::Builder`][] and invoking `Object#to_s(IO)` on each expression enclosed by `#{...}`. The expression `"sum: #{a} + #{b} = #{a + b}"` is equivalent to:
 
 ```crystal
 String.build do |io|
@@ -114,7 +114,7 @@ name = "world"
 
 ### Percent string array literal
 
-Besides the single string literal, there is also a percent literal to create an [Array][] of strings. It is indicated by `%w` and a pair of delimiters. Valid delimiters are as same as [percent string literals](#percent-string-literals).
+Besides the single string literal, there is also a percent literal to create an [`Array`][] of strings. It is indicated by `%w` and a pair of delimiters. Valid delimiters are as same as [percent string literals](#percent-string-literals).
 
 ```crystal
 %w(foo bar baz)  # => ["foo", "bar", "baz"]

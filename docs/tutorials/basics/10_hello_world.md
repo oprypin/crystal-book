@@ -17,7 +17,7 @@ puts "Hello World!"
 !!! info inline end
     The name `puts` is short for “put string”.
 
-The entire program consists of a call to the method [puts][] with the string `Hello World!` as argument.
+The entire program consists of a call to the method [`puts`][] with the string `Hello World!` as argument.
 
 This method prints the string (plus a trailing new line character) to the [standard output](https://en.wikipedia.org/wiki/Standard_output).
 

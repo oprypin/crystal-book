@@ -1,6 +1,6 @@
 # Floats
 
-There are two floating point types, [Float32][],
+There are two floating point types, [`Float32`][],
 which correspond to the [binary32](http://en.wikipedia.org/wiki/Single_precision_floating-point_format)
 and [binary64](http://en.wikipedia.org/wiki/Double_precision_floating-point_format)
 types defined by IEEE.

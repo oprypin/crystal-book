@@ -15,7 +15,7 @@ sum 1, 2, 3      # => 6
 sum 1, 2, 3, 4.5 # => 10.5
 ```
 
-The passed arguments become a [Tuple][] in the method's body:
+The passed arguments become a [`Tuple`][] in the method's body:
 
 ```crystal
 # elements is Tuple(Int32, Int32, Int32)

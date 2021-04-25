@@ -7,7 +7,7 @@ The same [escaping](./string.md#escaping) and [interpolation rules](./string.md#
 
 Similar to percent string literals, valid delimiters for `%x` are parentheses `()`, square brackets `[]`, curly braces `{}`, angles `<>` and pipes `||`. Except for the pipes, all delimiters can be nested; meaning a start delimiter inside the string escapes the next end delimiter.
 
-The special variable `$?` holds the exit status of the command as a [Process::Status][]. It is only available in the same scope as the command literal.
+The special variable `$?` holds the exit status of the command as a [`Process::Status`][]. It is only available in the same scope as the command literal.
 
 ```crystal
 `echo foo`  # => "foo"
@@ -27,7 +27,7 @@ user_input = "hello; rm -rf *"
 
 This command will write `hello` and subsequently delete all files and folders in the current working directory.
 
-To avoid this, command literals should generally not be used with interpolated user input. [Process][] from the standard library offers a safe way to provide user input as command arguments:
+To avoid this, command literals should generally not be used with interpolated user input. [`Process`][] from the standard library offers a safe way to provide user input as command arguments:
 
 ```crystal
 user_input = "hello; rm -rf *"

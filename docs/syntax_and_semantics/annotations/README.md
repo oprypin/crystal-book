@@ -1,6 +1,6 @@
 # Annotations
 
-Annotations can be used to add metadata to certain features in the source code. Types, methods and instance variables may be annotated.  User-defined annotations, such as the standard library's [JSON::Field][], are defined using the `annotation` keyword.  A number of [built-in annotations](built_in_annotations.md) are provided by the compiler.
+Annotations can be used to add metadata to certain features in the source code. Types, methods and instance variables may be annotated.  User-defined annotations, such as the standard library's [`JSON::Field`][], are defined using the `annotation` keyword.  A number of [built-in annotations](built_in_annotations.md) are provided by the compiler.
 
 Users can define their own annotations using the `annotation` keyword, which works similarly to defining a `class` or `struct`.
 
@@ -41,7 +41,7 @@ A few applications for annotations:
 
 ### Object Serialization
 
-Have an annotation that when applied to an instance variable determines if that instance variable should be serialized, or with what key. Crystal's [JSON::Serializable][] and [YAML::Serializable][] are examples of this.
+Have an annotation that when applied to an instance variable determines if that instance variable should be serialized, or with what key. Crystal's [`JSON::Serializable`][] and [`YAML::Serializable`][] are examples of this.
 
 ### ORMs
 

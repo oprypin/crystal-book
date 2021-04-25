@@ -2,16 +2,16 @@
 
 There are four signed integer types, and four unsigned integer types:
 
-| Type | Length  | Minimum Value | Maximum Value |
-| ---------- | -----------: | -----------: |-----------: |
-| [Int8][]  | 8       | -128 | 127 |
-| [Int16][]  | 16 | −32,768 | 32,767 |
-| [Int32][] | 32  | −2,147,483,648 | 2,147,483,647 |
-| [Int64][]   |  64 | −2<sup>63</sup> | 2<sup>63</sup> - 1 |
-| [UInt8][] | 8 |  0 | 255 |
-| [UInt16][] | 16 | 0 | 65,535 |
-| [UInt32][] | 32 |  0 | 4,294,967,295 |
-| [UInt64][] | 64 | 0 | 2<sup>64</sup> - 1 |
+| Type         | Length    | Minimum Value | Maximum Value |
+| ------------ | --------: | ------------: | ------------: |
+| [`Int8`][]   |  8 | −128 | 127 |
+| [`Int16`][]  | 16 | −32,768 | 32,767 |
+| [`Int32`][]  | 32 | −2,147,483,648 | 2,147,483,647 |
+| [`Int64`][]  | 64 | −2<sup>63</sup> | 2<sup>63</sup> − 1 |
+| [`UInt8`][]  |  8 | 0 | 255 |
+| [`UInt16`][] | 16 | 0 | 65,535 |
+| [`UInt32`][] | 32 | 0 | 4,294,967,295 |
+| [`UInt64`][] | 64 | 0 | 2<sup>64</sup> − 1 |
 
 An integer literal is an optional `+` or `-` sign, followed by
 a sequence of digits and underscores, optionally followed by a suffix.

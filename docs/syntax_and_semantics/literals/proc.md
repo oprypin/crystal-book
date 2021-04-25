@@ -1,6 +1,6 @@
 # Proc
 
-A [Proc][] represents a function pointer with an optional context (the closure data). It is typically created with a proc literal:
+A [`Proc`][] represents a function pointer with an optional context (the closure data). It is typically created with a proc literal:
 
 ```crystal
 # A proc without parameters

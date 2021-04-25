@@ -1,6 +1,6 @@
 # Testing Crystal Code
 
-Crystal comes with a fully-featured spec library in the [`Spec` module][Spec]. It provides a structure for writing executable examples of how your code should behave.
+Crystal comes with a fully-featured spec library in the [`Spec`][] module. It provides a structure for writing executable examples of how your code should behave.
 
 Inspired by [Rspec](http://rspec.info/), it includes a domain specific language (DSL) that allows you to write examples in a way similar to plain english.
 
@@ -144,7 +144,7 @@ end
 
 Tagging an example group (`describe` or `context`) extends to all of the contained examples.
 
-Multiple tags can be specified by giving an [Enumerable][], such as [Array][] or [Set][].
+Multiple tags can be specified by giving an [`Enumerable`][], such as [`Array`][] or [`Set`][].
 
 ## Running specs
 

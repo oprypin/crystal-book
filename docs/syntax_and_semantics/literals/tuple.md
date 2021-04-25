@@ -1,6 +1,6 @@
 # Tuple
 
-A [Tuple][] is typically created with a tuple literal:
+A [`Tuple`][] is typically created with a tuple literal:
 
 ```crystal
 tuple = {1, "hello", 'x'} # Tuple(Int32, String, Char)
@@ -9,7 +9,7 @@ tuple[1]                  # => "hello" (String)
 tuple[2]                  # => 'x'     (Char)
 ```
 
-To create an empty tuple use [Tuple.new][Tuple.new(*)].
+To create an empty tuple use [`Tuple.new`][Tuple.new(*)].
 
 To denote a tuple type you can write:
 

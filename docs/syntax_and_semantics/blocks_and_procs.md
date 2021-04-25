@@ -252,7 +252,7 @@ end
 
 The above prints "2" and "3".
 
-A `yield` expression's value is mostly useful for transforming and filtering values. The best examples of this are [Enumerable#map][Enumerable#map(&)] and [Enumerable#select][Enumerable#select(&)]:
+A `yield` expression's value is mostly useful for transforming and filtering values. The best examples of this are [`Enumerable#map`][Enumerable#map(&)] and [`Enumerable#select`][Enumerable#select(&)]:
 
 ```crystal
 ary = [1, 2, 3]
@@ -336,7 +336,7 @@ end
 value # :: Int32 | String
 ```
 
-If a `break` receives many arguments, they are automatically transformed to a [Tuple][]:
+If a `break` receives many arguments, they are automatically transformed to a [`Tuple`][]:
 
 ```crystal
 values = twice { break 1, 2 }
@@ -398,7 +398,7 @@ end
 # 3
 ```
 
-If a `next` receives many arguments, they are automatically transformed to a [Tuple][]. If it receives no arguments it's the same as receiving a single `nil` argument.
+If a `next` receives many arguments, they are automatically transformed to a [`Tuple`][]. If it receives no arguments it's the same as receiving a single `nil` argument.
 
 ## with ... yield
 
@@ -451,7 +451,7 @@ end
 
 That means that any type that responds to `[]` with integers can be unpacked in a block parameter.
 
-For [Tuple][] arguments you can take advantage of auto-splatting and do not need parentheses:
+For [`Tuple`][] arguments you can take advantage of auto-splatting and do not need parentheses:
 
 ```crystal
 array = [{1, "one", true}, {2, "two", false}]
@@ -460,7 +460,7 @@ array.each do |number, word, bool|
 end
 ```
 
-[Hash(K, V)#each][Hash#each(&)] passes `Tuple(K, V)` to the block so iterating key-value pairs works with auto-splatting:
+[`Hash(K, V)#each`][Hash#each(&)] passes `Tuple(K, V)` to the block so iterating key-value pairs works with auto-splatting:
 
 ```crystal
 h = {"foo" => "bar"}

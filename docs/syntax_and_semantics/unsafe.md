@@ -2,8 +2,8 @@
 
 These parts of the language are considered unsafe:
 
-* Code involving raw pointers: the [Pointer][] type and [pointerof](pointerof.md).
-* The [allocate](new,_initialize_and_allocate.md) class method.
+* Code involving raw pointers: the [`Pointer`][] type and [`pointerof`](pointerof.md).
+* The [`allocate`](new,_initialize_and_allocate.md) class method.
 * Code involving C bindings
 * [Uninitialized variable declaration](declare_var.md)
 

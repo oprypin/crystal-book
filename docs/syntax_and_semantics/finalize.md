@@ -15,8 +15,8 @@ end
 Use this method to release resources allocated by external libraries that are
 not directly managed by Crystal garbage collector.
 
-Examples of this can be found in [IO::FileDescriptor#finalize][]
-or [OpenSSL::Digest#finalize][].
+Examples of this can be found in [`IO::FileDescriptor#finalize`][]
+or [`OpenSSL::Digest#finalize`][].
 
 **Notes**:
 

@@ -75,7 +75,7 @@ Note that `:foo` was the result of the interpolation, because that's what was pa
 
 ## Macro calls
 
-You can invoke a **fixed subset** of methods on AST nodes at compile-time. These methods are documented in a fictitious [Crystal::Macros][] module.
+You can invoke a **fixed subset** of methods on AST nodes at compile-time. These methods are documented in a fictitious [`Crystal::Macros`][] module.
 
 For example, invoking [`ASTNode#id`][Crystal::Macros::ASTNode#id] in the above example solves the problem:
 
