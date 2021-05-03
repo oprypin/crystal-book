@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/annotations/index.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.1.3">
     
     
       
@@ -20,10 +20,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c772ddf0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
         
           
           
@@ -63,8 +63,9 @@
     
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="blue">
-      
   
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -107,9 +108,8 @@
         </div>
       </div>
     </div>
-    <div class="md-header__options">
-      
-    </div>
+    
+    
     
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
@@ -2243,6 +2243,7 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
     
   
   
@@ -2344,7 +2345,7 @@
                 
                 
                 <h1 id="annotations">Annotations<a class="headerlink" href="#annotations" title="Permanent link">&para;</a></h1>
-<p>Annotations can be used to add metadata to certain features in the source code. Types, methods and instance variables may be annotated.  User-defined annotations, such as the standard library's [<code>JSON::Field</code>][], are defined using the <code>annotation</code> keyword.  A number of <a href="built_in_annotations.html">built-in annotations</a> are provided by the compiler.</p>
+<p>Annotations can be used to add metadata to certain features in the source code. Types, methods and instance variables may be annotated.  User-defined annotations, such as the standard library's <a href="../../api/JSON/Field.html#JSON::Field"><code>JSON::Field</code></a>, are defined using the <code>annotation</code> keyword.  A number of <a href="built_in_annotations.html">built-in annotations</a> are provided by the compiler.</p>
 <p>Users can define their own annotations using the <code>annotation</code> keyword, which works similarly to defining a <code>class</code> or <code>struct</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="k">annotation</span> <span class="nc">MyAnnotation</span>
 <span class="k">end</span>
@@ -2375,7 +2376,7 @@
 <p>Annotations are best used to store metadata about a given instance variable, type, or method so that it can be read at compile time using macros.  One of the main benefits of annotations is that they are applied directly to instance variables/methods, which causes classes to look more natural since a standard macro is not needed to create these properties/methods.</p>
 <p>A few applications for annotations:</p>
 <h3 id="object-serialization">Object Serialization<a class="headerlink" href="#object-serialization" title="Permanent link">&para;</a></h3>
-<p>Have an annotation that when applied to an instance variable determines if that instance variable should be serialized, or with what key. Crystal's [<code>JSON::Serializable</code>][] and [<code>YAML::Serializable</code>][] are examples of this.</p>
+<p>Have an annotation that when applied to an instance variable determines if that instance variable should be serialized, or with what key. Crystal's <a href="../../api/JSON/Serializable.html#JSON::Serializable"><code>JSON::Serializable</code></a> and <a href="../../api/YAML/Serializable.html#YAML::Serializable"><code>YAML::Serializable</code></a> are examples of this.</p>
 <h3 id="orms">ORMs<a class="headerlink" href="#orms" title="Permanent link">&para;</a></h3>
 <p>An annotation could be used to designate a property as an ORM column. The name and type of the instance variable can be read off the <code>TypeNode</code> in addition to the annotation; removing the need for any ORM specific macro. The annotation itself could also be used to store metadata about the column, such as if it is nullable, the name of the column, or if it is the primary key.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h2>
@@ -2567,6 +2568,7 @@
             </article>
           </div>
         </div>
+        
       </main>
       
         
@@ -2627,7 +2629,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.65ce87ac.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
         <script src="../../assets/vendor/codemirror/codemirror.min.js"></script>
       

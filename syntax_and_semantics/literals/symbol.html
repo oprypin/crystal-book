@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/literals/symbol.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.1.3">
     
     
       
@@ -20,10 +20,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c772ddf0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
         
           
           
@@ -63,8 +63,9 @@
     
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="blue">
-      
   
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -107,9 +108,8 @@
         </div>
       </div>
     </div>
-    <div class="md-header__options">
-      
-    </div>
+    
+    
     
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
@@ -488,6 +488,7 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+      
         
       
       
@@ -507,6 +508,7 @@
       
         
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2286,6 +2288,7 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
     
   
   
@@ -2320,7 +2323,7 @@
                 
                 
                 <h1 id="symbol">Symbol<a class="headerlink" href="#symbol" title="Permanent link">&para;</a></h1>
-<p>A [<code>Symbol</code>][] represents a unique name inside the entire source code.</p>
+<p>A <a href="../../api/Symbol.html#Symbol"><code>Symbol</code></a> represents a unique name inside the entire source code.</p>
 <p>Symbols are interpreted at compile time and cannot be created dynamically. The only way to create a Symbol is by using a symbol literal, denoted by a colon (<code>:</code>) followed by an identifier. The identifier may optionally be enclosed in double quotes (<code>"</code>).</p>
 <div class="highlight"><pre><span></span><code><span class="ss">:unquoted_symbol</span>
 <span class="ss">:&quot;quoted symbol&quot;</span>
@@ -2362,7 +2365,7 @@
 </code></pre></div>
 <p>Internally, symbols are implemented as constants with a numeric value of type <code>Int32</code>.</p>
 <h2 id="percent-symbol-array-literal">Percent symbol array literal<a class="headerlink" href="#percent-symbol-array-literal" title="Permanent link">&para;</a></h2>
-<p>Besides the single symbol literal, there is also a percent literal to create an [<code>Array</code>][] of symbols. It is indicated by <code>%i</code> and a pair of delimiters. Valid delimiters are parentheses <code>()</code>, square brackets <code>[]</code>, curly braces <code>{}</code>, angles <code>&lt;&gt;</code> and pipes <code>||</code>. Except for the pipes, all delimiters can be nested; meaning a start delimiter inside the string escapes the next end delimiter.</p>
+<p>Besides the single symbol literal, there is also a percent literal to create an <a href="../../api/Array.html#Array"><code>Array</code></a> of symbols. It is indicated by <code>%i</code> and a pair of delimiters. Valid delimiters are parentheses <code>()</code>, square brackets <code>[]</code>, curly braces <code>{}</code>, angles <code>&lt;&gt;</code> and pipes <code>||</code>. Except for the pipes, all delimiters can be nested; meaning a start delimiter inside the string escapes the next end delimiter.</p>
 <div class="highlight"><pre><span></span><code><span class="sx">%i(foo bar baz)</span>  <span class="c1"># =&gt; [:foo, :bar, :baz]</span>
 <span class="sx">%i(foo\nbar baz)</span> <span class="c1"># =&gt; [:&quot;foo\nbar&quot;, :baz]</span>
 <span class="sx">%i(foo(bar) baz)</span> <span class="c1"># =&gt; [:&quot;foo(bar)&quot;, :baz]</span>
@@ -2380,6 +2383,7 @@
             </article>
           </div>
         </div>
+        
       </main>
       
         
@@ -2440,7 +2444,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.65ce87ac.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
         <script src="../../assets/vendor/codemirror/codemirror.min.js"></script>
       
