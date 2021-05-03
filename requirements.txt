@@ -7,28 +7,27 @@
 cached-property==1.5.2
     # via mkdocstrings-crystal
 click==7.1.2
-    # via
-    #   mkdocs
-    #   nltk
-future==0.18.2
-    # via lunr
+    # via mkdocs
 ghp-import==1.1.0
     # via mkdocs
 glob2==0.7
     # via mkdocs-literate-nav
+importlib-metadata==4.0.1
+    # via mkdocs
 jinja2==2.11.3
     # via
     #   mkdocs
     #   mkdocstrings
     #   mkdocstrings-crystal
-joblib==1.0.1
-    # via nltk
 livereload==2.6.3
     # via mkdocs
-lunr[languages]==0.5.8
+lunr[languages]==0.5.9
     # via mkdocs
+markdown-callouts==0.1.0
+    # via mkdocstrings-crystal
 markdown==3.3.4
     # via
+    #   markdown-callouts
     #   mkdocs
     #   mkdocs-autorefs
     #   mkdocs-material
@@ -39,10 +38,8 @@ markupsafe==1.1.1
     #   jinja2
     #   mkdocstrings
     #   mkdocstrings-crystal
-git+https://github.com/mkdocstrings/autorefs@master
-    # via
-    #   -r requirements.in
-    #   mkdocstrings
+mkdocs-autorefs==0.1.1
+    # via mkdocstrings
 mkdocs-gen-files==0.3.1
     # via -r requirements.in
 mkdocs-literate-nav==0.3.0
@@ -67,18 +64,22 @@ git+https://github.com/mkdocs/mkdocs@master
     #   mkdocs-redirects
     #   mkdocs-section-index
     #   mkdocstrings
-mkdocstrings-crystal==0.3.1
+git+https://github.com/mkdocstrings/crystal@master
     # via -r requirements.in
 mkdocstrings==0.15.0
     # via mkdocstrings-crystal
-nltk==3.5
+nltk==3.4.5
     # via lunr
+packaging==20.9
+    # via mkdocs
 pygments==2.8.1
     # via mkdocs-material
 pymdown-extensions==8.1.1
     # via
     #   mkdocs-material
     #   mkdocstrings
+pyparsing==2.4.7
+    # via packaging
 python-dateutil==2.8.1
     # via ghp-import
 pytkdocs==0.11.0
@@ -89,16 +90,14 @@ pyyaml==5.4.1
     # via
     #   mkdocs
     #   pyyaml-env-tag
-regex==2021.3.17
-    # via nltk
 six==1.15.0
     # via
     #   livereload
-    #   lunr
+    #   nltk
     #   python-dateutil
 tornado==6.1
     # via
     #   livereload
     #   mkdocs
-tqdm==4.59.0
-    # via nltk
+zipp==3.4.1
+    # via importlib-metadata

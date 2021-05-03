@@ -39,6 +39,8 @@ plugins:
             - --project-name=Crystal
             - crystal/src/docs_main.cr
             - crystal/src/compiler/crystal.cr
+          source_locations:
+            crystal: https://github.com/crystal-lang/crystal/blob/{crystal_version}/{file}#L{line}
   - literate-nav:
       nav_file: SUMMARY.md
   - section-index
