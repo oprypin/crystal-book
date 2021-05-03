@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/Socket/IPAddress.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -13059,7 +13059,7 @@ raised. Domain names will not be resolved.</p>
 <span class="n">Socket</span><span class="o">::</span><span class="n">IPAddress</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&quot;udp://[::1]:8080&quot;</span><span class="p">)</span>     <span class="c1"># =&gt; Socket::IPAddress.new(&quot;::1&quot;, 8080)</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L141">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L141">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13071,7 +13071,7 @@ raised. Domain names will not be resolved.</p>
 <p>Returns <code>true</code> if <em>port</em> is a valid port number.</p>
 <p>Valid port numbers are in the range <code>0..65_535</code>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L312">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L312">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13083,7 +13083,7 @@ raised. Domain names will not be resolved.</p>
 <p>Creates an <a href="#Socket::IPAddress"><code>IPAddress</code></a> from the internal OS representation. Supports both
 INET and INET6 families.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L100">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L100">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13094,7 +13094,7 @@ INET and INET6 families.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L84">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L84">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13114,7 +13114,7 @@ raised. Domain names will not be resolved.</p>
 <span class="n">Socket</span><span class="o">::</span><span class="n">IPAddress</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&quot;udp://[::1]:8080&quot;</span><span class="p">)</span>     <span class="c1"># =&gt; Socket::IPAddress.new(&quot;::1&quot;, 8080)</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L125">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L125">View source</a>
 </div><h2 id="Socket::IPAddress-methods">Methods<a href="#Socket::IPAddress-methods" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13139,7 +13139,7 @@ raised. Domain names will not be resolved.</p>
 <span class="n">ip_address</span><span class="o">.</span><span class="n">address</span> <span class="c1"># =&gt; &quot;127.0.0.1&quot;</span>
 </code></pre></div></p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L184">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L184">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13170,7 +13170,7 @@ to the given IO.</p>
 <span class="n">p1</span><span class="o">.</span><span class="n">inspect</span> <span class="c1"># &quot;Point(@x=1, @y=2)&quot;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L266">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L266">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13183,7 +13183,7 @@ to the given IO.</p>
 <p>In the IPv4 family, loopback addresses are all addresses in the subnet
 <code>127.0.0.0/24</code>. In IPv6 <code>::1</code> is the loopback address.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L208">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L208">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13194,7 +13194,7 @@ to the given IO.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L80">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L80">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13205,7 +13205,7 @@ to the given IO.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L272">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L272">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13218,7 +13218,7 @@ to the given IO.</p>
 <p>IPv4 addresses in <code>10.0.0.0/8</code>, <code>172.16.0.0/12</code> and <code>192.168.0.0/16</code> as defined in <a href="https://tools.ietf.org/html/rfc1918">RFC 1918</a>
 and IPv6 Unique Local Addresses in <code>fc00::/7</code> as defined in <a href="https://tools.ietf.org/html/rfc4193">RFC 4193</a> are considered private.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L231">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L231">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13229,7 +13229,7 @@ and IPv6 Unique Local Addresses in <code>fc00::/7</code> as defined in <a href="
   <div class="doc doc-contents ">
 <p>Same as <a href="#Socket::IPAddress#inspect(io)"><code>#inspect(io)</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L258">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L258">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13240,7 +13240,7 @@ and IPv6 Unique Local Addresses in <code>fc00::/7</code> as defined in <a href="
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L276">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L276">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13251,7 +13251,7 @@ and IPv6 Unique Local Addresses in <code>fc00::/7</code> as defined in <a href="
   <div class="doc doc-contents ">
 <p>Returns <code>true</code> if this IP is an unspecified address, either the IPv4 address <code>0.0.0.0</code> or the IPv6 address <code>::</code>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/address.cr#L218">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/address.cr#L218">View source</a>
 </div>      </div>
   </div>
 

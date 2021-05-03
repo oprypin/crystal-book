@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/blocks_and_procs.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -2579,7 +2579,7 @@ with the <code>yield</code> keyword. For example:</p>
 <span class="k">end</span>
 <span class="n">value</span> <span class="c1"># :: Int32 | String</span>
 </code></pre></div>
-<p>If a <code>break</code> receives many arguments, they are automatically transformed to a <a href="../api/Tuple.html#Tuple"><code>Tuple</code></a>:</p>
+<p>If a <code>break</code> receives many arguments, they are automatically transformed to a [<code>Tuple</code>][]:</p>
 <div class="highlight"><pre><span></span><code><span class="n">values</span> <span class="o">=</span> <span class="n">twice</span> <span class="p">{</span> <span class="k">break</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">}</span>
 <span class="n">values</span> <span class="c1"># =&gt; {1, 2}</span>
 </code></pre></div>
@@ -2628,7 +2628,7 @@ with the <code>yield</code> keyword. For example:</p>
 <span class="c1"># 10</span>
 <span class="c1"># 3</span>
 </code></pre></div>
-<p>If a <code>next</code> receives many arguments, they are automatically transformed to a <a href="../api/Tuple.html#Tuple"><code>Tuple</code></a>. If it receives no arguments it's the same as receiving a single <code>nil</code> argument.</p>
+<p>If a <code>next</code> receives many arguments, they are automatically transformed to a [<code>Tuple</code>][]. If it receives no arguments it's the same as receiving a single <code>nil</code> argument.</p>
 <h2 id="with-yield">with ... yield<a class="headerlink" href="#with-yield" title="Permanent link">&para;</a></h2>
 <p>A <code>yield</code> expression can be modified, using the <code>with</code> keyword, to specify an object to use as the default receiver of method calls within the block:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Foo</span>
@@ -2668,7 +2668,7 @@ with the <code>yield</code> keyword. For example:</p>
 <span class="k">end</span>
 </code></pre></div>
 <p>That means that any type that responds to <code>[]</code> with integers can be unpacked in a block parameter.</p>
-<p>For <a href="../api/Tuple.html#Tuple"><code>Tuple</code></a> arguments you can take advantage of auto-splatting and do not need parentheses:</p>
+<p>For [<code>Tuple</code>][] arguments you can take advantage of auto-splatting and do not need parentheses:</p>
 <div class="highlight"><pre><span></span><code><span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">},</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="kc">false</span><span class="p">}</span><span class="o">]</span>
 <span class="n">array</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">number</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="n">bool</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">number</span><span class="si">}</span><span class="s2">: </span><span class="si">#{</span><span class="n">word</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">bool</span><span class="si">}</span><span class="s2">&quot;</span>

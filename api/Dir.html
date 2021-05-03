@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/Dir.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -13047,9 +13047,12 @@ the parent directory (<code>..</code>), and the directory itself (<code>.</code>
   <div class="doc doc-contents ">
 <p>Returns an array of all files that match against any of <em>patterns</em>.</p>
 <p>The pattern syntax is similar to shell filename globbing, see <a href="File.html#File.match?(pattern,path)"><code>File.match?</code></a> for details.</p>
-<p>NOTE: Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>  </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir/glob.cr#L7">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir/glob.cr#L7">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13060,9 +13063,12 @@ the parent directory (<code>..</code>), and the directory itself (<code>.</code>
   <div class="doc doc-contents ">
 <p>Returns an array of all files that match against any of <em>patterns</em>.</p>
 <p>The pattern syntax is similar to shell filename globbing, see <a href="File.html#File.match?(pattern,path)"><code>File.match?</code></a> for details.</p>
-<p>NOTE: Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>  </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir/glob.cr#L12">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir/glob.cr#L12">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13073,7 +13079,7 @@ the parent directory (<code>..</code>), and the directory itself (<code>.</code>
   <div class="doc doc-contents ">
 <p>Changes the current working directory of the process to the given string.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L146">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L146">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13086,7 +13092,7 @@ the parent directory (<code>..</code>), and the directory itself (<code>.</code>
 and invokes the block, restoring the original working directory
 when the block exits.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L153">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L153">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13097,7 +13103,7 @@ when the block exits.</p>  </div>
   <div class="doc doc-contents ">
 <p>See <a href="#Dir#children"><code>#children</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L198">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L198">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13108,7 +13114,7 @@ when the block exits.</p>  </div>
   <div class="doc doc-contents ">
 <p>Returns the current working directory.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L141">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L141">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13119,7 +13125,7 @@ when the block exits.</p>  </div>
   <div class="doc doc-contents ">
 <p>Removes the directory at the given path.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L252">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L252">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13130,7 +13136,7 @@ when the block exits.</p>  </div>
   <div class="doc doc-contents ">
 <p>See <a href="#Dir#each(&amp;)"><code>#each</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L173">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L173">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13141,7 +13147,7 @@ when the block exits.</p>  </div>
   <div class="doc doc-contents ">
 <p>See <a href="#Dir#each_child(&amp;)"><code>#each_child</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L189">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L189">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13158,7 +13164,7 @@ Raises <a href="File/NotFoundError.html#File::NotFoundError"><code>File::NotFoun
 <span class="n">Dir</span><span class="o">.</span><span class="n">empty?</span><span class="p">(</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span> <span class="c1"># =&gt; false</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L222">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L222">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13169,7 +13175,7 @@ Raises <a href="File/NotFoundError.html#File::NotFoundError"><code>File::NotFoun
   <div class="doc doc-contents ">
 <p>See <a href="#Dir#entries"><code>#entries</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L182">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L182">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13180,7 +13186,7 @@ Raises <a href="File/NotFoundError.html#File::NotFoundError"><code>File::NotFoun
   <div class="doc doc-contents ">
 <p>Returns <code>true</code> if the given path exists and is a directory</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L205">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L205">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13192,9 +13198,12 @@ Raises <a href="File/NotFoundError.html#File::NotFoundError"><code>File::NotFoun
 <p>Yields all files that match against any of <em>patterns</em>.</p>
 <p>The pattern syntax is similar to shell filename globbing, see <a href="File.html#File.match?(pattern,path)"><code>File.match?</code></a> for details.</p>
 <p>If <em>match_hidden</em> is <code>true</code> the pattern will match hidden files and folders.</p>
-<p>NOTE: Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>  </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir/glob.cr#L50">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir/glob.cr#L50">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13206,9 +13215,12 @@ Raises <a href="File/NotFoundError.html#File::NotFoundError"><code>File::NotFoun
 <p>Returns an array of all files that match against any of <em>patterns</em>.</p>
 <p>The pattern syntax is similar to shell filename globbing, see <a href="File.html#File.match?(pattern,path)"><code>File.match?</code></a> for details.</p>
 <p>If <em>match_hidden</em> is <code>true</code> the pattern will match hidden files and folders.</p>
-<p>NOTE: Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>  </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir/glob.cr#L23">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir/glob.cr#L23">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13220,9 +13232,12 @@ Raises <a href="File/NotFoundError.html#File::NotFoundError"><code>File::NotFoun
 <p>Returns an array of all files that match against any of <em>patterns</em>.</p>
 <p>The pattern syntax is similar to shell filename globbing, see <a href="File.html#File.match?(pattern,path)"><code>File.match?</code></a> for details.</p>
 <p>If <em>match_hidden</em> is <code>true</code> the pattern will match hidden files and folders.</p>
-<p>NOTE: Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>  </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir/glob.cr#L28">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir/glob.cr#L28">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13234,9 +13249,12 @@ Raises <a href="File/NotFoundError.html#File::NotFoundError"><code>File::NotFoun
 <p>Yields all files that match against any of <em>patterns</em>.</p>
 <p>The pattern syntax is similar to shell filename globbing, see <a href="File.html#File.match?(pattern,path)"><code>File.match?</code></a> for details.</p>
 <p>If <em>match_hidden</em> is <code>true</code> the pattern will match hidden files and folders.</p>
-<p>NOTE: Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>  </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Path separator in patterns needs to be always <code>/</code>. The returned file names use system-specific path separators.</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir/glob.cr#L43">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir/glob.cr#L43">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13247,9 +13265,12 @@ Raises <a href="File/NotFoundError.html#File::NotFoundError"><code>File::NotFoun
   <div class="doc doc-contents ">
 <p>Creates a new directory at the given path. The linux-style permission mode
 can be specified, with a default of 777 (0o777).</p>
-<p>NOTE: <em>mode</em> is ignored on windows.</p>  </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>mode</em> is ignored on windows.</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L233">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L233">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13262,7 +13283,7 @@ can be specified, with a default of 777 (0o777).</p>
 intermediate directories. The linux-style permission mode can be specified,
 with a default of 777 (0o777).</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L240">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L240">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13274,7 +13295,7 @@ with a default of 777 (0o777).</p>  </div>
 <p>Opens a directory and yields it, closing it at the end of the block.
 Returns the value of the block.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L30">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L30">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13287,7 +13308,7 @@ Returns the value of the block.</p>  </div>
 <div class="highlight"><pre><span></span><code><span class="n">Dir</span><span class="o">.</span><span class="n">tempdir</span> <span class="c1"># =&gt; &quot;/tmp&quot;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L168">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L168">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13298,7 +13319,7 @@ Returns the value of the block.</p>  </div>
   <div class="doc doc-contents ">
 <p>Returns a new directory object for the named directory.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L17">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L17">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13309,7 +13330,7 @@ Returns the value of the block.</p>  </div>
   <div class="doc doc-contents ">
 <p>Alias for <a href="#Dir.new(path)"><code>new(path)</code></a></p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L24">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L24">View source</a>
 </div><h2 id="Dir-methods">Methods<a href="#Dir-methods" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13321,7 +13342,7 @@ Returns the value of the block.</p>  </div>
 <p>Returns an array containing all of the filenames except for <code>.</code> and <code>..</code>
 in the given directory.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L105">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L105">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13332,7 +13353,7 @@ in the given directory.</p>  </div>
   <div class="doc doc-contents ">
 <p>Closes the directory stream.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L134">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L134">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13355,7 +13376,7 @@ Got ..
 Got config.h
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L57">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L57">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13366,7 +13387,7 @@ Got config.h
   <div class="doc doc-contents ">
 <p>Must return an <a href="Iterator.html#Iterator"><code>Iterator</code></a> over the elements in this collection.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L63">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L63">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13387,7 +13408,7 @@ passing the filename of each entry as a parameter to the block.</p>
 <div class="highlight"><pre><span></span><code>Got config.h
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L92">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L92">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13398,7 +13419,7 @@ passing the filename of each entry as a parameter to the block.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L99">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L99">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13409,7 +13430,7 @@ passing the filename of each entry as a parameter to the block.</p>
   <div class="doc doc-contents ">
 <p>Returns an array containing all of the filenames in the given directory.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L68">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L68">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13429,7 +13450,7 @@ and the values of all instance variables.</p>
 <span class="n">Person</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span><span class="o">.</span><span class="n">inspect</span> <span class="c1"># =&gt; #&lt;Person:0x10fd31f20 @name=&quot;John&quot;, @age=32&gt;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L260">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L260">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13440,7 +13461,7 @@ and the values of all instance variables.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L14">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L14">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13451,7 +13472,7 @@ and the values of all instance variables.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L264">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L264">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13469,7 +13490,7 @@ and the values of all instance variables.</p>
 <span class="n">array</span><span class="o">.</span><span class="n">sort</span> <span class="c1"># =&gt; [&quot;.&quot;, &quot;..&quot;, &quot;config.h&quot;]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L123">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L123">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13480,7 +13501,7 @@ and the values of all instance variables.</p>
   <div class="doc doc-contents ">
 <p>Repositions this directory to the first entry.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L128">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L128">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13499,7 +13520,7 @@ which includes its class name and its object address.</p>
 <span class="n">Person</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span><span class="o">.</span><span class="n">to_s</span> <span class="c1"># =&gt; #&lt;Person:0x10a199f20&gt;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/dir.cr#L256">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/dir.cr#L256">View source</a>
 </div>      </div>
   </div>
 

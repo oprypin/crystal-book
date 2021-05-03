@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/OpenSSL/SSL/Server.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -12854,7 +12854,7 @@
 <p><em>context</em> configures the SSL options, see <a href="Context/Server.html#OpenSSL::SSL::Context::Server"><code>OpenSSL::SSL::Context::Server</code></a> for details</p>
 <p>The server is closed after the block returns.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L52">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L52">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12866,7 +12866,7 @@
 <p>Creates a new SSL server wrapping <em>wrapped</em>.</p>
 <p><em>context</em> configures the SSL options, see <a href="Context/Server.html#OpenSSL::SSL::Context::Server"><code>OpenSSL::SSL::Context::Server</code></a> for details</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L44">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L44">View source</a>
 </div><h2 id="OpenSSL::SSL::Server-methods">Methods<a href="#OpenSSL::SSL::Server-methods" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12878,7 +12878,7 @@
 <p>Implements <a href="../../Socket/Server.html#Socket::Server#accept"><code>::Socket::Server#accept</code></a>.</p>
 <p>This method calls <code>@wrapped.accept</code> and wraps the resulting IO in a SSL socket (<a href="Socket/Server.html#OpenSSL::SSL::Socket::Server"><code>OpenSSL::SSL::Socket::Server</code></a>) with <a href="#OpenSSL::SSL::Server#context"><code>context</code></a> configuration.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L65">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L65">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12890,7 +12890,7 @@
 <p>Implements <a href="../../Socket/Server.html#Socket::Server#accept?"><code>::Socket::Server#accept?</code></a>.</p>
 <p>This method calls <code>@wrapped.accept?</code> and wraps the resulting IO in a SSL socket (<a href="Socket/Server.html#OpenSSL::SSL::Socket::Server"><code>OpenSSL::SSL::Socket::Server</code></a>) with <a href="#OpenSSL::SSL::Server#context"><code>context</code></a> configuration.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L72">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L72">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12902,7 +12902,7 @@
 <p>Closes this SSL server.</p>
 <p>Propagates to <a href="#OpenSSL::SSL::Server#wrapped"><code>wrapped</code></a> if <code>sync_close</code> is <code>true</code>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L85">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L85">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12913,7 +12913,7 @@
   <div class="doc doc-contents ">
 <p>Returns <code>true</code> if this SSL server has been closed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L36">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L36">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12924,7 +12924,7 @@
   <div class="doc doc-contents ">
 <p>Returns the SSL context.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L29">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L29">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12935,7 +12935,7 @@
   <div class="doc doc-contents ">
 <p>Returns local address of <a href="#OpenSSL::SSL::Server#wrapped"><code>wrapped</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L93">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L93">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12946,7 +12946,7 @@
   <div class="doc doc-contents ">
 <p>When <code>true</code> a call to <a href="#OpenSSL::SSL::Server#accept"><code>#accept</code></a> will also initiate the SSL handshake.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L39">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L39">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12957,7 +12957,7 @@
   <div class="doc doc-contents ">
 <p>When <code>true</code> a call to <a href="#OpenSSL::SSL::Server#accept"><code>#accept</code></a> will also initiate the SSL handshake.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L39">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L39">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12969,7 +12969,7 @@
 <p>If <a href="#OpenSSL::SSL::Server#sync_close?"><code>#sync_close?</code></a> is <code>true</code>, closing this server will
 close the wrapped server.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L33">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L33">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12981,7 +12981,7 @@ close the wrapped server.</p>  </div>
 <p>If <a href="#OpenSSL::SSL::Server#sync_close?"><code>#sync_close?</code></a> is <code>true</code>, closing this server will
 close the wrapped server.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L33">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L33">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12992,7 +12992,7 @@ close the wrapped server.</p>  </div>
   <div class="doc doc-contents ">
 <p>Returns the wrapped server socket.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/openssl/ssl/server.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/openssl/ssl/server.cr#L26">View source</a>
 </div>      </div>
   </div>
 

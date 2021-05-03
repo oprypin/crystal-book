@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/annotations/index.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -2344,7 +2344,7 @@
                 
                 
                 <h1 id="annotations">Annotations<a class="headerlink" href="#annotations" title="Permanent link">&para;</a></h1>
-<p>Annotations can be used to add metadata to certain features in the source code. Types, methods and instance variables may be annotated.  User-defined annotations, such as the standard library's <a href="../../api/JSON/Field.html#JSON::Field"><code>JSON::Field</code></a>, are defined using the <code>annotation</code> keyword.  A number of <a href="built_in_annotations.html">built-in annotations</a> are provided by the compiler.</p>
+<p>Annotations can be used to add metadata to certain features in the source code. Types, methods and instance variables may be annotated.  User-defined annotations, such as the standard library's [<code>JSON::Field</code>][], are defined using the <code>annotation</code> keyword.  A number of <a href="built_in_annotations.html">built-in annotations</a> are provided by the compiler.</p>
 <p>Users can define their own annotations using the <code>annotation</code> keyword, which works similarly to defining a <code>class</code> or <code>struct</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="k">annotation</span> <span class="nc">MyAnnotation</span>
 <span class="k">end</span>
@@ -2375,7 +2375,7 @@
 <p>Annotations are best used to store metadata about a given instance variable, type, or method so that it can be read at compile time using macros.  One of the main benefits of annotations is that they are applied directly to instance variables/methods, which causes classes to look more natural since a standard macro is not needed to create these properties/methods.</p>
 <p>A few applications for annotations:</p>
 <h3 id="object-serialization">Object Serialization<a class="headerlink" href="#object-serialization" title="Permanent link">&para;</a></h3>
-<p>Have an annotation that when applied to an instance variable determines if that instance variable should be serialized, or with what key. Crystal's <a href="../../api/JSON/Serializable.html#JSON::Serializable"><code>JSON::Serializable</code></a> and <a href="../../api/YAML/Serializable.html#YAML::Serializable"><code>YAML::Serializable</code></a> are examples of this.</p>
+<p>Have an annotation that when applied to an instance variable determines if that instance variable should be serialized, or with what key. Crystal's [<code>JSON::Serializable</code>][] and [<code>YAML::Serializable</code>][] are examples of this.</p>
 <h3 id="orms">ORMs<a class="headerlink" href="#orms" title="Permanent link">&para;</a></h3>
 <p>An annotation could be used to designate a property as an ORM column. The name and type of the instance variable can be read off the <code>TypeNode</code> in addition to the annotation; removing the need for any ORM specific macro. The annotation itself could also be used to store metadata about the column, such as if it is nullable, the name of the column, or if it is the primary key.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h2>

@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/BigDecimal.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -13440,7 +13440,7 @@ the MIT/APACHE-licensed <a href="https://github.com/akubera/bigdecimal-rs">bigde
 <p>Creates a new <a href="#BigDecimal"><code>BigDecimal</code></a> from <a href="BigInt.html#BigInt"><code>BigInt</code></a> <em>value</em> and <a href="UInt64.html#UInt64"><code>UInt64</code></a> <em>scale</em>,
 which matches the internal representation.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L54">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L54">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13450,10 +13450,13 @@ which matches the internal representation.</p>  </div>
 <a href="#BigDecimal.new(num)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
 <p>Creates a new <a href="#BigDecimal"><code>BigDecimal</code></a> from <a href="Float.html#Float"><code>Float</code></a>.</p>
-<p>NOTE: Floats are fundamentally less precise than BigDecimals,
-which makes initialization from them risky.</p>  </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Floats are fundamentally less precise than BigDecimals,
+which makes initialization from them risky.</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L34">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L34">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13463,10 +13466,13 @@ which makes initialization from them risky.</p>  </div>
 <a href="#BigDecimal.new(num)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
 <p>Creates a new <a href="#BigDecimal"><code>BigDecimal</code></a> from <a href="BigRational.html#BigRational"><code>BigRational</code></a>.</p>
-<p>NOTE: BigRational are fundamentally more precise than BigDecimals,
-which makes initialization from them risky.</p>  </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>BigRational are fundamentally more precise than BigDecimals,
+which makes initialization from them risky.</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L42">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L42">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13478,7 +13484,7 @@ which makes initialization from them risky.</p>  </div>
 <p>Returns <em>num</em>. Useful for generic code that does <code>T.new(...)</code> with <code>T</code>
 being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L48">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L48">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13489,7 +13495,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
 <p>Creates a new <a href="#BigDecimal"><code>BigDecimal</code></a> from <a href="Int.html#Int"><code>Int</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L58">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L58">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13501,7 +13507,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
 <p>Creates a new <a href="#BigDecimal"><code>BigDecimal</code></a> from a <a href="String.html#String"><code>String</code></a>.</p>
 <p>Allows only valid number strings with an optional negative sign.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L65">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L65">View source</a>
 </div><h2 id="BigDecimal-methods">Methods<a href="#BigDecimal-methods" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13512,7 +13518,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L184">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L184">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13523,7 +13529,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L188">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L188">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13538,7 +13544,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
 <span class="n">BigDecimal</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1234</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="c1"># =&gt; 152.2756</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L285">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L285">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13549,7 +13555,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L152">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L152">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13560,7 +13566,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L164">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L164">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13571,7 +13577,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L168">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L168">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13582,7 +13588,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L180">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L180">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13593,7 +13599,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L148">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L148">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13604,7 +13610,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L26">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13615,7 +13621,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L27">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L27">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13626,7 +13632,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L26">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13637,7 +13643,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L26">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13648,7 +13654,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L26">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13659,7 +13665,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L26">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13670,7 +13676,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L26">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13681,7 +13687,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L26">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13692,7 +13698,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L26">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13703,7 +13709,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L26">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13714,7 +13720,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L26">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L26">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13725,7 +13731,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L197">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L197">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13736,7 +13742,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L196">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L196">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13747,7 +13753,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L196">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L196">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13758,7 +13764,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L192">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L192">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13769,7 +13775,7 @@ being a <a href="Number.html#Number"><code>Number</code></a>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/number.cr#L27">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/number.cr#L27">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13791,7 +13797,7 @@ or <code>nil</code> if the two objects are not comparable.</p>
 <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">].</span><span class="n">sort</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">|</span> <span class="n">x</span> <span class="o">&lt;=&gt;</span> <span class="n">y</span> <span class="p">}</span> <span class="c1"># =&gt; [1, 2, 3]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L230">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L230">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13802,7 +13808,7 @@ or <code>nil</code> if the two objects are not comparable.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L240">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L240">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13815,7 +13821,7 @@ or <code>nil</code> if the two objects are not comparable.</p>
 returning <code>true</code> if it returns <code>0</code>.</p>
 <p>Also returns <code>true</code> if this and <em>other</em> are the same object.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L244">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L244">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13826,7 +13832,7 @@ returning <code>true</code> if it returns <code>0</code>.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L292">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L292">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13837,7 +13843,7 @@ returning <code>true</code> if it returns <code>0</code>.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L523">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L523">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13852,7 +13858,7 @@ defines a maximum number of iterations in case the division is not exact.</p>
 <span class="n">BigDecimal</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">BigDecimal</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span> <span class="c1"># =&gt; BigDecimal(@value=33333, @scale=5)</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L206">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L206">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13863,7 +13869,7 @@ defines a maximum number of iterations in case the division is not exact.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L299">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L299">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13883,7 +13889,7 @@ accumulate the result:</p>
 <span class="k">end</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L527">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L527">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13895,7 +13901,7 @@ accumulate the result:</p>
 <p>Returns the <em>quotient</em> as absolutely negative if <code>self</code> and <em>other</em> have
 different signs, otherwise returns the <em>quotient</em>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L533">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L533">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13906,7 +13912,7 @@ different signs, otherwise returns the <em>quotient</em>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L28">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L28">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13918,7 +13924,7 @@ different signs, otherwise returns the <em>quotient</em>.</p>  </div>
 <p>Scales a <a href="#BigDecimal"><code>BigDecimal</code></a> to another <a href="#BigDecimal"><code>BigDecimal</code></a>, so they can be
 computed easier.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L259">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L259">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13929,7 +13935,7 @@ computed easier.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L345">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L345">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13940,7 +13946,7 @@ computed easier.</p>  </div>
   <div class="doc doc-contents ">
 <p>Converts to <a href="BigFloat.html#BigFloat"><code>BigFloat</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L341">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L341">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13951,7 +13957,7 @@ computed easier.</p>  </div>
   <div class="doc doc-contents ">
 <p>Converts to <a href="BigInt.html#BigInt"><code>BigInt</code></a>. Truncates anything on the right side of the decimal point.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L336">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L336">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13962,7 +13968,7 @@ computed easier.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L349">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L349">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13974,7 +13980,7 @@ computed easier.</p>  </div>
 <p>Converts to <a href="Float64.html#Float64"><code>Float64</code></a>.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L501">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L501">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13986,7 +13992,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 <p>Converts to <a href="Float64.html#Float64"><code>Float64</code></a>.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L519">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L519">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13998,7 +14004,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="Float32.html#Float32"><code>Float32</code></a>.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L495">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L495">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14010,7 +14016,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 <p>Converts to <a href="Float32.html#Float32"><code>Float32</code></a>.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L507">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L507">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14022,7 +14028,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="Float64.html#Float64"><code>Float64</code></a>.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L489">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L489">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14034,7 +14040,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 <p>Converts to <a href="Float64.html#Float64"><code>Float64</code></a>.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L513">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L513">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14046,7 +14052,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="Int32.html#Int32"><code>Int32</code></a>. Truncates anything on the right side of the decimal point.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L379">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L379">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14058,7 +14064,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 <p>Converts to <a href="Int32.html#Int32"><code>Int32</code></a>. Truncates anything on the right side of the decimal point.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L409">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L409">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14070,7 +14076,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="Int16.html#Int16"><code>Int16</code></a>. Truncates anything on the right side of the decimal point.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L367">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L367">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14082,7 +14088,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 <p>Converts to <a href="Int16.html#Int16"><code>Int16</code></a>. Truncates anything on the right side of the decimal point.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L391">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L391">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14094,7 +14100,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="Int32.html#Int32"><code>Int32</code></a>. Truncates anything on the right side of the decimal point.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L361">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L361">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14106,7 +14112,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 <p>Converts to <a href="Int32.html#Int32"><code>Int32</code></a>. Truncates anything on the right side of the decimal point.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L397">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L397">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14118,7 +14124,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="Int64.html#Int64"><code>Int64</code></a>. Truncates anything on the right side of the decimal point.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L355">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L355">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14130,7 +14136,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 <p>Converts to <a href="Int64.html#Int64"><code>Int64</code></a>. Truncates anything on the right side of the decimal point.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L403">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L403">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14142,7 +14148,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="Int8.html#Int8"><code>Int8</code></a>. Truncates anything on the right side of the decimal point.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L373">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L373">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14154,7 +14160,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 <p>Converts to <a href="Int8.html#Int8"><code>Int8</code></a>. Truncates anything on the right side of the decimal point.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L385">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L385">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14168,7 +14174,7 @@ to the given <a href="IO.html#IO"><code>IO</code></a> object.</p>
 <p>An object must never append itself to the io argument,
 as this will in turn call <a href="#BigDecimal#to_s(io)"><code>to_s(io)</code></a> on it.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L307">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L307">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14180,7 +14186,7 @@ as this will in turn call <a href="#BigDecimal#to_s(io)"><code>to_s(io)</code></
 <p>Converts to <a href="UInt32.html#UInt32"><code>UInt32</code></a>. Truncates anything on the right side of the decimal point.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L448">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L448">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14193,7 +14199,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 converting negative to positive.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L483">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L483">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14205,7 +14211,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="UInt16.html#UInt16"><code>UInt16</code></a>. Truncates anything on the right side of the decimal point.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L436">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L436">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14218,7 +14224,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 converting negative to positive.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L462">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L462">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14230,7 +14236,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="UInt32.html#UInt32"><code>UInt32</code></a>. Truncates anything on the right side of the decimal point.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L430">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L430">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14243,7 +14249,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 converting negative to positive.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L469">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L469">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14255,7 +14261,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="UInt64.html#UInt64"><code>UInt64</code></a>. Truncates anything on the right side of the decimal point.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L424">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L424">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14268,7 +14274,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 converting negative to positive.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L476">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L476">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14280,7 +14286,7 @@ In case of overflow a wrapping is performed.</p>  </div>
 <p>Converts to <a href="UInt8.html#UInt8"><code>UInt8</code></a>. Truncates anything on the right side of the decimal point.
 Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a> in case of overflow.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L442">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L442">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14293,7 +14299,7 @@ Raises <a href="OverflowError.html#OverflowError"><code>OverflowError</code></a>
 converting negative to positive.
 In case of overflow a wrapping is performed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L455">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L455">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14304,7 +14310,7 @@ In case of overflow a wrapping is performed.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L303">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L303">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14315,7 +14321,7 @@ In case of overflow a wrapping is performed.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/big/big_decimal.cr#L27">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/big/big_decimal.cr#L27">View source</a>
 </div>      </div>
   </div>
 

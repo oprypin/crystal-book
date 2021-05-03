@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/Compress/Zlib/Writer.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -12766,8 +12766,11 @@
 <p>A write-only <a href="../../IO.html#IO"><code>IO</code></a> object to compress data in the zlib format.</p>
 <p>Instances of this class wrap another IO object. When you write to this
 instance, it compresses the data and writes it to the underlying IO.</p>
-<p>NOTE: unless created with a block, <a href="#Compress::Zlib::Writer#close"><code>close</code></a> must be invoked after all
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>unless created with a block, <a href="#Compress::Zlib::Writer#close"><code>close</code></a> must be invoked after all
 data has been written to a Zlib::Writer instance.</p>
+</div>
       <div class="doc doc-children">
 
 
@@ -12783,7 +12786,7 @@ data has been written to a Zlib::Writer instance.</p>
 <p>Creates a new writer to the given <em>io</em>, yields it to the given block,
 and closes it at the end.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L29">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L29">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12795,7 +12798,7 @@ and closes it at the end.</p>  </div>
 <p>Creates a new writer to the given <em>filename</em>, yields it to the given block,
 and closes it at the end.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L36">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L36">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12806,7 +12809,7 @@ and closes it at the end.</p>  </div>
   <div class="doc doc-contents ">
 <p>Creates a new writer to the given <em>io</em>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L16">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L16">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12817,7 +12820,7 @@ and closes it at the end.</p>  </div>
   <div class="doc doc-contents ">
 <p>Creates a new writer to the given <em>filename</em>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L23">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L23">View source</a>
 </div><h2 id="Compress::Zlib::Writer-methods">Methods<a href="#Compress::Zlib::Writer-methods" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12828,7 +12831,7 @@ and closes it at the end.</p>  </div>
   <div class="doc doc-contents ">
 <p>Closes this writer. Must be invoked after all data has been written.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L70">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L70">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12839,7 +12842,7 @@ and closes it at the end.</p>  </div>
   <div class="doc doc-contents ">
 <p>Returns <code>true</code> if this writer is closed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L13">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L13">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12852,7 +12855,7 @@ and closes it at the end.</p>  </div>
 data has been written yet.</p>
 <p>See <a href="../../IO.html#IO#flush"><code>IO#flush</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L62">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L62">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12863,7 +12866,7 @@ data has been written yet.</p>
   <div class="doc doc-contents ">
 <p>Always raises <a href="../../IO/Error.html#IO::Error"><code>IO::Error</code></a> because this is a write-only <a href="../../IO.html#IO"><code>IO</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L42">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L42">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12874,7 +12877,7 @@ data has been written yet.</p>
   <div class="doc doc-contents ">
 <p>Whether to close the enclosed <a href="../../IO.html#IO"><code>IO</code></a> when closing this writer.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L10">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L10">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12885,7 +12888,7 @@ data has been written yet.</p>
   <div class="doc doc-contents ">
 <p>Whether to close the enclosed <a href="../../IO.html#IO"><code>IO</code></a> when closing this writer.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L10">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L10">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12896,7 +12899,7 @@ data has been written yet.</p>
   <div class="doc doc-contents ">
 <p>See <a href="../../IO.html#IO#write(slice)"><code>IO#write</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/compress/zlib/writer.cr#L47">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compress/zlib/writer.cr#L47">View source</a>
 </div>      </div>
   </div>
 

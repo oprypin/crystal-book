@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/JSON.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -12624,12 +12624,15 @@ target type <code>T</code> and pass either a <a href="String.html#String"><code>
 you can define a <code>self.new(pull : JSON::PullParser)</code> for parsing and
 <code>to_json(builder : JSON::Builder)</code> for serializing. The following sections
 show convenient ways to do this using <a href="JSON/Serializable.html#JSON::Serializable"><code>JSON::Serializable</code></a>.</p>
-<p>NOTE: JSON object keys are always strings but they can still be parsed
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>JSON object keys are always strings but they can still be parsed
 and deserialized to other types. To deserialize, define a
 <code>T.from_json_object_key?(key : String) : T?</code> method, which can return <code>nil</code>
 if the string can't be parsed into that type. To serialize, define a
 <code>to_json_object_key : String</code> method can be serialized that way.
 All integer and float types in the standard library can be deserialized that way.</p>
+</div>
 <div class="highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;json&quot;</span>
 
 <span class="n">json_text</span> <span class="o">=</span> <span class="sx">%({&quot;1&quot;: 2, &quot;3&quot;: 4})</span>
@@ -12699,7 +12702,7 @@ for custom objects, either manually or using <a href="JSON/Serializable.html#JSO
   <div class="doc doc-contents ">
 <p>Writes JSON into the given <a href="IO.html#IO"><code>IO</code></a>. A <a href="JSON/Builder.html#JSON::Builder"><code>JSON::Builder</code></a> is yielded to the block.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/json/builder.cr#L412">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/json/builder.cr#L412">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12726,7 +12729,7 @@ for custom objects, either manually or using <a href="JSON/Serializable.html#JSO
 <span class="n">string</span> <span class="c1"># =&gt; %&lt;{&quot;name&quot;:&quot;foo&quot;,&quot;values&quot;:[1,2,3]}&gt;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/json/builder.cr#L403">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/json/builder.cr#L403">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12737,7 +12740,7 @@ for custom objects, either manually or using <a href="JSON/Serializable.html#JSO
   <div class="doc doc-contents ">
 <p>Parses a JSON document as a <a href="JSON/Any.html#JSON::Any"><code>JSON::Any</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/json.cr#L130">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/json.cr#L130">View source</a>
 </div>      </div>
   </div>
 

@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/index.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -12976,7 +12976,7 @@ The special <code>$?</code> variable is set to a <a href="Process/Status.html#Pr
 <div class="highlight"><pre><span></span><code><span class="sb">`echo hi`</span> <span class="c1"># =&gt; &quot;hi\n&quot;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/process.cr#L432">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/process.cr#L432">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12988,7 +12988,7 @@ The special <code>$?</code> variable is set to a <a href="Process/Status.html#Pr
 <p>Terminates execution immediately, printing <em>message</em> to <a href="#STDERR"><code>STDERR</code></a> and
 then calling <a href="#exit(status)"><code>exit(status)</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L500">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L500">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13015,11 +13015,14 @@ the block as its first argument. In case of any unhandled exception, it is
 passed as the second argument to the block, if the program terminates
 normally or <a href="#exit(status)"><code>exit(status)</code></a> is called explicitly, then the second argument
 will be <code>nil</code>.</p>
-<p>NOTE: If <a href="#at_exit(&amp;)"><code>at_exit</code></a> is called inside an <a href="#at_exit(&amp;)"><code>at_exit</code></a> handler, it will be called
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If <a href="#at_exit(&amp;)"><code>at_exit</code></a> is called inside an <a href="#at_exit(&amp;)"><code>at_exit</code></a> handler, it will be called
 right after the current <a href="#at_exit(&amp;)"><code>at_exit</code></a> handler ends, and then other handlers
-will be invoked.</p>  </div>
+will be invoked.</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L483">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L483">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13031,7 +13034,7 @@ will be invoked.</p>  </div>
 <p>Returns the current execution stack as an array containing strings
 usually in the form file:line:column or file:line:column in 'method'.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/exception/call_stack.cr#L16">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/exception/call_stack.cr#L16">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13044,7 +13047,7 @@ usually in the form file:line:column or file:line:column in 'method'.</p>  </div
 to the invoking environment.</p>
 <p>Registered <a href="#at_exit(&amp;)"><code>at_exit</code></a> procs are executed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L491">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L491">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13056,7 +13059,7 @@ to the invoking environment.</p>
 <p>Reads a line from <a href="#STDIN"><code>STDIN</code></a>.</p>
 <p>See also: <a href="IO.html#IO#gets(delimiter,limit,chomp)"><code>IO#gets</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L110">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L110">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13074,7 +13077,7 @@ to the invoking environment.</p>
 NOTE: This is a pseudo-method provided directly by the Crystal compiler.
 It cannot be redefined nor overridden.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/docs_pseudo_methods.cr#L61">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/docs_pseudo_methods.cr#L61">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13091,7 +13094,7 @@ It cannot be redefined nor overridden.</p>  </div>
 <span class="k">end</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L101">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L101">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13104,7 +13107,7 @@ It cannot be redefined nor overridden.</p>  </div>
 Invokes <a href="Crystal.html#Crystal.main"><code>Crystal.main</code></a>.</p>
 <p>Can be redefined. See <a href="Crystal.html#Crystal.main"><code>Crystal.main</code></a> for examples.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/crystal/main.cr#L118">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/crystal/main.cr#L118">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13127,7 +13130,7 @@ or the index of an element in a Tuple, starting from 0, if <em>type</em> is a <a
 NOTE: This is a pseudo-method provided directly by the Crystal compiler.
 It cannot be redefined nor overridden.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/docs_pseudo_methods.cr#L91">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/docs_pseudo_methods.cr#L91">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13140,7 +13143,7 @@ It cannot be redefined nor overridden.</p>  </div>
 by a newline. Returns <em>object</em>.</p>
 <p>See also: <a href="Object.html#Object#inspect(io)"><code>Object#inspect(io)</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L393">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L393">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13153,7 +13156,7 @@ by a newline. Returns <em>object</em>.</p>
 by a newline. Returns <em>objects</em>.</p>
 <p>See also: <a href="Object.html#Object#inspect(io)"><code>Object#inspect(io)</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L403">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L403">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13168,7 +13171,7 @@ by a newline. Returns <em>objects</em>.</p>
 </code></pre></div>
 <p>See <a href="Object.html#Object#inspect(io)"><code>Object#inspect(io)</code></a></p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L418">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L418">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13188,7 +13191,7 @@ by a newline. Returns <em>objects</em>.</p>
 NOTE: This is a pseudo-method provided directly by the Crystal compiler.
 It cannot be redefined nor overridden.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/docs_pseudo_methods.cr#L75">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/docs_pseudo_methods.cr#L75">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13201,7 +13204,7 @@ It cannot be redefined nor overridden.</p>  </div>
 by a newline. Returns <em>object</em>.</p>
 <p>See also: <a href="Object.html#Object#pretty_print(pp)"><code>Object#pretty_print(pp)</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L426">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L426">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13216,7 +13219,7 @@ by a newline. Returns <em>objects</em>.</p>
 </code></pre></div>
 <p>See <a href="Object.html#Object#pretty_print(pp)"><code>Object#pretty_print(pp)</code></a></p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L451">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L451">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13229,7 +13232,7 @@ by a newline. Returns <em>objects</em>.</p>
 by a newline. Returns <em>objects</em>.</p>
 <p>See also: <a href="Object.html#Object#pretty_print(pp)"><code>Object#pretty_print(pp)</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L436">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L436">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13241,7 +13244,7 @@ by a newline. Returns <em>objects</em>.</p>
 <p>Prints objects to <a href="#STDOUT"><code>STDOUT</code></a> and then invokes <code>STDOUT.flush</code>.</p>
 <p>See also: <a href="IO.html#IO#print(*)"><code>IO#print</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L124">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L124">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13253,7 +13256,7 @@ by a newline. Returns <em>objects</em>.</p>
 <p>Prints a formatted string to <a href="#STDOUT"><code>STDOUT</code></a>.</p>
 <p>For details on the format string, see <a href="#sprintf(format_string,args)"><code>sprintf</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L136">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L136">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13265,7 +13268,7 @@ by a newline. Returns <em>objects</em>.</p>
 <p>Prints a formatted string to <a href="#STDOUT"><code>STDOUT</code></a>.</p>
 <p>For details on the format string, see <a href="#sprintf(format_string,args)"><code>sprintf</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L131">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L131">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13278,7 +13281,7 @@ by a newline. Returns <em>objects</em>.</p>
 the object is a <a href="String.html#String"><code>String</code></a> and already ends with a newline.</p>
 <p>See also: <a href="IO.html#IO#puts(*)"><code>IO#puts</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L385">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L385">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13289,7 +13292,7 @@ the object is a <a href="String.html#String"><code>String</code></a> and already
   <div class="doc doc-contents ">
 <p>Raises an Exception with the <em>message</em>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/raise.cr#L229">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/raise.cr#L229">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13302,7 +13305,7 @@ the object is a <a href="String.html#String"><code>String</code></a> and already
 <p>This will set the exception's callstack if it hasn't been already.
 Re-raising a previously caught exception won't replace the callstack.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/raise.cr#L191">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/raise.cr#L191">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13313,7 +13316,7 @@ Re-raising a previously caught exception won't replace the callstack.</p>  </div
   <div class="doc doc-contents ">
 <p>See <a href="Random.html#Random#rand(range)"><code>Random#rand</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/random.cr#L418">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/random.cr#L418">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13324,7 +13327,7 @@ Re-raising a previously caught exception won't replace the callstack.</p>  </div
   <div class="doc doc-contents ">
 <p>See <a href="Random.html#Random.rand(x)"><code>Random#rand(x)</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/random.cr#L423">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/random.cr#L423">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13336,7 +13339,7 @@ Re-raising a previously caught exception won't replace the callstack.</p>  </div
 <p>Reads a line from <a href="#STDIN"><code>STDIN</code></a>.</p>
 <p>See also: <a href="IO.html#IO#read_line(*,**)"><code>IO#read_line</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L117">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L117">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13363,7 +13366,7 @@ using <a href="#instance_sizeof(type)"><code>#instance_sizeof</code></a>.
 NOTE: This is a pseudo-method provided directly by the Crystal compiler.
 It cannot be redefined nor overridden.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/docs_pseudo_methods.cr#L48">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/docs_pseudo_methods.cr#L48">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13376,7 +13379,7 @@ It cannot be redefined nor overridden.</p>  </div>
 <p>While this fiber is waiting this time, other ready-to-execute
 fibers might start their execution.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/concurrent.cr#L9">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/concurrent.cr#L9">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13389,7 +13392,7 @@ fibers might start their execution.</p>  </div>
 <p>While this fiber is waiting this time, other ready-to-execute
 fibers might start their execution.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/concurrent.cr#L21">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/concurrent.cr#L21">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13401,7 +13404,7 @@ fibers might start their execution.</p>  </div>
 <p>Blocks the current fiber forever.</p>
 <p>Meanwhile, other ready-to-execute fibers might start their execution.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/concurrent.cr#L28">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/concurrent.cr#L28">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13436,7 +13439,7 @@ fibers might start their execution.</p>  </div>
 <span class="mi">2</span><span class="o">.</span><span class="n">times</span> <span class="p">{</span> <span class="n">ch</span><span class="o">.</span><span class="n">receive</span> <span class="p">}</span>
 </code></pre></div></p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/concurrent.cr#L60">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/concurrent.cr#L60">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13630,7 +13633,7 @@ minimum number of digits:
 <span class="nb">sprintf</span> <span class="s2">&quot;%+g:% g:%-g&quot;</span><span class="p">,</span> <span class="mf">1.23</span><span class="p">,</span> <span class="mf">1.23</span><span class="p">,</span> <span class="mf">1.23</span> <span class="c1"># =&gt; &quot;+1.23: 1.23:1.23&quot;</span>
 </code></pre></div></p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L375">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L375">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13824,7 +13827,7 @@ minimum number of digits:
 <span class="nb">sprintf</span> <span class="s2">&quot;%+g:% g:%-g&quot;</span><span class="p">,</span> <span class="mf">1.23</span><span class="p">,</span> <span class="mf">1.23</span><span class="p">,</span> <span class="mf">1.23</span> <span class="c1"># =&gt; &quot;+1.23: 1.23:1.23&quot;</span>
 </code></pre></div></p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/kernel.cr#L370">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/kernel.cr#L370">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13849,7 +13852,7 @@ its argument list.</p>
 <div class="highlight"><pre><span></span><code>LICENSE shard.yml Readme.md spec src
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/process.cr#L417">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/process.cr#L417">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13866,9 +13869,12 @@ its argument list.</p>
   <span class="nb">puts</span> <span class="s2">&quot;timeout&quot;</span>
 <span class="k">end</span>
 </code></pre></div>
-<p>NOTE: It won't trigger if the <code>select</code> has an <code>else</code> case (i.e.: a non-blocking select).</p>  </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It won't trigger if the <code>select</code> has an <code>else</code> case (i.e.: a non-blocking select).</p>
+</div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L736">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L736">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -13888,7 +13894,7 @@ only analyzes their return type.
 NOTE: This is a pseudo-method provided directly by the Crystal compiler.
 It cannot be redefined nor overridden.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/docs_pseudo_methods.cr#L23">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/docs_pseudo_methods.cr#L23">View source</a>
 </div><h2 id="-macros">Macros<a href="#-macros" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-macro">
@@ -13899,7 +13905,7 @@ It cannot be redefined nor overridden.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/intrinsics.cr#L173">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/intrinsics.cr#L173">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-macro">
@@ -13917,7 +13923,7 @@ Useful for print style debugging.</p>
 </code></pre></div>
 <p>See also: <a href="#p(object)"><code>p</code></a>, <a href="Object.html#Object#inspect"><code>Object#inspect</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/macros.cr#L166">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/macros.cr#L166">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-macro">
@@ -13935,7 +13941,7 @@ Useful for print style debugging.</p>
 </code></pre></div>
 <p>See also: <a href="#pp(object)"><code>pp</code></a>, <a href="Object.html#Object#pretty_inspect(width,newline,indent)"><code>Object#pretty_inspect</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/macros.cr#L132">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/macros.cr#L132">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-macro">
@@ -13987,7 +13993,7 @@ a copy of the record with the provided properties altered.</p>
 <span class="nb">p</span>                  <span class="c1"># =&gt; #&lt;Point(@x=0, @y=2)&gt;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/macros.cr#L60">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/macros.cr#L60">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-macro">
@@ -14020,7 +14026,7 @@ expressions to it, and letting the <a href="Proc.html#Proc"><code>Proc</code></a
 the same local variable, while in the second example copies of
 <em>i</em> are passed to a <a href="Proc.html#Proc"><code>Proc</code></a> that eventually invokes the call.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/concurrent.cr#L99">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/concurrent.cr#L99">View source</a>
 </div>      </div>
   </div>
 

@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/c_bindings/callbacks.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -2342,7 +2342,7 @@
   <span class="k">fun</span> <span class="nf">callback</span><span class="p">(</span><span class="n">f</span> <span class="p">:</span> <span class="n">Int32</span> <span class="o">-&gt;</span> <span class="n">Int32</span><span class="p">)</span>
 <span class="k">end</span>
 </code></pre></div>
-<p>Then you can pass a function (a <a href="../../api/Proc.html#Proc"><code>Proc</code></a>) like this:</p>
+<p>Then you can pass a function (a [<code>Proc</code>][]) like this:</p>
 <div class="highlight"><pre><span></span><code><span class="n">f</span> <span class="o">=</span> <span class="o">-&gt;</span><span class="p">(</span><span class="n">x</span> <span class="p">:</span> <span class="n">Int32</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}</span>
 <span class="n">X</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 </code></pre></div>

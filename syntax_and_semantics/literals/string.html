@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/literals/string.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -2402,7 +2402,7 @@
                 
                 
                 <h1 id="string">String<a class="headerlink" href="#string" title="Permanent link">&para;</a></h1>
-<p>A <a href="../../api/String.html#String"><code>String</code></a> represents an immutable sequence of UTF-8 characters.</p>
+<p>A [<code>String</code>][] represents an immutable sequence of UTF-8 characters.</p>
 <p>A String is typically created with a string literal enclosing UTF-8 characters in double quotes (<code>"</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;hello world&quot;</span>
 </code></pre></div>
@@ -2451,7 +2451,7 @@
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;</span><span class="se">\#</span><span class="s2">{a + b}&quot;</span>  <span class="c1"># =&gt; &quot;#{a + b}&quot;</span>
 <span class="sx">%q(#{a + b})</span> <span class="c1"># =&gt; &quot;#{a + b}&quot;</span>
 </code></pre></div>
-<p>Interpolation is implemented using a <a href="../../api/String/Builder.html#String::Builder"><code>String::Builder</code></a> and invoking <code>Object#to_s(IO)</code> on each expression enclosed by <code>#{...}</code>. The expression <code>"sum: #{a} + #{b} = #{a + b}"</code> is equivalent to:</p>
+<p>Interpolation is implemented using a [<code>String::Builder</code>][] and invoking <code>Object#to_s(IO)</code> on each expression enclosed by <code>#{...}</code>. The expression <code>"sum: #{a} + #{b} = #{a + b}"</code> is equivalent to:</p>
 <div class="highlight"><pre><span></span><code><span class="n">String</span><span class="o">.</span><span class="n">build</span> <span class="k">do</span> <span class="o">|</span><span class="n">io</span><span class="o">|</span>
   <span class="n">io</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;sum: &quot;</span>
   <span class="n">io</span> <span class="o">&lt;&lt;</span> <span class="n">a</span>
@@ -2476,7 +2476,7 @@
 <span class="sx">%Q(hello </span><span class="se">\n</span><span class="sx"> </span><span class="si">#{</span><span class="n">name</span><span class="si">}</span><span class="sx">)</span> <span class="c1"># =&gt; &quot;hello \n world&quot;</span>
 </code></pre></div>
 <h3 id="percent-string-array-literal">Percent string array literal<a class="headerlink" href="#percent-string-array-literal" title="Permanent link">&para;</a></h3>
-<p>Besides the single string literal, there is also a percent literal to create an <a href="../../api/Array.html#Array"><code>Array</code></a> of strings. It is indicated by <code>%w</code> and a pair of delimiters. Valid delimiters are as same as <a href="#percent-string-literals">percent string literals</a>.</p>
+<p>Besides the single string literal, there is also a percent literal to create an [<code>Array</code>][] of strings. It is indicated by <code>%w</code> and a pair of delimiters. Valid delimiters are as same as <a href="#percent-string-literals">percent string literals</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="sx">%w(foo bar baz)</span>  <span class="c1"># =&gt; [&quot;foo&quot;, &quot;bar&quot;, &quot;baz&quot;]</span>
 <span class="sx">%w(foo\nbar baz)</span> <span class="c1"># =&gt; [&quot;foo\\nbar&quot;, &quot;baz&quot;]</span>
 <span class="sx">%w(foo(bar) baz)</span> <span class="c1"># =&gt; [&quot;foo(bar)&quot;, &quot;baz&quot;]</span>

@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/Compress/Zip.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -12612,8 +12612,11 @@ be raised if the computed CRC32 checksum does not match.</p>
 <h4 id="Compress::Zip--writer-zip-files">Writer zip files<a class="headerlink" href="#Compress::Zip--writer-zip-files" title="Permanent link">&para;</a></h4>
 <p>Use <a href="Zip/Writer.html#Compress::Zip::Writer"><code>Compress::Zip::Writer</code></a>, which writes zip entries sequentially to
 any <a href="../IO.html#IO"><code>IO</code></a>.</p>
-<p>NOTE: only compression methods 0 (STORED) and 8 (DEFLATED) are
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>only compression methods 0 (STORED) and 8 (DEFLATED) are
 supported. Additionally, ZIP64 is not yet supported.</p>
+</div>
       <div class="doc doc-children">
 
 

@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/declare_var.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -2275,7 +2275,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="kp">uninitialized</span> <span class="n">Int32</span>
 <span class="n">x</span> <span class="c1"># =&gt; some random value, garbage, unreliable</span>
 </code></pre></div>
-<p>This is <a href="unsafe.html">unsafe</a> code and is almost always used in low-level code for declaring uninitialized <a href="../api/StaticArray.html#StaticArray"><code>StaticArray</code></a> buffers without a performance penalty:</p>
+<p>This is <a href="unsafe.html">unsafe</a> code and is almost always used in low-level code for declaring uninitialized [<code>StaticArray</code>][] buffers without a performance penalty:</p>
 <div class="highlight"><pre><span></span><code><span class="n">buffer</span> <span class="o">=</span> <span class="kp">uninitialized</span> <span class="n">UInt8</span><span class="o">[</span><span class="mi">256</span><span class="o">]</span>
 </code></pre></div>
 <p>The buffer is allocated on the stack, avoiding a heap allocation.</p>

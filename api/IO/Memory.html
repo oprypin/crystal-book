@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/IO/Memory.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -12911,7 +12911,7 @@ initial <em>capacity</em> for the internal buffer.</p>
 <span class="n">slice</span>          <span class="c1"># =&gt; Bytes[0]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L24">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L24">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12929,7 +12929,7 @@ The created <a href="#IO::Memory"><code>IO::Memory</code></a> is non-resizeable 
 <span class="n">io</span><span class="o">.</span><span class="n">print</span> <span class="s2">&quot;hi&quot;</span> <span class="c1"># raises IO::Error</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L68">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L68">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12948,7 +12948,7 @@ the given slice. The created <a href="#IO::Memory"><code>IO::Memory</code></a> i
 <span class="n">String</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">slice</span><span class="p">)</span> <span class="c1"># =&gt; &quot;abcdef&quot;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L48">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L48">View source</a>
 </div><h2 id="IO::Memory-methods">Methods<a href="#IO::Memory-methods" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12959,7 +12959,7 @@ the given slice. The created <a href="#IO::Memory"><code>IO::Memory</code></a> i
   <div class="doc doc-contents ">
 <p>Returns the internal buffer as a <a href="../Pointer.html#Pointer"><code>Pointer(UInt8)</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L7">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L7">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12970,7 +12970,7 @@ the given slice. The created <a href="#IO::Memory"><code>IO::Memory</code></a> i
   <div class="doc doc-contents ">
 <p>Same as <a href="#IO::Memory#size"><code>size</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L10">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L10">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12993,7 +12993,7 @@ Raises if this <a href="#IO::Memory"><code>IO::Memory</code></a> is non-resizeab
 <span class="n">io</span><span class="o">.</span><span class="n">clear</span> <span class="c1"># raises IO::Error</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L245">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L245">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13008,7 +13008,7 @@ Raises if this <a href="#IO::Memory"><code>IO::Memory</code></a> is non-resizeab
 <span class="n">io</span><span class="o">.</span><span class="n">gets_to_end</span> <span class="c1"># raises IO::Error (closed stream)</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L375">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L375">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13024,7 +13024,7 @@ Raises if this <a href="#IO::Memory"><code>IO::Memory</code></a> is non-resizeab
 <span class="n">io</span><span class="o">.</span><span class="n">closed?</span> <span class="c1"># =&gt; true</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L387">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L387">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13040,7 +13040,7 @@ Raises if this <a href="#IO::Memory"><code>IO::Memory</code></a> is non-resizeab
 <span class="n">io</span><span class="o">.</span><span class="n">empty?</span> <span class="c1"># =&gt; false</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L260">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L260">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13056,7 +13056,7 @@ Raises if this <a href="#IO::Memory"><code>IO::Memory</code></a> is non-resizeab
 <span class="n">io</span><span class="o">.</span><span class="n">pos</span>     <span class="c1"># =&gt; 2</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L320">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L320">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13071,7 +13071,7 @@ Raises if this <a href="#IO::Memory"><code>IO::Memory</code></a> is non-resizeab
 <span class="n">io</span><span class="o">.</span><span class="n">gets</span> <span class="c1"># =&gt; &quot;lo&quot;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L331">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L331">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13082,7 +13082,7 @@ Raises if this <a href="#IO::Memory"><code>IO::Memory</code></a> is non-resizeab
   <div class="doc doc-contents ">
 <p>See <a href="../IO.html#IO#read(slice)"><code>IO#read(slice)</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L73">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L73">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13095,7 +13095,7 @@ Raises if this <a href="#IO::Memory"><code>IO::Memory</code></a> is non-resizeab
 <p>During the block duration <code>self</code> becomes read-only,
 so multiple concurrent open are allowed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L341">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L341">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13111,7 +13111,7 @@ so multiple concurrent open are allowed.</p>  </div>
 <span class="n">io</span><span class="o">.</span><span class="n">gets</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># =&gt; &quot;he&quot;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L272">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L272">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13129,7 +13129,7 @@ so multiple concurrent open are allowed.</p>  </div>
 <span class="n">io</span><span class="o">.</span><span class="n">gets</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># =&gt; &quot;c&quot;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L297">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L297">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13143,7 +13143,7 @@ so multiple concurrent open are allowed.</p>  </div>
 <span class="n">io</span><span class="o">.</span><span class="n">size</span> <span class="c1"># =&gt; 5</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L283">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L283">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13154,7 +13154,7 @@ so multiple concurrent open are allowed.</p>  </div>
   <div class="doc doc-contents ">
 <p>Appends this internal buffer to the given <a href="../IO.html#IO"><code>IO</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L415">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L415">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13169,7 +13169,7 @@ so multiple concurrent open are allowed.</p>  </div>
 <span class="n">io</span><span class="o">.</span><span class="n">to_s</span> <span class="c1"># =&gt; &quot;123&quot;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L398">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L398">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13185,7 +13185,7 @@ so multiple concurrent open are allowed.</p>  </div>
 <span class="n">io</span><span class="o">.</span><span class="n">to_slice</span> <span class="c1"># =&gt; Bytes[104, 101, 108, 108, 111]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L410">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L410">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13197,7 +13197,7 @@ so multiple concurrent open are allowed.</p>  </div>
 <p>See <a href="../IO.html#IO#write(slice)"><code>IO#write(slice)</code></a>. Raises if this <a href="#IO::Memory"><code>IO::Memory</code></a> is non-writeable,
 or if it's non-resizeable and a resize is needed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L85">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L85">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13209,7 +13209,7 @@ or if it's non-resizeable and a resize is needed.</p>  </div>
 <p>See <a href="../IO.html#IO#write_byte(byte)"><code>IO#write_byte</code></a>. Raises if this <a href="#IO::Memory"><code>IO::Memory</code></a> is non-writeable,
 or if it's non-resizeable and a resize is needed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/io/memory.cr#L111">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/io/memory.cr#L111">View source</a>
 </div>      </div>
   </div>
 

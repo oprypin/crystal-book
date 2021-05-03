@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/Channel.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -12655,9 +12655,12 @@
 <span class="n">channel</span><span class="o">.</span><span class="n">receive</span> <span class="c1"># =&gt; 0</span>
 <span class="n">channel</span><span class="o">.</span><span class="n">receive</span> <span class="c1"># =&gt; 1</span>
 </code></pre></div>
-<p>NOTE: Although a <a href="#Channel"><code>Channel(Nil)</code></a> or any other nilable types like <a href="#Channel"><code>Channel(Int32?)</code></a> are valid
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although a <a href="#Channel"><code>Channel(Nil)</code></a> or any other nilable types like <a href="#Channel"><code>Channel(Int32?)</code></a> are valid
 they are discouraged since from certain methods or constructs it receiving a <code>nil</code> as data
 will be indistinguishable from a closed channel.</p>
+</div>
       <div class="doc doc-children">
 
 
@@ -12672,7 +12675,7 @@ will be indistinguishable from a closed channel.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L387">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L387">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12683,7 +12686,7 @@ will be indistinguishable from a closed channel.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L383">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L383">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12694,7 +12697,7 @@ will be indistinguishable from a closed channel.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L396">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L396">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12705,7 +12708,7 @@ will be indistinguishable from a closed channel.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L392">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L392">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12716,7 +12719,7 @@ will be indistinguishable from a closed channel.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L171">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L171">View source</a>
 </div><h2 id="Channel-methods">Methods<a href="#Channel-methods" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12733,7 +12736,7 @@ All items successfully sent to the channel can be received, before <a href="#Cha
 Calling <a href="#Channel#close"><code>#close</code></a> on a closed channel does not have any effect.</p>
 <p>It returns <code>true</code> when the channel was successfully closed, or <code>false</code> if it was already closed.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L191">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L191">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12744,7 +12747,7 @@ Calling <a href="#Channel#close"><code>#close</code></a> on a closed channel doe
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L208">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L208">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12764,7 +12767,7 @@ and the values of all instance variables.</p>
 <span class="n">Person</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span><span class="o">.</span><span class="n">inspect</span> <span class="c1"># =&gt; #&lt;Person:0x10fd31f20 @name=&quot;John&quot;, @age=32&gt;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L375">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L375">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12775,7 +12778,7 @@ and the values of all instance variables.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L379">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L379">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12794,7 +12797,7 @@ If there is a value waiting, then it is returned immediately. Otherwise, this me
 <span class="n">channel</span><span class="o">.</span><span class="n">receive</span> <span class="c1"># =&gt; 1</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L279">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L279">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12807,7 +12810,7 @@ If there is a value waiting, then it is returned immediately. Otherwise, this me
 If there is a value waiting, it is returned immediately. Otherwise, this method blocks until a value is sent to the channel.</p>
 <p>Returns <code>nil</code> if the channel is closed or closes while waiting for receive.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L287">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L287">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12821,7 +12824,7 @@ If the channel has spare capacity, then the method returns immediately.
 Otherwise, this method blocks the calling fiber until another fiber calls <a href="#Channel#receive"><code>#receive</code></a> on the channel.</p>
 <p>Raises <a href="Channel/ClosedError.html#Channel::ClosedError"><code>ClosedError</code></a> if the channel is closed or closes while waiting on a full channel.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/channel.cr#L217">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/channel.cr#L217">View source</a>
 </div>      </div>
   </div>
 

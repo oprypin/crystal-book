@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/syntax_and_semantics/structs.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -2342,7 +2342,7 @@
   <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></div>
-<p>Structs inherit from <a href="../api/Value.html#Value"><code>Value</code></a> so they are allocated on the stack and passed by value: when passed to methods, returned from methods or assigned to variables, a copy of the value is actually passed (while classes inherit from <a href="../api/Reference.html#Reference"><code>Reference</code></a>, are allocated on the heap and passed by reference).</p>
+<p>Structs inherit from [<code>Value</code>][] so they are allocated on the stack and passed by value: when passed to methods, returned from methods or assigned to variables, a copy of the value is actually passed (while classes inherit from [<code>Reference</code>][], are allocated on the heap and passed by reference).</p>
 <p>Therefore structs are mostly useful for immutable data types and/or stateless wrappers of other types, usually for performance reasons to avoid lots of small memory allocations when passing small copies might be more efficient (for more details, see the <a href="https://crystal-lang.org/docs/guides/performance.html#use-structs-when-possible">performance guide</a>).</p>
 <p>Mutable structs are still allowed, but you should be careful when writing code involving mutability if you want to avoid surprises that are described below.</p>
 <h2 id="passing-by-value">Passing by value<a class="headerlink" href="#passing-by-value" title="Permanent link">&para;</a></h2>
@@ -2399,7 +2399,7 @@
 <p><code>Klass</code> is a class, so it is passed by reference to <code>modify</code>, and <code>object.array = ["new"]</code> saves the reference to the newly created array in the original <code>klass</code> object, not in the copy as it was with the <code>strukt</code>.</p>
 <h2 id="inheritance">Inheritance<a class="headerlink" href="#inheritance" title="Permanent link">&para;</a></h2>
 <ul>
-<li>A struct implicitly inherits from <a href="../api/Struct.html#Struct"><code>Struct</code></a>.</li>
+<li>A struct implicitly inherits from [<code>Struct</code>][].</li>
 <li>A struct cannot inherit from a non-abstract struct.</li>
 </ul>
 <p>The second point has a reason to it: a struct has a very well defined memory layout. For example, the above <code>Point</code> struct occupies 8 bytes. If you have an array of points the points are embedded inside the array's buffer:</p>

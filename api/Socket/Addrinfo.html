@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-book/api/Socket/Addrinfo.html">
       
       <link rel="icon" href="https://crystal-lang.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.7">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-7.0.7">
     
     
       
@@ -12669,7 +12669,7 @@
 <span class="n">addrinfos</span> <span class="o">=</span> <span class="n">Socket</span><span class="o">::</span><span class="n">Addrinfo</span><span class="o">.</span><span class="n">resolve</span><span class="p">(</span><span class="s2">&quot;example.org&quot;</span><span class="p">,</span> <span class="s2">&quot;http&quot;</span><span class="p">,</span> <span class="ss">type</span><span class="p">:</span> <span class="n">Socket</span><span class="o">::</span><span class="n">Type</span><span class="o">::</span><span class="no">STREAM</span><span class="p">,</span> <span class="ss">protocol</span><span class="p">:</span> <span class="n">Socket</span><span class="o">::</span><span class="n">Protocol</span><span class="o">::</span><span class="no">TCP</span><span class="p">)</span>
 </code></pre></div></p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L32">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L32">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12689,7 +12689,7 @@ addresses to try.</p>
 <p>The iteration will be stopped once the block returns something that isn't
 an <a href="../Exception.html#Exception"><code>Exception</code></a> (e.g. a <a href="../Socket.html#Socket"><code>Socket</code></a> or <code>nil</code>).</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L58">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L58">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12706,7 +12706,7 @@ an <a href="../Exception.html#Exception"><code>Exception</code></a> (e.g. a <a h
 <span class="n">addrinfos</span> <span class="o">=</span> <span class="n">Socket</span><span class="o">::</span><span class="n">Addrinfo</span><span class="o">.</span><span class="n">tcp</span><span class="p">(</span><span class="s2">&quot;example.org&quot;</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
 </code></pre></div></p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L149">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L149">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12718,7 +12718,7 @@ an <a href="../Exception.html#Exception"><code>Exception</code></a> (e.g. a <a h
 <p>Resolves a domain for the TCP protocol with STREAM type, and yields each
 possible <a href="#Socket::Addrinfo"><code>Addrinfo</code></a>. See <a href="#Socket::Addrinfo.resolve(domain,service,family,type,protocol,timeout)"><code>#resolve</code></a> for details.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L155">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L155">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12735,7 +12735,7 @@ possible <a href="#Socket::Addrinfo"><code>Addrinfo</code></a>. See <a href="#So
 <span class="n">addrinfos</span> <span class="o">=</span> <span class="n">Socket</span><span class="o">::</span><span class="n">Addrinfo</span><span class="o">.</span><span class="n">udp</span><span class="p">(</span><span class="s2">&quot;example.org&quot;</span><span class="p">,</span> <span class="mi">53</span><span class="p">)</span>
 </code></pre></div></p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L168">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L168">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-class_method">
@@ -12747,7 +12747,7 @@ possible <a href="#Socket::Addrinfo"><code>Addrinfo</code></a>. See <a href="#So
 <p>Resolves a domain for the UDP protocol with DGRAM type, and yields each
 possible <a href="#Socket::Addrinfo"><code>Addrinfo</code></a>. See <a href="#Socket::Addrinfo.resolve(domain,service,family,type,protocol,timeout)"><code>#resolve</code></a> for details.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L174">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L174">View source</a>
 </div><h2 id="Socket::Addrinfo-methods">Methods<a href="#Socket::Addrinfo-methods" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12758,7 +12758,7 @@ possible <a href="#Socket::Addrinfo"><code>Addrinfo</code></a>. See <a href="#So
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L6">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L6">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12769,7 +12769,7 @@ possible <a href="#Socket::Addrinfo"><code>Addrinfo</code></a>. See <a href="#So
   <div class="doc doc-contents ">
 <p>Returns an <a href="IPAddress.html#Socket::IPAddress"><code>IPAddress</code></a> matching this addrinfo.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L200">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L200">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12780,7 +12780,7 @@ possible <a href="#Socket::Addrinfo"><code>Addrinfo</code></a>. See <a href="#So
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L8">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L8">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12791,7 +12791,7 @@ possible <a href="#Socket::Addrinfo"><code>Addrinfo</code></a>. See <a href="#So
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L9">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L9">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12802,7 +12802,7 @@ possible <a href="#Socket::Addrinfo"><code>Addrinfo</code></a>. See <a href="#So
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L204">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L204">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12813,7 +12813,7 @@ possible <a href="#Socket::Addrinfo"><code>Addrinfo</code></a>. See <a href="#So
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-book/blob/8b103c077cf5b6562e0be135d51511d4816b05c0/crystal/src/socket/addrinfo.cr#L7">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/socket/addrinfo.cr#L7">View source</a>
 </div>      </div>
   </div>
 
