@@ -225,6 +225,30 @@
   
 
       
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../api/index.html" class="md-tabs__link">
+      API
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../api/Crystal.html" class="md-tabs__link">
+      Compiler
+    </a>
+  </li>
+
+      
     </ul>
   </div>
 </nav>
@@ -2176,6 +2200,36 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/index.html" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Crystal.html" class="md-nav__link">
+        Compiler
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2465,7 +2519,7 @@ with the <code>yield</code> keyword. For example:</p>
 <span class="k">end</span>
 </code></pre></div>
 <p>The above prints "2" and "3".</p>
-<p>A <code>yield</code> expression's value is mostly useful for transforming and filtering values. The best examples of this are [<code>Enumerable#map</code>][Enumerable#map(&amp;)] and [<code>Enumerable#select</code>][Enumerable#select(&amp;)]:</p>
+<p>A <code>yield</code> expression's value is mostly useful for transforming and filtering values. The best examples of this are <a href="../api/Enumerable.html#Enumerable#map(&amp;)"><code>Enumerable#map</code></a> and <a href="../api/Enumerable.html#Enumerable#select(&amp;)"><code>Enumerable#select</code></a>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">ary</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span>
 <span class="n">ary</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}</span>         <span class="c1"># =&gt; [2, 3, 4]</span>
 <span class="n">ary</span><span class="o">.</span><span class="n">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">}</span> <span class="c1"># =&gt; [1, 3]</span>
@@ -2526,7 +2580,7 @@ with the <code>yield</code> keyword. For example:</p>
 <span class="k">end</span>
 <span class="n">value</span> <span class="c1"># :: Int32 | String</span>
 </code></pre></div>
-<p>If a <code>break</code> receives many arguments, they are automatically transformed to a [<code>Tuple</code>][Tuple]:</p>
+<p>If a <code>break</code> receives many arguments, they are automatically transformed to a <a href="../api/Tuple.html#Tuple"><code>Tuple</code></a>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">values</span> <span class="o">=</span> <span class="n">twice</span> <span class="p">{</span> <span class="k">break</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">}</span>
 <span class="n">values</span> <span class="c1"># =&gt; {1, 2}</span>
 </code></pre></div>
@@ -2575,7 +2629,7 @@ with the <code>yield</code> keyword. For example:</p>
 <span class="c1"># 10</span>
 <span class="c1"># 3</span>
 </code></pre></div>
-<p>If a <code>next</code> receives many arguments, they are automatically transformed to a [<code>Tuple</code>][Tuple]. If it receives no arguments it's the same as receiving a single <code>nil</code> argument.</p>
+<p>If a <code>next</code> receives many arguments, they are automatically transformed to a <a href="../api/Tuple.html#Tuple"><code>Tuple</code></a>. If it receives no arguments it's the same as receiving a single <code>nil</code> argument.</p>
 <h2 id="with-yield">with ... yield<a class="headerlink" href="#with-yield" title="Permanent link">&para;</a></h2>
 <p>A <code>yield</code> expression can be modified, using the <code>with</code> keyword, to specify an object to use as the default receiver of method calls within the block:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Foo</span>
@@ -2615,13 +2669,13 @@ with the <code>yield</code> keyword. For example:</p>
 <span class="k">end</span>
 </code></pre></div>
 <p>That means that any type that responds to <code>[]</code> with integers can be unpacked in a block parameter.</p>
-<p>For [<code>Tuple</code>][Tuple] arguments you can take advantage of auto-splatting and do not need parentheses:</p>
+<p>For <a href="../api/Tuple.html#Tuple"><code>Tuple</code></a> arguments you can take advantage of auto-splatting and do not need parentheses:</p>
 <div class="highlight"><pre><span></span><code><span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">},</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="kc">false</span><span class="p">}</span><span class="o">]</span>
 <span class="n">array</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">number</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="n">bool</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">number</span><span class="si">}</span><span class="s2">: </span><span class="si">#{</span><span class="n">word</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">bool</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="k">end</span>
 </code></pre></div>
-<p>[<code>Hash(K, V)#each</code>][Hash#each(&amp;)] passes <code>Tuple(K, V)</code> to the block so iterating key-value pairs works with auto-splatting:</p>
+<p><a href="../api/Hash.html#Hash#each(&amp;)"><code>Hash(K, V)#each</code></a> passes <code>Tuple(K, V)</code> to the block so iterating key-value pairs works with auto-splatting:</p>
 <div class="highlight"><pre><span></span><code><span class="n">h</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;foo&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;bar&quot;</span><span class="p">}</span>
 <span class="n">h</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
   <span class="n">key</span>   <span class="c1"># =&gt; &quot;foo&quot;</span>

@@ -225,6 +225,30 @@
   
 
       
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../api/index.html" class="md-tabs__link">
+      API
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../api/Crystal.html" class="md-tabs__link">
+      Compiler
+    </a>
+  </li>
+
+      
     </ul>
   </div>
 </nav>
@@ -2174,6 +2198,36 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/index.html" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/Crystal.html" class="md-nav__link">
+        Compiler
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2374,10 +2428,10 @@ code that is pasted into a program. For example:</p>
 <span class="c1">#     end</span>
 <span class="n">define_method</span> <span class="ss">:foo</span><span class="p">,</span> <span class="mi">1</span>
 </code></pre></div>
-<p>Note that <code>:foo</code> was the result of the interpolation, because that's what was passed to the macro. You can use the method [<code>ASTNode#id</code>][Crystal::Macros::ASTNode#id] in these cases, where you just need an identifier.</p>
+<p>Note that <code>:foo</code> was the result of the interpolation, because that's what was passed to the macro. You can use the method <a href="../../api/Crystal/Macros/ASTNode.html#Crystal::Macros::ASTNode#id"><code>ASTNode#id</code></a> in these cases, where you just need an identifier.</p>
 <h2 id="macro-calls">Macro calls<a class="headerlink" href="#macro-calls" title="Permanent link">&para;</a></h2>
-<p>You can invoke a <strong>fixed subset</strong> of methods on AST nodes at compile-time. These methods are documented in a fictitious [<code>Crystal::Macros</code>][Crystal::Macros] module.</p>
-<p>For example, invoking [<code>ASTNode#id</code>][Crystal::Macros::ASTNode#id] in the above example solves the problem:</p>
+<p>You can invoke a <strong>fixed subset</strong> of methods on AST nodes at compile-time. These methods are documented in a fictitious <a href="../../api/Crystal/Macros.html#Crystal::Macros"><code>Crystal::Macros</code></a> module.</p>
+<p>For example, invoking <a href="../../api/Crystal/Macros/ASTNode.html#Crystal::Macros::ASTNode#id"><code>ASTNode#id</code></a> in the above example solves the problem:</p>
 <div class="highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_method</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
   <span class="k">def</span> <span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
     <span class="si">{{</span><span class="n">content</span><span class="si">}}</span>
@@ -2443,7 +2497,7 @@ code that is pasted into a program. For example:</p>
 <span class="n">bar</span> <span class="c1"># =&gt; two</span>
 <span class="n">baz</span> <span class="c1"># =&gt; 3</span>
 </code></pre></div>
-<p>Similar to regular code, [<code>Nop</code>][Crystal::Macros::Nop], [<code>NilLiteral</code>][Crystal::Macros::NilLiteral] and a false [<code>BoolLiteral</code>][Crystal::Macros::BoolLiteral] are considered <em>falsey</em>, while everything else is considered <em>truthy</em>.</p>
+<p>Similar to regular code, <a href="../../api/Crystal/Macros/Nop.html#Crystal::Macros::Nop"><code>Nop</code></a>, <a href="../../api/Crystal/Macros/NilLiteral.html#Crystal::Macros::NilLiteral"><code>NilLiteral</code></a> and a false <a href="../../api/Crystal/Macros/BoolLiteral.html#Crystal::Macros::BoolLiteral"><code>BoolLiteral</code></a> are considered <em>falsey</em>, while everything else is considered <em>truthy</em>.</p>
 <p>Macro conditionals can be used outside a macro definition:</p>
 <div class="highlight"><pre><span></span><code><span class="si">{%</span> <span class="k">if</span> <span class="n">env</span><span class="p">(</span><span class="s2">&quot;TEST&quot;</span><span class="p">)</span> <span class="si">%}</span>
   <span class="nb">puts</span> <span class="s2">&quot;We are in test mode&quot;</span>
@@ -2463,7 +2517,7 @@ code that is pasted into a program. For example:</p>
 <span class="n">PI_2</span> <span class="c1"># =&gt; 6.28318...</span>
 <span class="n">PI_3</span> <span class="c1"># =&gt; 9.42477...</span>
 </code></pre></div>
-<p>To iterate an [<code>ArrayLiteral</code>][Crystal::Macros::ArrayLiteral]:</p>
+<p>To iterate an <a href="../../api/Crystal/Macros/ArrayLiteral.html#Crystal::Macros::ArrayLiteral"><code>ArrayLiteral</code></a>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_dummy_methods</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
   <span class="si">{%</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">index</span> <span class="k">in</span> <span class="n">names</span> <span class="si">%}</span>
     <span class="k">def</span> <span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
@@ -2479,7 +2533,7 @@ code that is pasted into a program. For example:</p>
 <span class="n">baz</span> <span class="c1"># =&gt; 2</span>
 </code></pre></div>
 <p>The <code>index</code> variable in the above example is optional.</p>
-<p>To iterate a [<code>HashLiteral</code>][Crystal::Macros::HashLiteral]:</p>
+<p>To iterate a <a href="../../api/Crystal/Macros/HashLiteral.html#Crystal::Macros::HashLiteral"><code>HashLiteral</code></a>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_dummy_methods</span><span class="p">(</span><span class="n">hash</span><span class="p">)</span>
   <span class="si">{%</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="k">in</span> <span class="n">hash</span> <span class="si">%}</span>
     <span class="k">def</span> <span class="si">{{</span><span class="n">key</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
@@ -2519,8 +2573,8 @@ code that is pasted into a program. For example:</p>
 <span class="n">bar</span> <span class="c1"># =&gt; 1</span>
 <span class="n">baz</span> <span class="c1"># =&gt; 2</span>
 </code></pre></div>
-<p>The arguments are packed into an [<code>ArrayLiteral</code>][Crystal::Macros::ArrayLiteral] and passed to the macro.</p>
-<p>Additionally, using <code>*</code> when interpolating an [<code>ArrayLiteral</code>][Crystal::Macros::ArrayLiteral] interpolates the elements separated by commas:</p>
+<p>The arguments are packed into an <a href="../../api/Crystal/Macros/ArrayLiteral.html#Crystal::Macros::ArrayLiteral"><code>ArrayLiteral</code></a> and passed to the macro.</p>
+<p>Additionally, using <code>*</code> when interpolating an <a href="../../api/Crystal/Macros/ArrayLiteral.html#Crystal::Macros::ArrayLiteral"><code>ArrayLiteral</code></a> interpolates the elements separated by commas:</p>
 <div class="highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">println</span><span class="p">(</span><span class="o">*</span><span class="n">values</span><span class="p">)</span>
   <span class="nb">print</span> <span class="si">{{</span><span class="o">*</span><span class="n">values</span><span class="si">}}</span><span class="p">,</span> <span class="sc">&#39;\n&#39;</span>
 <span class="k">end</span>
@@ -2528,7 +2582,7 @@ code that is pasted into a program. For example:</p>
 <span class="n">println</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="c1"># outputs 123\n</span>
 </code></pre></div>
 <h2 id="type-information">Type information<a class="headerlink" href="#type-information" title="Permanent link">&para;</a></h2>
-<p>When a macro is invoked you can access the current scope, or type, with a special instance variable: <code>@type</code>. The type of this variable is [<code>TypeNode</code>][Crystal::Macros::TypeNode], which gives you access to type information at compile time.</p>
+<p>When a macro is invoked you can access the current scope, or type, with a special instance variable: <code>@type</code>. The type of this variable is <a href="../../api/Crystal/Macros/TypeNode.html#Crystal::Macros::TypeNode"><code>TypeNode</code></a>, which gives you access to type information at compile time.</p>
 <p>Note that <code>@type</code> is always the <em>instance</em> type, even when the macro is invoked in a class method.</p>
 <p>For example:</p>
 <div class="highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">add_describe_methods</span>
@@ -2549,7 +2603,7 @@ code that is pasted into a program. For example:</p>
 <span class="n">Foo</span><span class="o">.</span><span class="n">describe</span>     <span class="c1"># =&gt; &quot;Class is Foo&quot;</span>
 </code></pre></div>
 <h2 id="method-information">Method information<a class="headerlink" href="#method-information" title="Permanent link">&para;</a></h2>
-<p>When a macro is invoked you can access the method, the macro is in with a special instance variable: <code>@def</code>. The type of this variable is [<code>Def</code>][Crystal::Macros::Def] unless the macro is outside of a method, in this case it's [<code>NilLiteral</code>][Crystal::Macros::NilLiteral].</p>
+<p>When a macro is invoked you can access the method, the macro is in with a special instance variable: <code>@def</code>. The type of this variable is <a href="../../api/Crystal/Macros/Def.html#Crystal::Macros::Def"><code>Def</code></a> unless the macro is outside of a method, in this case it's <a href="../../api/Crystal/Macros/NilLiteral.html#Crystal::Macros::NilLiteral"><code>NilLiteral</code></a>.</p>
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="k">module</span> <span class="nn">Foo</span>
   <span class="k">def</span> <span class="nc">Foo</span><span class="o">.</span><span class="nf">boo</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">)</span>
@@ -2569,7 +2623,7 @@ code that is pasted into a program. For example:</p>
   <span class="nb">puts</span> <span class="si">{{</span><span class="n">value</span><span class="si">}}</span>
 <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
 </code></pre></div>
-<p>If the constant denotes a type, you get back a [<code>TypeNode</code>][Crystal::Macros::TypeNode].</p>
+<p>If the constant denotes a type, you get back a <a href="../../api/Crystal/Macros/TypeNode.html#Crystal::Macros::TypeNode"><code>TypeNode</code></a>.</p>
 <h2 id="nested-macros">Nested macros<a class="headerlink" href="#nested-macros" title="Permanent link">&para;</a></h2>
 <p>It is possible to define a macro which generates one or more macro definitions. You must escape macro expressions of the inner macro by preceding them with a backslash character "\" to prevent them from being evaluated by the outer macro.</p>
 <div class="highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_macros</span><span class="p">(</span><span class="o">*</span><span class="n">names</span><span class="p">)</span>

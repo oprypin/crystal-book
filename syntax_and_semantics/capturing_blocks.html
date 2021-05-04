@@ -225,6 +225,30 @@
   
 
       
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../api/index.html" class="md-tabs__link">
+      API
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../api/Crystal.html" class="md-tabs__link">
+      Compiler
+    </a>
+  </li>
+
+      
     </ul>
   </div>
 </nav>
@@ -2228,6 +2252,36 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/index.html" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Crystal.html" class="md-nav__link">
+        Compiler
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2294,7 +2348,7 @@
 <span class="n">proc</span> <span class="o">=</span> <span class="n">int_to_int</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}</span>
 <span class="n">proc</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># =&gt; 2</span>
 </code></pre></div>
-<p>The above code captures the block of code passed to <code>int_to_int</code> in the <code>block</code> variable, and returns it from the method. The type of <code>proc</code> is [<code>Proc(Int32, Int32)</code>][Proc], a function that accepts a single <code>Int32</code> argument and returns an <code>Int32</code>.</p>
+<p>The above code captures the block of code passed to <code>int_to_int</code> in the <code>block</code> variable, and returns it from the method. The type of <code>proc</code> is <a href="../api/Proc.html#Proc"><code>Proc(Int32, Int32)</code></a>, a function that accepts a single <code>Int32</code> argument and returns an <code>Int32</code>.</p>
 <p>In this way a block can be saved as a callback:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Model</span>
   <span class="k">def</span> <span class="nf">on_save</span><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>

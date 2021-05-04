@@ -225,6 +225,30 @@
   
 
       
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../api/index.html" class="md-tabs__link">
+      API
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../api/Crystal.html" class="md-tabs__link">
+      Compiler
+    </a>
+  </li>
+
+      
     </ul>
   </div>
 </nav>
@@ -2240,6 +2264,36 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/index.html" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Crystal.html" class="md-nav__link">
+        Compiler
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2342,7 +2396,7 @@
 <span class="n">Color</span><span class="o">::</span><span class="n">Red</span><span class="o">.</span><span class="n">value</span> <span class="c1"># :: UInt8</span>
 </code></pre></div>
 <p>Only integer types are allowed as the underlying type.</p>
-<p>All enums inherit from [<code>Enum</code>][Enum].</p>
+<p>All enums inherit from <a href="../api/Enum.html#Enum"><code>Enum</code></a>.</p>
 <h2 id="flags-enums">Flags enums<a class="headerlink" href="#flags-enums" title="Permanent link">&para;</a></h2>
 <p>An enum can be marked with the <code>@[Flags]</code> annotation. This changes the default values:</p>
 <div class="highlight"><pre><span></span><code><span class="o">@[</span><span class="nd">Flags</span><span class="o">]</span>
@@ -2386,7 +2440,7 @@
 </code></pre></div>
 <p>Class variables are allowed, but instance variables are not.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Enums are a type-safe alternative to [<code>Symbol</code>][Symbol]. For example, an API's method can specify a <a href="type_restrictions.html">type restriction</a> using an enum type:</p>
+<p>Enums are a type-safe alternative to <a href="../api/Symbol.html#Symbol"><code>Symbol</code></a>. For example, an API's method can specify a <a href="type_restrictions.html">type restriction</a> using an enum type:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">paint</span><span class="p">(</span><span class="n">color</span> <span class="p">:</span> <span class="n">Color</span><span class="p">)</span>
   <span class="k">case</span> <span class="n">color</span>
   <span class="k">when</span> <span class="n">Color</span><span class="o">::</span><span class="n">Red</span>

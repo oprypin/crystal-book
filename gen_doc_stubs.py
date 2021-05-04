@@ -39,7 +39,7 @@ nav_items = {}
 
 # For each type (e.g. "Foo::Bar")
 for typ in root.walk_types():
-    if all(loc.filename.startswith("crystal/src/crystal/") for loc in typ.locations):
+    if all("/src/crystal/" in loc.filename for loc in typ.locations):
         continue
 
     # Use the file name "api/Foo/Bar.md"
@@ -49,8 +49,8 @@ for typ in root.walk_types():
         print(f"# ::: {typ.abs_id}", file=f)
 
     if not any(
-        loc.filename.startswith("crystal/src/compiler/")
-        and not loc.filename.startswith("crystal/src/compiler/crystal/macros")
+        "/src/compiler/" in loc.filename and
+        "/src/compiler/crystal/macros" not in loc.filename
         for loc in typ.locations
     ):
         add_to_nav("API", *typ.abs_id.split("::"), filename)

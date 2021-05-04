@@ -225,6 +225,30 @@
   
 
       
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../api/index.html" class="md-tabs__link">
+      API
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../api/Crystal.html" class="md-tabs__link">
+      Compiler
+    </a>
+  </li>
+
+      
     </ul>
   </div>
 </nav>
@@ -2294,6 +2318,36 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/index.html" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Crystal.html" class="md-nav__link">
+        Compiler
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2440,7 +2494,7 @@
   <span class="n">do_another_thing</span>
 <span class="k">end</span>
 </code></pre></div>
-<p>For comparing an expression against a <code>case</code>'s value the <em>case equality operator</em> <code>===</code> is used. It is defined as a method on [<code>Object</code>][Object#===(other)] and can be overridden by subclasses to provide meaningful semantics in case statements. For example, [<code>Class</code>][Class#===(other)] defines case equality as when an object is an instance of that class, [<code>Regex</code>][Regex#===(other)] as when the value matches the regular expression and [<code>Range</code>][Range#===(value)] as when the value is included in that range.</p>
+<p>For comparing an expression against a <code>case</code>'s value the <em>case equality operator</em> <code>===</code> is used. It is defined as a method on <a href="../api/Object.html#Object#===(other)"><code>Object</code></a> and can be overridden by subclasses to provide meaningful semantics in case statements. For example, <a href="../api/Class.html#Class#===(other)"><code>Class</code></a> defines case equality as when an object is an instance of that class, <a href="../api/Regex.html#Regex#===(other)"><code>Regex</code></a> as when the value matches the regular expression and <a href="../api/Range.html#Range#===(value)"><code>Range</code></a> as when the value is included in that range.</p>
 <p>If a <code>when</code>'s expression is a type, <code>is_a?</code> is used. Additionally, if the case expression is a variable or a variable assignment the type of the variable is restricted:</p>
 <div class="highlight"><pre><span></span><code><span class="k">case</span> <span class="n">var</span>
 <span class="k">when</span> <span class="n">String</span>

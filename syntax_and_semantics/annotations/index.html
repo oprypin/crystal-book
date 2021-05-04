@@ -225,6 +225,30 @@
   
 
       
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../api/index.html" class="md-tabs__link">
+      API
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../api/Crystal.html" class="md-tabs__link">
+      Compiler
+    </a>
+  </li>
+
+      
     </ul>
   </div>
 </nav>
@@ -2174,6 +2198,36 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/index.html" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/Crystal.html" class="md-nav__link">
+        Compiler
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2291,7 +2345,7 @@
                 
                 
                 <h1 id="annotations">Annotations<a class="headerlink" href="#annotations" title="Permanent link">&para;</a></h1>
-<p>Annotations can be used to add metadata to certain features in the source code. Types, methods and instance variables may be annotated.  User-defined annotations, such as the standard library's [<code>JSON::Field</code>][JSON::Field], are defined using the <code>annotation</code> keyword.  A number of <a href="built_in_annotations.html">built-in annotations</a> are provided by the compiler.</p>
+<p>Annotations can be used to add metadata to certain features in the source code. Types, methods and instance variables may be annotated.  User-defined annotations, such as the standard library's <a href="../../api/JSON/Field.html#JSON::Field"><code>JSON::Field</code></a>, are defined using the <code>annotation</code> keyword.  A number of <a href="built_in_annotations.html">built-in annotations</a> are provided by the compiler.</p>
 <p>Users can define their own annotations using the <code>annotation</code> keyword, which works similarly to defining a <code>class</code> or <code>struct</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="k">annotation</span> <span class="nc">MyAnnotation</span>
 <span class="k">end</span>
@@ -2322,7 +2376,7 @@
 <p>Annotations are best used to store metadata about a given instance variable, type, or method so that it can be read at compile time using macros.  One of the main benefits of annotations is that they are applied directly to instance variables/methods, which causes classes to look more natural since a standard macro is not needed to create these properties/methods.</p>
 <p>A few applications for annotations:</p>
 <h3 id="object-serialization">Object Serialization<a class="headerlink" href="#object-serialization" title="Permanent link">&para;</a></h3>
-<p>Have an annotation that when applied to an instance variable determines if that instance variable should be serialized, or with what key. Crystal's [<code>JSON::Serializable</code>][JSON::Serializable] and [<code>YAML::Serializable</code>][YAML::Serializable] are examples of this.</p>
+<p>Have an annotation that when applied to an instance variable determines if that instance variable should be serialized, or with what key. Crystal's <a href="../../api/JSON/Serializable.html#JSON::Serializable"><code>JSON::Serializable</code></a> and <a href="../../api/YAML/Serializable.html#YAML::Serializable"><code>YAML::Serializable</code></a> are examples of this.</p>
 <h3 id="orms">ORMs<a class="headerlink" href="#orms" title="Permanent link">&para;</a></h3>
 <p>An annotation could be used to designate a property as an ORM column. The name and type of the instance variable can be read off the <code>TypeNode</code> in addition to the annotation; removing the need for any ORM specific macro. The annotation itself could also be used to store metadata about the column, such as if it is nullable, the name of the column, or if it is the primary key.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h2>
@@ -2360,7 +2414,7 @@
 
 <span class="n">annotation_named_args</span> <span class="c1"># =&gt; {value: 2, name: &quot;Jim&quot;}</span>
 </code></pre></div>
-<p>Since this method returns a <code>NamedTupleLiteral</code>, all of the [methods][Crystal::Macros::NamedTupleLiteral] on that type are available for use.  Especially <code>#double_splat</code> which makes it easy to pass annotation arguments to methods.</p>
+<p>Since this method returns a <code>NamedTupleLiteral</code>, all of the <a href="../../api/Crystal/Macros/NamedTupleLiteral.html#Crystal::Macros::NamedTupleLiteral">methods</a> on that type are available for use.  Especially <code>#double_splat</code> which makes it easy to pass annotation arguments to methods.</p>
 <div class="highlight"><pre><span></span><code><span class="k">annotation</span> <span class="nc">MyAnnotation</span>
 <span class="k">end</span>
 
@@ -2410,7 +2464,7 @@
 
 <span class="n">annotation_args</span> <span class="c1"># =&gt; {1, 2, 3, 4}</span>
 </code></pre></div>
-<p>Since the return type of <code>TupleLiteral</code> is iterable, we can rewrite the previous example in a better way.  By extension, all of the [methods][Crystal::Macros::TupleLiteral] on <code>TupleLiteral</code> are available for use as well.</p>
+<p>Since the return type of <code>TupleLiteral</code> is iterable, we can rewrite the previous example in a better way.  By extension, all of the <a href="../../api/Crystal/Macros/TupleLiteral.html#Crystal::Macros::TupleLiteral">methods</a> on <code>TupleLiteral</code> are available for use as well.</p>
 <div class="highlight"><pre><span></span><code><span class="k">annotation</span> <span class="nc">MyAnnotation</span>
 <span class="k">end</span>
 
@@ -2430,7 +2484,7 @@
 <span class="s2">&quot;3 = 17.0&quot;</span>
 </code></pre></div>
 <h2 id="reading">Reading<a class="headerlink" href="#reading" title="Permanent link">&para;</a></h2>
-<p>Annotations can be read off of a [<code>TypeNode</code>][Crystal::Macros::TypeNode], [<code>Def</code>][Crystal::Macros::Def], or [<code>MetaVar</code>][Crystal::Macros::MetaVar] using the <code>.annotation(type : TypeNode)</code> method.  This method return an [<code>Annotation</code>][Crystal::Macros::Annotation] object representing the applied annotation of the supplied type.</p>
+<p>Annotations can be read off of a <a href="../../api/Crystal/Macros/TypeNode.html#Crystal::Macros::TypeNode"><code>TypeNode</code></a>, <a href="../../api/Crystal/Macros/Def.html#Crystal::Macros::Def"><code>Def</code></a>, or <a href="../../api/Crystal/Macros/MetaVar.html#Crystal::Macros::MetaVar"><code>MetaVar</code></a> using the <code>.annotation(type : TypeNode)</code> method.  This method return an <a href="../../api/Crystal/Macros/Annotation.html#Crystal::Macros::Annotation"><code>Annotation</code></a> object representing the applied annotation of the supplied type.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If multiple annotations of the same type are applied, the <code>.annotation</code> method will return the <em>last</em> one.</p>
