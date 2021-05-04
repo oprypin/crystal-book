@@ -225,30 +225,6 @@
   
 
       
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../api/index.html" class="md-tabs__link">
-      API
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../api/Crystal.html" class="md-tabs__link">
-      Compiler
-    </a>
-  </li>
-
-      
     </ul>
   </div>
 </nav>
@@ -2623,36 +2599,6 @@
   
 
     
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api/index.html" class="md-nav__link">
-        API
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api/Crystal.html" class="md-nav__link">
-        Compiler
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -2922,7 +2868,7 @@
 
 <span class="n">Fiber</span><span class="o">.</span><span class="n">yield</span>
 </code></pre></div>
-<p>Now it works because we are creating a <a href="../api/Proc.html#Proc"><code>Proc</code></a> and we invoke it passing <code>i</code>, so the value gets copied and now the spawned fiber receives a copy.</p>
+<p>Now it works because we are creating a [<code>Proc</code>][Proc] and we invoke it passing <code>i</code>, so the value gets copied and now the spawned fiber receives a copy.</p>
 <p>To avoid all this boilerplate, the standard library provides a <code>spawn</code> macro that accepts a call expression and basically rewrites it to do the above. Using it, we end up with:</p>
 <div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span>

@@ -225,30 +225,6 @@
   
 
       
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../api/index.html" class="md-tabs__link">
-      API
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../api/Crystal.html" class="md-tabs__link">
-      Compiler
-    </a>
-  </li>
-
-      
     </ul>
   </div>
 </nav>
@@ -2208,36 +2184,6 @@
   
 
     
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/index.html" class="md-nav__link">
-        API
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/Crystal.html" class="md-nav__link">
-        Compiler
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -2273,13 +2219,13 @@
                 
                 
                 <h1 id="tuple">Tuple<a class="headerlink" href="#tuple" title="Permanent link">&para;</a></h1>
-<p>A <a href="../../api/Tuple.html#Tuple"><code>Tuple</code></a> is typically created with a tuple literal:</p>
+<p>A [<code>Tuple</code>][Tuple] is typically created with a tuple literal:</p>
 <div class="highlight"><pre><span></span><code><span class="n">tuple</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="sc">&#39;x&#39;</span><span class="p">}</span> <span class="c1"># Tuple(Int32, String, Char)</span>
 <span class="n">tuple</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span>                  <span class="c1"># =&gt; 1       (Int32)</span>
 <span class="n">tuple</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span>                  <span class="c1"># =&gt; &quot;hello&quot; (String)</span>
 <span class="n">tuple</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span>                  <span class="c1"># =&gt; &#39;x&#39;     (Char)</span>
 </code></pre></div>
-<p>To create an empty tuple use <a href="../../api/Tuple.html#Tuple.new(*)"><code>Tuple.new</code></a>.</p>
+<p>To create an empty tuple use [<code>Tuple.new</code>][Tuple.new(*)].</p>
 <p>To denote a tuple type you can write:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># The type denoting a tuple of Int32, String and Char</span>
 <span class="n">Tuple</span><span class="p">(</span><span class="n">Int32</span><span class="p">,</span> <span class="n">String</span><span class="p">,</span> <span class="n">Char</span><span class="p">)</span>

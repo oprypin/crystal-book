@@ -225,30 +225,6 @@
   
 
       
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../api/index.html" class="md-tabs__link">
-      API
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../api/Crystal.html" class="md-tabs__link">
-      Compiler
-    </a>
-  </li>
-
-      
     </ul>
   </div>
 </nav>
@@ -2243,36 +2219,6 @@
   
 
     
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/index.html" class="md-nav__link">
-        API
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/Crystal.html" class="md-nav__link">
-        Compiler
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -2327,7 +2273,7 @@
 It will be substituted at runtime by the captured output from executing the string in a subshell.</p>
 <p>The same <a href="string.html#escaping">escaping</a> and <a href="string.html#interpolation">interpolation rules</a> apply as for regular strings.</p>
 <p>Similar to percent string literals, valid delimiters for <code>%x</code> are parentheses <code>()</code>, square brackets <code>[]</code>, curly braces <code>{}</code>, angles <code>&lt;&gt;</code> and pipes <code>||</code>. Except for the pipes, all delimiters can be nested; meaning a start delimiter inside the string escapes the next end delimiter.</p>
-<p>The special variable <code>$?</code> holds the exit status of the command as a <a href="../../api/Process/Status.html#Process::Status"><code>Process::Status</code></a>. It is only available in the same scope as the command literal.</p>
+<p>The special variable <code>$?</code> holds the exit status of the command as a [<code>Process::Status</code>][Process::Status]. It is only available in the same scope as the command literal.</p>
 <div class="highlight"><pre><span></span><code><span class="sb">`echo foo`</span>  <span class="c1"># =&gt; &quot;foo&quot;</span>
 <span class="vg">$?</span><span class="o">.</span><span class="n">success?</span> <span class="c1"># =&gt; true</span>
 </code></pre></div>
@@ -2338,7 +2284,7 @@ It will be substituted at runtime by the captured output from executing the stri
 <span class="sb">`echo </span><span class="si">#{</span><span class="n">user_input</span><span class="si">}</span><span class="sb">`</span>
 </code></pre></div>
 <p>This command will write <code>hello</code> and subsequently delete all files and folders in the current working directory.</p>
-<p>To avoid this, command literals should generally not be used with interpolated user input. <a href="../../api/Process.html#Process"><code>Process</code></a> from the standard library offers a safe way to provide user input as command arguments:</p>
+<p>To avoid this, command literals should generally not be used with interpolated user input. [<code>Process</code>][Process] from the standard library offers a safe way to provide user input as command arguments:</p>
 <div class="highlight"><pre><span></span><code><span class="n">user_input</span> <span class="o">=</span> <span class="s2">&quot;hello; rm -rf *&quot;</span>
 <span class="n">process</span> <span class="o">=</span> <span class="n">Process</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;echo&quot;</span><span class="p">,</span> <span class="o">[</span><span class="n">user_input</span><span class="o">]</span><span class="p">,</span> <span class="ss">output</span><span class="p">:</span> <span class="n">Process</span><span class="o">::</span><span class="n">Redirect</span><span class="o">::</span><span class="n">Pipe</span><span class="p">)</span>
 <span class="n">process</span><span class="o">.</span><span class="n">output</span><span class="o">.</span><span class="n">gets_to_end</span> <span class="c1"># =&gt; &quot;hello; rm -rf *&quot;</span>

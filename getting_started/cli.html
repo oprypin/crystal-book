@@ -225,30 +225,6 @@
   
 
       
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../api/index.html" class="md-tabs__link">
-      API
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../api/Crystal.html" class="md-tabs__link">
-      Compiler
-    </a>
-  </li>
-
-      
     </ul>
   </div>
 </nav>
@@ -2438,36 +2414,6 @@
   
 
     
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api/index.html" class="md-nav__link">
-        API
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api/Crystal.html" class="md-nav__link">
-        Compiler
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -2626,7 +2572,7 @@
 </div>
 <p>So, how does all this work? Well … magic! No, it’s not really magic! Just Crystal making our life easy.
 When our application starts, the block passed to <code>OptionParser#parse</code> gets executed. In that block we define all the options. After the block is executed, the parser will start consuming the arguments passed to the application, trying to match each one with the options defined by us. If an option matches then the block passed to <code>parser#on</code> gets executed!</p>
-<p>We can read all about <code>OptionParser</code> in <a href="../api/OptionParser.html#OptionParser">the official API documentation</a>. And from there we are one click away from the source code ... the actual proof that it is not magic!</p>
+<p>We can read all about <code>OptionParser</code> in [the official API documentation][OptionParser]. And from there we are one click away from the source code ... the actual proof that it is not magic!</p>
 <p>Now, let's run our application. We have two ways <a href="../using_the_compiler/index.html">using the compiler</a>:</p>
 <ol>
 <li><a href="../using_the_compiler/index.html#crystal-build">Build the application</a> and then run it.</li>
@@ -2821,7 +2767,7 @@ Easy, peasy! Let’s create a new application: the Fab Four will sing with us an
 <span class="nb">puts</span> <span class="s2">&quot;The Beatles are singing: 🎵</span><span class="si">#{</span><span class="n">user_input</span><span class="si">}</span><span class="s2">🎶🎸🥁&quot;</span>
 </code></pre></div>
 </div>
-<p>The method <a href="../api/index.html#gets(*,**)"><code>gets</code></a> will <strong>pause</strong> the execution of the application, until the user finishes entering the input (pressing the <code>Enter</code> key).
+<p>The method [<code>gets</code>][gets(*,**)] will <strong>pause</strong> the execution of the application, until the user finishes entering the input (pressing the <code>Enter</code> key).
 When the user presses <code>Enter</code>, then the execution will continue and <code>user_input</code> will have the user value.</p>
 <p>But what happen if the user doesn’t enter any value? In that case, we would get an empty string (if the user only presses <code>Enter</code>) or maybe a <code>Nil</code> value (if the input stream id closed, e.g. by pressing <code>Ctrl+D</code>).
 To illustrate the problem let’s try the following: we want the input entered by the user to be sang loudly:</p>
@@ -2867,7 +2813,7 @@ So, we have to test for <code>Nil</code> and for <code>empty</code> and act natu
 <h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
 <p>Now, we will focus on the second main topic: our application’s output.
 For starters, our applications already display information but (I think) we could do better. Let’s add more <em>life</em> (i.e. colors!) to the outputs.</p>
-<p>And to accomplish this, we will be using the <a href="../api/Colorize.html#Colorize"><code>Colorize</code></a> module.</p>
+<p>And to accomplish this, we will be using the [<code>Colorize</code>][Colorize] module.</p>
 <p>Let’s build a really simple application that shows a string with colors! We will use yellow font on a black background:</p>
 <div class="admonition example">
 <p class="admonition-title">yellow_cli.cr</p>
@@ -2902,7 +2848,7 @@ For starters, our applications already display information but (I think) we coul
 </div>
 <p>Let’s try the renewed application … and <em>hear</em> the difference!!
 <strong>Now</strong> we have two fabulous apps!!</p>
-<p>You may find a list of <strong>available colors</strong> and <strong>text decorations</strong> in the <a href="../api/Colorize.html#Colorize">API documentation</a>.</p>
+<p>You may find a list of <strong>available colors</strong> and <strong>text decorations</strong> in the [API documentation][Colorize].</p>
 <h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
 <p>As with any other application, at some point we would like to <a href="../guides/testing.html">write tests</a> for the different features.</p>
 <p>Right now the code containing the logic of each of the applications always gets executed with the <code>OptionParser</code>, i.e. there is no way to include that file without running the whole application. So first we would need to refactor the code, separating the code necessary for parsing options from the logic. Once the refactor is done, we could start testing the logic and including the file with the logic in the testing files we need. We leave this as an exercise for the reader.</p>

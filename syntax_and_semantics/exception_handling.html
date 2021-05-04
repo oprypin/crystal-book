@@ -225,30 +225,6 @@
   
 
       
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../api/index.html" class="md-tabs__link">
-      API
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../api/Crystal.html" class="md-tabs__link">
-      Compiler
-    </a>
-  </li>
-
-      
     </ul>
   </div>
 </nav>
@@ -2290,36 +2266,6 @@
   
 
     
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api/index.html" class="md-nav__link">
-        API
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api/Crystal.html" class="md-nav__link">
-        Compiler
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -2421,14 +2367,14 @@
                 <h1 id="exception-handling">Exception handling<a class="headerlink" href="#exception-handling" title="Permanent link">&para;</a></h1>
 <p>Crystal's way to do error handling is by raising and rescuing exceptions.</p>
 <h2 id="raising-exception">Raising exception<a class="headerlink" href="#raising-exception" title="Permanent link">&para;</a></h2>
-<p>You raise exceptions by invoking a top-level <code>raise</code> method. Unlike other keywords, <code>raise</code> is a regular method with two overloads: <a href="../api/index.html#raise(message)">one accepting a String</a> and another <a href="../api/index.html#raise(exception)">accepting an Exception instance</a>:</p>
+<p>You raise exceptions by invoking a top-level <code>raise</code> method. Unlike other keywords, <code>raise</code> is a regular method with two overloads: [one accepting a String][raise(message)] and another [accepting an Exception instance][raise(exception)]:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">raise</span> <span class="s2">&quot;OH NO!&quot;</span>
 <span class="nb">raise</span> <span class="n">Exception</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Some error&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>The String version just creates a new <a href="../api/Exception.html#Exception"><code>Exception</code></a> instance with that message.</p>
+<p>The String version just creates a new [<code>Exception</code>][Exception] instance with that message.</p>
 <p>Only <code>Exception</code> instances or subclasses can be raised.</p>
 <h2 id="defining-custom-exceptions">Defining custom exceptions<a class="headerlink" href="#defining-custom-exceptions" title="Permanent link">&para;</a></h2>
-<p>To define a custom exception type, just subclass from <a href="../api/Exception.html#Exception"><code>Exception</code></a>:</p>
+<p>To define a custom exception type, just subclass from [<code>Exception</code>][Exception]:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyException</span> <span class="o">&lt;</span> <span class="n">Exception</span>
 <span class="k">end</span>
 
