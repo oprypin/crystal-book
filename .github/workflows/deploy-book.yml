@@ -29,9 +29,7 @@ jobs:
           repository: crystal-lang/crystal
           path: crystal
       - name: Build site
-        run: |
-          PATH="$(pwd)/crystal/bin:$PATH" make build
-          cp 404.html site/
+        run: PATH="$(pwd)/crystal/bin:$PATH" mkdocs build
       - name: Disallow unchecked intra-site links
         run: make check_internal_links
       - name: Deploy to gh-pages
