@@ -576,6 +576,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://oprypin.github.io/crystal-book/api/Steppable.html</loc>
+         <lastmod>2021-05-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://oprypin.github.io/crystal-book/api/String.html</loc>
          <lastmod>2021-05-04</lastmod>
          <changefreq>daily</changefreq>
@@ -4476,11 +4481,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://oprypin.github.io/crystal-book/api/Number/StepIterator.html</loc>
-         <lastmod>2021-05-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://oprypin.github.io/crystal-book/api/OAuth/AccessToken.html</loc>
          <lastmod>2021-05-04</lastmod>
          <changefreq>daily</changefreq>
@@ -4781,6 +4781,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://oprypin.github.io/crystal-book/api/Socket/FamilyT.html</loc>
+         <lastmod>2021-05-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://oprypin.github.io/crystal-book/api/Socket/IPAddress.html</loc>
          <lastmod>2021-05-04</lastmod>
          <changefreq>daily</changefreq>
@@ -4857,6 +4862,11 @@
     </url>
     <url>
          <loc>https://oprypin.github.io/crystal-book/api/Spec/ExampleGroup/Procsy.html</loc>
+         <lastmod>2021-05-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oprypin.github.io/crystal-book/api/Steppable/StepIterator.html</loc>
          <lastmod>2021-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>

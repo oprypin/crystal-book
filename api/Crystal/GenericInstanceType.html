@@ -9000,7 +9000,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Crystal::GenericInstanceType#check_method_missing(*,**,&)" class="md-nav__link">
+  <a href="#Crystal::GenericInstanceType#check_method_missing(*,**)" class="md-nav__link">
     #check_method_missing
   </a>
   
@@ -9009,13 +9009,6 @@
           <li class="md-nav__item">
   <a href="#Crystal::GenericInstanceType#class_var_owner" class="md-nav__link">
     #class_var_owner
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#Crystal::GenericInstanceType#covariant?(other_type)" class="md-nav__link">
-    #covariant?
   </a>
   
 </li>
@@ -9161,7 +9154,7 @@ the superclass has a fixed type <a href="../Int32.html#Int32"><code>Int32</code>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1906">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1882">View source</a>
 </div><h2 id="Crystal::GenericInstanceType-methods">Methods<a href="#Crystal::GenericInstanceType-methods" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9172,7 +9165,7 @@ the superclass has a fixed type <a href="../Int32.html#Int32"><code>Int32</code>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1904">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1880">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9183,7 +9176,7 @@ the superclass has a fixed type <a href="../Int32.html#Int32"><code>Int32</code>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1904">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1880">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9194,7 +9187,7 @@ the superclass has a fixed type <a href="../Int32.html#Int32"><code>Int32</code>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1904">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1880">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9205,18 +9198,7 @@ the superclass has a fixed type <a href="../Int32.html#Int32"><code>Int32</code>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1904">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::GenericInstanceType#check_method_missing(*,**,&amp;)" class="doc doc-heading">    <code>
-      #check_method_missing<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
-    </code>
-<a href="#Crystal::GenericInstanceType#check_method_missing(*,**,&amp;)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/semantic/method_missing.cr#L133">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1880">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9227,7 +9209,18 @@ the superclass has a fixed type <a href="../Int32.html#Int32"><code>Int32</code>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/semantic/method_missing.cr#L133">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/semantic/method_missing.cr#L133">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::GenericInstanceType#check_method_missing(*,**,&amp;)" class="doc doc-heading">    <code>
+      #check_method_missing<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
+    </code>
+<a href="#Crystal::GenericInstanceType#check_method_missing(*,**,&amp;)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/semantic/method_missing.cr#L133">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9240,18 +9233,7 @@ the superclass has a fixed type <a href="../Int32.html#Int32"><code>Int32</code>
 <p>This method returns self, but subclasses might override.
 For example, a metaclass' class_var_owner is the instance type.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1910">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::GenericInstanceType#covariant?(other_type)" class="doc doc-heading">    <code>
-      #covariant?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">other_type</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::GenericInstanceType#covariant?(other_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1969">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1886">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9262,7 +9244,7 @@ For example, a metaclass' class_var_owner is the instance type.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1901">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1877">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9273,7 +9255,7 @@ For example, a metaclass' class_var_owner is the instance type.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1977">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1945">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9284,7 +9266,7 @@ For example, a metaclass' class_var_owner is the instance type.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1964">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1940">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9300,7 +9282,7 @@ type's namespace. This parameter is useful because when writing
 <code>Foo::Bar::Baz</code>, <code>Foo</code> should be searched in enclosing namespaces,
 but <code>Bar</code> and <code>Baz</code> not.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/semantic/path_lookup.cr#L119">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/semantic/path_lookup.cr#L119">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9311,7 +9293,7 @@ but <code>Bar</code> and <code>Baz</code> not.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1914">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1890">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9323,29 +9305,7 @@ but <code>Bar</code> and <code>Baz</code> not.</p>  </div>
 <p>Replace type parameters in this type with the type parameters
 of the given <em>instance</em> type.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1920">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::GenericInstanceType#restrict(other,context)" class="doc doc-heading">    <code>
-      #restrict<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">other</span> <span class="p">:</span> <a href="GenericType.html#Crystal::GenericType">GenericType</a><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::GenericInstanceType#restrict(other,context)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/semantic/restrictions.cr#L730">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::GenericInstanceType#restrict(other,context)" class="doc doc-heading">    <code>
-      #restrict<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">other</span> <span class="p">:</span> <a href="Generic.html#Crystal::Generic">Generic</a><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::GenericInstanceType#restrict(other,context)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/semantic/restrictions.cr#L734">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1896">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9356,7 +9316,29 @@ of the given <em>instance</em> type.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/semantic/restrictions.cr#L827">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/semantic/restrictions.cr#L851">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::GenericInstanceType#restrict(other,context)" class="doc doc-heading">    <code>
+      #restrict<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">other</span> <span class="p">:</span> <a href="Generic.html#Crystal::Generic">Generic</a><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::GenericInstanceType#restrict(other,context)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/semantic/restrictions.cr#L758">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::GenericInstanceType#restrict(other,context)" class="doc doc-heading">    <code>
+      #restrict<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">other</span> <span class="p">:</span> <a href="GenericType.html#Crystal::GenericType">GenericType</a><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::GenericInstanceType#restrict(other,context)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/semantic/restrictions.cr#L743">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9367,7 +9349,7 @@ of the given <em>instance</em> type.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/semantic/restrictions.cr#L839">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/semantic/restrictions.cr#L863">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9378,7 +9360,7 @@ of the given <em>instance</em> type.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/semantic/restrictions.cr#L705">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/semantic/restrictions.cr#L718">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9389,7 +9371,7 @@ of the given <em>instance</em> type.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/semantic/restrictions.cr#L710">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/semantic/restrictions.cr#L723">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9400,7 +9382,7 @@ of the given <em>instance</em> type.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1995">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1963">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9411,7 +9393,7 @@ of the given <em>instance</em> type.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1902">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1878">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -9422,7 +9404,7 @@ of the given <em>instance</em> type.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/share/crystal/src/compiler/crystal/types.cr#L1986">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/types.cr#L1954">View source</a>
 </div>      </div>
   </div>
 
