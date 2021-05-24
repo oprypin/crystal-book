@@ -2404,21 +2404,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#[](range)" class="md-nav__link">
+  <a href="#Array#[](start,count)" class="md-nav__link">
     #[]
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#[]=(range,values)" class="md-nav__link">
+  <a href="#Array#[]=(index,count,values)" class="md-nav__link">
     #[]=
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#[]?(start,count)" class="md-nav__link">
+  <a href="#Array#[]?(range)" class="md-nav__link">
     #[]?
   </a>
   
@@ -2467,7 +2467,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#delete_at(range)" class="md-nav__link">
+  <a href="#Array#delete_at(index,count)" class="md-nav__link">
     #delete_at
   </a>
   
@@ -2488,7 +2488,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#fill(value,from,count)" class="md-nav__link">
+  <a href="#Array#fill(value)" class="md-nav__link">
     #fill
   </a>
   
@@ -2586,7 +2586,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#reject!(&)" class="md-nav__link">
+  <a href="#Array#reject!(pattern)" class="md-nav__link">
     #reject!
   </a>
   
@@ -2642,14 +2642,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#select!(&)" class="md-nav__link">
+  <a href="#Array#select!(pattern)" class="md-nav__link">
     #select!
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#shift(n)" class="md-nav__link">
+  <a href="#Array#shift" class="md-nav__link">
     #shift
   </a>
   
@@ -2763,6 +2763,13 @@
           <li class="md-nav__item">
   <a href="#Array#transpose" class="md-nav__link">
     #transpose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Array#truncate(start,count)" class="md-nav__link">
+    #truncate
   </a>
   
 </li>
@@ -12326,13 +12333,25 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="WinError.html" class="md-nav__link">
+        WinError
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_129" type="checkbox" id="__nav_5_129" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_130" type="checkbox" id="__nav_5_130" >
       
-      <label class="md-nav__link" for="__nav_5_129">
+      <label class="md-nav__link" for="__nav_5_130">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="XML.html" class="md-nav__link"
@@ -12342,7 +12361,7 @@
         </a>
       </label>
       <nav class="md-nav" aria-label="XML" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_129">
+        <label class="md-nav__title" for="__nav_5_130">
           <span class="md-nav__icon md-icon"></span>
           
             <a href="XML.html" class="md-nav__link"
@@ -12433,9 +12452,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_129_7" type="checkbox" id="__nav_5_129_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_130_7" type="checkbox" id="__nav_5_130_7" >
       
-      <label class="md-nav__link" for="__nav_5_129_7">
+      <label class="md-nav__link" for="__nav_5_130_7">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="XML/Node.html" class="md-nav__link"
@@ -12445,7 +12464,7 @@
         </a>
       </label>
       <nav class="md-nav" aria-label="Node" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_129_7">
+        <label class="md-nav__title" for="__nav_5_130_7">
           <span class="md-nav__icon md-icon"></span>
           
             <a href="XML/Node.html" class="md-nav__link"
@@ -12506,9 +12525,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_129_10" type="checkbox" id="__nav_5_129_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_130_10" type="checkbox" id="__nav_5_130_10" >
       
-      <label class="md-nav__link" for="__nav_5_129_10">
+      <label class="md-nav__link" for="__nav_5_130_10">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="XML/Reader.html" class="md-nav__link"
@@ -12518,7 +12537,7 @@
         </a>
       </label>
       <nav class="md-nav" aria-label="Reader" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_129_10">
+        <label class="md-nav__title" for="__nav_5_130_10">
           <span class="md-nav__icon md-icon"></span>
           
             <a href="XML/Reader.html" class="md-nav__link"
@@ -12585,9 +12604,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_130" type="checkbox" id="__nav_5_130" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_131" type="checkbox" id="__nav_5_131" >
       
-      <label class="md-nav__link" for="__nav_5_130">
+      <label class="md-nav__link" for="__nav_5_131">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="YAML.html" class="md-nav__link"
@@ -12597,7 +12616,7 @@
         </a>
       </label>
       <nav class="md-nav" aria-label="YAML" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_130">
+        <label class="md-nav__title" for="__nav_5_131">
           <span class="md-nav__icon md-icon"></span>
           
             <a href="YAML.html" class="md-nav__link"
@@ -12616,9 +12635,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_130_1" type="checkbox" id="__nav_5_130_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_131_1" type="checkbox" id="__nav_5_131_1" >
       
-      <label class="md-nav__link" for="__nav_5_130_1">
+      <label class="md-nav__link" for="__nav_5_131_1">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="YAML/Any.html" class="md-nav__link"
@@ -12628,7 +12647,7 @@
         </a>
       </label>
       <nav class="md-nav" aria-label="Any" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_130_1">
+        <label class="md-nav__title" for="__nav_5_131_1">
           <span class="md-nav__icon md-icon"></span>
           
             <a href="YAML/Any.html" class="md-nav__link"
@@ -12737,9 +12756,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_130_8" type="checkbox" id="__nav_5_130_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_131_8" type="checkbox" id="__nav_5_131_8" >
       
-      <label class="md-nav__link" for="__nav_5_130_8">
+      <label class="md-nav__link" for="__nav_5_131_8">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="YAML/Nodes.html" class="md-nav__link"
@@ -12749,7 +12768,7 @@
         </a>
       </label>
       <nav class="md-nav" aria-label="Nodes" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_130_8">
+        <label class="md-nav__title" for="__nav_5_131_8">
           <span class="md-nav__icon md-icon"></span>
           
             <a href="YAML/Nodes.html" class="md-nav__link"
@@ -12906,9 +12925,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_130_13" type="checkbox" id="__nav_5_130_13" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_131_13" type="checkbox" id="__nav_5_131_13" >
       
-      <label class="md-nav__link" for="__nav_5_130_13">
+      <label class="md-nav__link" for="__nav_5_131_13">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="YAML/Schema.html" class="md-nav__link"
@@ -12918,7 +12937,7 @@
         </a>
       </label>
       <nav class="md-nav" aria-label="Schema" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_130_13">
+        <label class="md-nav__title" for="__nav_5_131_13">
           <span class="md-nav__icon md-icon"></span>
           
             <a href="YAML/Schema.html" class="md-nav__link"
@@ -12979,9 +12998,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_130_15" type="checkbox" id="__nav_5_130_15" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_131_15" type="checkbox" id="__nav_5_131_15" >
       
-      <label class="md-nav__link" for="__nav_5_130_15">
+      <label class="md-nav__link" for="__nav_5_131_15">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="YAML/Serializable.html" class="md-nav__link"
@@ -12991,7 +13010,7 @@
         </a>
       </label>
       <nav class="md-nav" aria-label="Serializable" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_130_15">
+        <label class="md-nav__title" for="__nav_5_131_15">
           <span class="md-nav__icon md-icon"></span>
           
             <a href="YAML/Serializable.html" class="md-nav__link"
@@ -13216,21 +13235,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#[](range)" class="md-nav__link">
+  <a href="#Array#[](start,count)" class="md-nav__link">
     #[]
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#[]=(range,values)" class="md-nav__link">
+  <a href="#Array#[]=(index,count,values)" class="md-nav__link">
     #[]=
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#[]?(start,count)" class="md-nav__link">
+  <a href="#Array#[]?(range)" class="md-nav__link">
     #[]?
   </a>
   
@@ -13279,7 +13298,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#delete_at(range)" class="md-nav__link">
+  <a href="#Array#delete_at(index,count)" class="md-nav__link">
     #delete_at
   </a>
   
@@ -13300,7 +13319,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#fill(value,from,count)" class="md-nav__link">
+  <a href="#Array#fill(value)" class="md-nav__link">
     #fill
   </a>
   
@@ -13398,7 +13417,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#reject!(&)" class="md-nav__link">
+  <a href="#Array#reject!(pattern)" class="md-nav__link">
     #reject!
   </a>
   
@@ -13454,14 +13473,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#select!(&)" class="md-nav__link">
+  <a href="#Array#select!(pattern)" class="md-nav__link">
     #select!
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#Array#shift(n)" class="md-nav__link">
+  <a href="#Array#shift" class="md-nav__link">
     #shift
   </a>
   
@@ -13575,6 +13594,13 @@
           <li class="md-nav__item">
   <a href="#Array#transpose" class="md-nav__link">
     #transpose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Array#truncate(start,count)" class="md-nav__link">
+    #truncate
   </a>
   
 </li>
@@ -14037,6 +14063,29 @@ corresponding element in <em>other</em>.</p>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Array#[](start,count)" class="doc doc-heading">    <code>
+      #[]<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">start</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Array#[](start,count)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>Returns count or less (if there aren't enough) elements starting at the
+given start index.</p>
+<p>Negative indices count backward from the end of the array (-1 is the last
+element). Additionally, an empty array is returned when the starting index
+for an element range is at the end of the array.</p>
+<p>Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if the <em>start</em> index is out of range.</p>
+<p>Raises <a href="ArgumentError.html#ArgumentError"><code>ArgumentError</code></a> if <em>count</em> is negative.</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="o">]</span>
+<span class="n">a</span><span class="o">[-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span> <span class="c1"># =&gt; [&quot;c&quot;, &quot;d&quot;, &quot;e&quot;]</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">]</span>  <span class="c1"># =&gt; [&quot;b&quot;, &quot;c&quot;]</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span>  <span class="c1"># =&gt; []</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span>  <span class="c1"># raises IndexError</span>
+</code></pre></div>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L639">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Array#[](range)" class="doc doc-heading">    <code>
       #[]<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">range</span> <span class="p">:</span> <a href="Range.html#Range">Range</a><span class="p">)</span></code></span>
     </code>
@@ -14060,26 +14109,68 @@ for an element range is at the end of the array.</p>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#[](start,count)" class="doc doc-heading">    <code>
-      #[]<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">start</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">)</span></code></span>
+<h3 id="Array#[]=(index,count,values)" class="doc doc-heading">    <code>
+      #[]=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">values</span> <span class="p">:</span> <a href="#Array">Array</a><span class="p">(</span><span class="n">T</span><span class="p">))</span></code></span>
     </code>
-<a href="#Array#[](start,count)" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#Array#[]=(index,count,values)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
-<p>Returns count or less (if there aren't enough) elements starting at the
-given start index.</p>
-<p>Negative indices count backward from the end of the array (-1 is the last
-element). Additionally, an empty array is returned when the starting index
-for an element range is at the end of the array.</p>
-<p>Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if the <em>start</em> index is out of range.</p>
-<p>Raises <a href="ArgumentError.html#ArgumentError"><code>ArgumentError</code></a> if <em>count</em> is negative.</p>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="o">]</span>
-<span class="n">a</span><span class="o">[-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span> <span class="c1"># =&gt; [&quot;c&quot;, &quot;d&quot;, &quot;e&quot;]</span>
-<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">]</span>  <span class="c1"># =&gt; [&quot;b&quot;, &quot;c&quot;]</span>
-<span class="n">a</span><span class="o">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span>  <span class="c1"># =&gt; []</span>
-<span class="n">a</span><span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span>  <span class="c1"># raises IndexError</span>
+<p>Replaces a subrange with the elements of the given array.</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span>
+<span class="n">a</span> <span class="c1"># =&gt; [1, 6, 7, 8, 5]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="o">]</span>
+<span class="n">a</span> <span class="c1"># =&gt; [1, 6, 7, 5]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="o">]</span>
+<span class="n">a</span> <span class="c1"># =&gt; [1, 6, 7, 8, 9, 10, 5]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L639">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L532">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Array#[]=(index,count,value)" class="doc doc-heading">    <code>
+      #[]=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">value</span> <span class="p">:</span> <span class="n">T</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Array#[]=(index,count,value)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>Replaces a subrange with a single value. All elements in the range
+<code>index...index+count</code> are removed and replaced by a single element
+<em>value</em>.</p>
+<p>If <em>count</em> is zero, <em>value</em> is inserted at <em>index</em>.</p>
+<p>Negative values of <em>index</em> count from the end of the array.</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">a</span> <span class="c1"># =&gt; [1, 6, 5]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">a</span> <span class="c1"># =&gt; [1, 6, 2, 3, 4, 5]</span>
+</code></pre></div>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L447">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Array#[]=(index,value)" class="doc doc-heading">    <code>
+      #[]=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">value</span> <span class="p">:</span> <span class="n">T</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Array#[]=(index,value)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>Sets the given value at the given index.</p>
+<p>Negative indices can be used to start counting from the end of the array.
+Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if trying to set an element outside the array's range.</p>
+<div class="highlight"><pre><span></span><code><span class="n">ary</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span>
+<span class="n">ary</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">p</span> <span class="n">ary</span> <span class="c1"># =&gt; [5,2,3]</span>
+
+<span class="n">ary</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># raises IndexError</span>
+</code></pre></div>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L425">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14133,82 +14224,6 @@ for an element range is at the end of the array.</p>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#[]=(index,value)" class="doc doc-heading">    <code>
-      #[]=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">value</span> <span class="p">:</span> <span class="n">T</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Array#[]=(index,value)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>Sets the given value at the given index.</p>
-<p>Negative indices can be used to start counting from the end of the array.
-Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if trying to set an element outside the array's range.</p>
-<div class="highlight"><pre><span></span><code><span class="n">ary</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span>
-<span class="n">ary</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="nb">p</span> <span class="n">ary</span> <span class="c1"># =&gt; [5,2,3]</span>
-
-<span class="n">ary</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># raises IndexError</span>
-</code></pre></div>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L425">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#[]=(index,count,value)" class="doc doc-heading">    <code>
-      #[]=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">value</span> <span class="p">:</span> <span class="n">T</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Array#[]=(index,count,value)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>Replaces a subrange with a single value. All elements in the range
-<code>index...index+count</code> are removed and replaced by a single element
-<em>value</em>.</p>
-<p>If <em>count</em> is zero, <em>value</em> is inserted at <em>index</em>.</p>
-<p>Negative values of <em>index</em> count from the end of the array.</p>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
-<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="mi">6</span>
-<span class="n">a</span> <span class="c1"># =&gt; [1, 6, 5]</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
-<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">6</span>
-<span class="n">a</span> <span class="c1"># =&gt; [1, 6, 2, 3, 4, 5]</span>
-</code></pre></div>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L447">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#[]=(index,count,values)" class="doc doc-heading">    <code>
-      #[]=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">values</span> <span class="p">:</span> <a href="#Array">Array</a><span class="p">(</span><span class="n">T</span><span class="p">))</span></code></span>
-    </code>
-<a href="#Array#[]=(index,count,values)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>Replaces a subrange with the elements of the given array.</p>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
-<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span>
-<span class="n">a</span> <span class="c1"># =&gt; [1, 6, 7, 8, 5]</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
-<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="o">]</span>
-<span class="n">a</span> <span class="c1"># =&gt; [1, 6, 7, 5]</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
-<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="o">]</span>
-<span class="n">a</span> <span class="c1"># =&gt; [1, 6, 7, 8, 9, 10, 5]</span>
-</code></pre></div>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L532">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#[]?(start,count)" class="doc doc-heading">    <code>
-      #[]?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">start</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Array#[]?(start,count)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>Like <code>#[Int, Int]</code> but returns <code>nil</code> if the <em>start</em> index is out of range.</p>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L644">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Array#[]?(range)" class="doc doc-heading">    <code>
       #[]?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">range</span> <span class="p">:</span> <a href="Range.html#Range">Range</a><span class="p">)</span></code></span>
     </code>
@@ -14221,6 +14236,17 @@ Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if tryin
 </code></pre></div>  </div>
 
     <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L617">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Array#[]?(start,count)" class="doc doc-heading">    <code>
+      #[]?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">start</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Array#[]?(start,count)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>Like <code>#[Int, Int]</code> but returns <code>nil</code> if the <em>start</em> index is out of range.</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L644">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14339,21 +14365,22 @@ if any, or <code>nil</code> if not found.</p>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#delete_at(range)" class="doc doc-heading">    <code>
-      #delete_at<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">range</span> <span class="p">:</span> <a href="Range.html#Range">Range</a><span class="p">)</span></code></span>
+<h3 id="Array#delete_at(index,count)" class="doc doc-heading">    <code>
+      #delete_at<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">)</span></code></span>
     </code>
-<a href="#Array#delete_at(range)" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#Array#delete_at(index,count)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
-<p>Removes all elements within the given <em>range</em>.
+<p>Removes <em>count</em> elements from <code>self</code> starting at <em>index</em>.
+If the size of <code>self</code> is less than <em>count</em>, removes values to the end of the array without error.
 Returns an array of the removed elements with the original order of <code>self</code> preserved.
-Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if the index is out of range.</p>
+Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if <em>index</em> is out of range.</p>
 <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;ant&quot;</span><span class="p">,</span> <span class="s2">&quot;bat&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;dog&quot;</span><span class="o">]</span>
-<span class="n">a</span><span class="o">.</span><span class="n">delete_at</span><span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">2</span><span class="p">)</span>    <span class="c1"># =&gt; [&quot;bat&quot;, &quot;cat&quot;]</span>
-<span class="n">a</span>                    <span class="c1"># =&gt; [&quot;ant&quot;, &quot;dog&quot;]</span>
-<span class="n">a</span><span class="o">.</span><span class="n">delete_at</span><span class="p">(</span><span class="mi">99</span><span class="o">..</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># raises IndexError</span>
+<span class="n">a</span><span class="o">.</span><span class="n">delete_at</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># =&gt; [&quot;bat&quot;, &quot;cat&quot;]</span>
+<span class="n">a</span>                  <span class="c1"># =&gt; [&quot;ant&quot;, &quot;dog&quot;]</span>
+<span class="n">a</span><span class="o">.</span><span class="n">delete_at</span><span class="p">(</span><span class="mi">99</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># raises IndexError</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L822">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L838">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14374,22 +14401,21 @@ Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if <em>i
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#delete_at(index,count)" class="doc doc-heading">    <code>
-      #delete_at<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">)</span></code></span>
+<h3 id="Array#delete_at(range)" class="doc doc-heading">    <code>
+      #delete_at<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">range</span> <span class="p">:</span> <a href="Range.html#Range">Range</a><span class="p">)</span></code></span>
     </code>
-<a href="#Array#delete_at(index,count)" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#Array#delete_at(range)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
-<p>Removes <em>count</em> elements from <code>self</code> starting at <em>index</em>.
-If the size of <code>self</code> is less than <em>count</em>, removes values to the end of the array without error.
+<p>Removes all elements within the given <em>range</em>.
 Returns an array of the removed elements with the original order of <code>self</code> preserved.
-Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if <em>index</em> is out of range.</p>
+Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if the index is out of range.</p>
 <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;ant&quot;</span><span class="p">,</span> <span class="s2">&quot;bat&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;dog&quot;</span><span class="o">]</span>
-<span class="n">a</span><span class="o">.</span><span class="n">delete_at</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># =&gt; [&quot;bat&quot;, &quot;cat&quot;]</span>
-<span class="n">a</span>                  <span class="c1"># =&gt; [&quot;ant&quot;, &quot;dog&quot;]</span>
-<span class="n">a</span><span class="o">.</span><span class="n">delete_at</span><span class="p">(</span><span class="mi">99</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># raises IndexError</span>
+<span class="n">a</span><span class="o">.</span><span class="n">delete_at</span><span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">2</span><span class="p">)</span>    <span class="c1"># =&gt; [&quot;bat&quot;, &quot;cat&quot;]</span>
+<span class="n">a</span>                    <span class="c1"># =&gt; [&quot;ant&quot;, &quot;dog&quot;]</span>
+<span class="n">a</span><span class="o">.</span><span class="n">delete_at</span><span class="p">(</span><span class="mi">99</span><span class="o">..</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># raises IndexError</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L838">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L822">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14424,22 +14450,6 @@ That is, it returns a shallow copy of <code>self</code>.</p>
   </div>
 
     <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1338">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#fill(value,from,count)" class="doc doc-heading">    <code>
-      #fill<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span> <span class="p">:</span> <span class="n">T</span><span class="p">,</span> <span class="n">from</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Array#fill(value,from,count)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>Replaces every element in <code>self</code>, starting at <em>from</em> and only <em>count</em> times,
-with the given <em>value</em>. Returns <code>self</code>.</p>
-<p>Negative values of <em>from</em> count from the end of the array.</p>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
-<span class="n">a</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># =&gt; [1, 2, 9, 9, 5]</span>
-</code></pre></div>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L999">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14549,6 +14559,22 @@ to the given block and then assigns the block's value in that position. Returns 
 </code></pre></div>  </div>
 
     <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L922">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Array#fill(value,from,count)" class="doc doc-heading">    <code>
+      #fill<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span> <span class="p">:</span> <span class="n">T</span><span class="p">,</span> <span class="n">from</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Array#fill(value,from,count)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>Replaces every element in <code>self</code>, starting at <em>from</em> and only <em>count</em> times,
+with the given <em>value</em>. Returns <code>self</code>.</p>
+<p>Negative values of <em>from</em> count from the end of the array.</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
+<span class="n">a</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># =&gt; [1, 2, 9, 9, 5]</span>
+</code></pre></div>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L999">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14687,9 +14713,10 @@ If the array is empty, the given block is called.</p>
 <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="o">]</span>
 <span class="n">a</span><span class="o">.</span><span class="n">pop</span> <span class="p">{</span> <span class="s2">&quot;Testing&quot;</span> <span class="p">}</span> <span class="c1"># =&gt; 1</span>
 <span class="n">a</span><span class="o">.</span><span class="n">pop</span> <span class="p">{</span> <span class="s2">&quot;Testing&quot;</span> <span class="p">}</span> <span class="c1"># =&gt; &quot;Testing&quot;</span>
-</code></pre></div>  </div>
+</code></pre></div>
+<p>See also: <a href="#Array#truncate(start,count)"><code>#truncate</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1371">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1375">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14704,9 +14731,10 @@ Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if array
 <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="o">]</span>
 <span class="n">a</span><span class="o">.</span><span class="n">pop</span> <span class="c1"># =&gt; &quot;c&quot;</span>
 <span class="n">a</span>     <span class="c1"># =&gt; [&quot;a&quot;, &quot;b&quot;]</span>
-</code></pre></div>  </div>
+</code></pre></div>
+<p>See also: <a href="#Array#truncate(start,count)"><code>#truncate</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1359">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1361">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14726,9 +14754,10 @@ without raising an error.</p>
 <span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="o">]</span>
 <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</span>
 <span class="n">a</span>        <span class="c1"># =&gt; []</span>
-</code></pre></div>  </div>
+</code></pre></div>
+<p>See also: <a href="#Array#truncate(start,count)"><code>#truncate</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1404">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1410">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14737,9 +14766,10 @@ without raising an error.</p>
     </code>
 <a href="#Array#pop?" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
-<p>Like <a href="#Array#pop"><code>pop</code></a>, but returns <code>nil</code> if <code>self</code> is empty.</p>  </div>
+<p>Like <a href="#Array#pop"><code>pop</code></a>, but returns <code>nil</code> if <code>self</code> is empty.</p>
+<p>See also: <a href="#Array#truncate(start,count)"><code>#truncate</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1419">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1427">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14750,7 +14780,7 @@ without raising an error.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1816">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1832">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14761,7 +14791,7 @@ without raising an error.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1423">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1431">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14772,7 +14802,7 @@ without raising an error.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1431">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1439">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14787,7 +14817,7 @@ of values to push into <code>self</code>. Returns <code>self</code>.</p>
 <span class="n">a</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">)</span> <span class="c1"># =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1463">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1471">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14809,7 +14839,24 @@ See <a href="#Array#pop"><code>pop</code></a> for the opposite effect.</p>
 <span class="n">a</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, 1]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1449">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1457">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Array#reject!(pattern)" class="doc doc-heading">    <code>
+      #reject!<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">pattern</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Array#reject!(pattern)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>Modifies <code>self</code>, deleting the elements in the collection for which
+<code>pattern === element</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">ary</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span>
+<span class="n">ary</span><span class="o">.</span><span class="n">reject!</span><span class="p">(</span><span class="mi">3</span><span class="o">..</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">ary</span> <span class="c1"># =&gt; [1, 2, 8]</span>
+</code></pre></div>
+<p>See also: <a href="#Array#select!(pattern)"><code>Array#select!</code></a>.</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1179">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14830,23 +14877,6 @@ passed block returns <code>true</code>. Returns <code>self</code>.</p>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#reject!(pattern)" class="doc doc-heading">    <code>
-      #reject!<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">pattern</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Array#reject!(pattern)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>Modifies <code>self</code>, deleting the elements in the collection for which
-<code>pattern === element</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">ary</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span>
-<span class="n">ary</span><span class="o">.</span><span class="n">reject!</span><span class="p">(</span><span class="mi">3</span><span class="o">..</span><span class="mi">7</span><span class="p">)</span>
-<span class="n">ary</span> <span class="c1"># =&gt; [1, 2, 8]</span>
-</code></pre></div>
-<p>See also: <a href="#Array#select!(&amp;)"><code>Array#select!</code></a>.</p>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1179">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Array#remaining_capacity" class="doc doc-heading">    <code>
       #remaining_capacity<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
     </code>
@@ -14854,7 +14884,7 @@ passed block returns <code>true</code>. Returns <code>self</code>.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L2075">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L2138">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14876,7 +14906,7 @@ passed block returns <code>true</code>. Returns <code>self</code>.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1475">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1483">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14890,7 +14920,7 @@ passed block returns <code>true</code>. Returns <code>self</code>.</p>
 <span class="n">a</span><span class="o">.</span><span class="n">reverse</span> <span class="c1"># =&gt; [3, 2, 1]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1488">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1496">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14901,7 +14931,7 @@ passed block returns <code>true</code>. Returns <code>self</code>.</p>
   <div class="doc doc-contents ">
 <p>Reverses in-place all the elements of <code>self</code>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1493">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1501">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14918,7 +14948,7 @@ passed block returns <code>true</code>. Returns <code>self</code>.</p>
 <span class="n">a</span>           <span class="c1"># =&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1557">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1565">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14941,7 +14971,24 @@ passed block returns <code>true</code>. Returns <code>self</code>.</p>
 <span class="n">a3</span> <span class="c1"># =&gt; [3, 4, 5, 6, 7, 8, 9, 0, 1, 2]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1513">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1521">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Array#select!(pattern)" class="doc doc-heading">    <code>
+      #select!<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">pattern</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Array#select!(pattern)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>Modifies <code>self</code>, keeping only the elements in the collection for which
+<code>pattern === element</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">ary</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span>
+<span class="n">ary</span><span class="o">.</span><span class="n">select!</span><span class="p">(</span><span class="mi">3</span><span class="o">..</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">ary</span> <span class="c1"># =&gt; [6, 4]</span>
+</code></pre></div>
+<p>See also: <a href="#Array#reject!(pattern)"><code>Array#reject!</code></a>.</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1150">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14962,20 +15009,40 @@ passed block returns <code>true</code>. Returns <code>self</code>.</p>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#select!(pattern)" class="doc doc-heading">    <code>
-      #select!<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">pattern</span><span class="p">)</span></code></span>
+<h3 id="Array#shift" class="doc doc-heading">    <code>
+      #shift<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
     </code>
-<a href="#Array#select!(pattern)" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#Array#shift" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
-<p>Modifies <code>self</code>, keeping only the elements in the collection for which
-<code>pattern === element</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">ary</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span>
-<span class="n">ary</span><span class="o">.</span><span class="n">select!</span><span class="p">(</span><span class="mi">3</span><span class="o">..</span><span class="mi">7</span><span class="p">)</span>
-<span class="n">ary</span> <span class="c1"># =&gt; [6, 4]</span>
+<p>Removes the first value of <code>self</code>, at index 0. This method returns the removed value.
+If the array is empty, it raises <a href="IndexError.html#IndexError"><code>IndexError</code></a>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="o">]</span>
+<span class="n">a</span><span class="o">.</span><span class="n">shift</span> <span class="c1"># =&gt; &quot;a&quot;</span>
+<span class="n">a</span>       <span class="c1"># =&gt; [&quot;b&quot;, &quot;c&quot;]</span>
 </code></pre></div>
-<p>See also: <a href="#Array#reject!(&amp;)"><code>Array#reject!</code></a>.</p>  </div>
+<p>See also: <a href="#Array#truncate(start,count)"><code>#truncate</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1150">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1586">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Array#shift" class="doc doc-heading">    <code>
+      #shift<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
+    </code>
+<a href="#Array#shift" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>Removes the first value of <code>self</code>, at index 0, or otherwise invokes the given block.
+This method returns the removed value.
+If the array is empty, it invokes the given block and returns its value.</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="o">]</span>
+<span class="n">a</span><span class="o">.</span><span class="n">shift</span> <span class="p">{</span> <span class="s2">&quot;empty!&quot;</span> <span class="p">}</span> <span class="c1"># =&gt; &quot;a&quot;</span>
+<span class="n">a</span>                    <span class="c1"># =&gt; []</span>
+<span class="n">a</span><span class="o">.</span><span class="n">shift</span> <span class="p">{</span> <span class="s2">&quot;empty!&quot;</span> <span class="p">}</span> <span class="c1"># =&gt; &quot;empty!&quot;</span>
+<span class="n">a</span>                    <span class="c1"># =&gt; []</span>
+</code></pre></div>
+<p>See also: <a href="#Array#truncate(start,count)"><code>#truncate</code></a>.</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1603">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14995,44 +15062,10 @@ without raising an error.</p>
 <span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="o">]</span>
 <span class="n">a</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</span>
 <span class="n">a</span>          <span class="c1"># =&gt; []</span>
-</code></pre></div>  </div>
+</code></pre></div>
+<p>See also: <a href="#Array#truncate(start,count)"><code>#truncate</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1629">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#shift" class="doc doc-heading">    <code>
-      #shift<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
-    </code>
-<a href="#Array#shift" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>Removes the first value of <code>self</code>, at index 0. This method returns the removed value.
-If the array is empty, it raises <a href="IndexError.html#IndexError"><code>IndexError</code></a>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="o">]</span>
-<span class="n">a</span><span class="o">.</span><span class="n">shift</span> <span class="c1"># =&gt; &quot;a&quot;</span>
-<span class="n">a</span>       <span class="c1"># =&gt; [&quot;b&quot;, &quot;c&quot;]</span>
-</code></pre></div>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1576">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Array#shift" class="doc doc-heading">    <code>
-      #shift<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
-    </code>
-<a href="#Array#shift" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>Removes the first value of <code>self</code>, at index 0, or otherwise invokes the given block.
-This method returns the removed value.
-If the array is empty, it invokes the given block and returns its value.</p>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="o">]</span>
-<span class="n">a</span><span class="o">.</span><span class="n">shift</span> <span class="p">{</span> <span class="s2">&quot;empty!&quot;</span> <span class="p">}</span> <span class="c1"># =&gt; &quot;a&quot;</span>
-<span class="n">a</span>                    <span class="c1"># =&gt; []</span>
-<span class="n">a</span><span class="o">.</span><span class="n">shift</span> <span class="p">{</span> <span class="s2">&quot;empty!&quot;</span> <span class="p">}</span> <span class="c1"># =&gt; &quot;empty!&quot;</span>
-<span class="n">a</span>                    <span class="c1"># =&gt; []</span>
-</code></pre></div>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1591">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1643">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15050,9 +15083,10 @@ If the array is empty, it returns <code>nil</code> without raising any error.</p
 <span class="n">a</span>        <span class="c1"># =&gt; []</span>
 <span class="n">a</span><span class="o">.</span><span class="n">shift?</span> <span class="c1"># =&gt; nil</span>
 <span class="n">a</span>        <span class="c1"># =&gt; []</span>
-</code></pre></div>  </div>
+</code></pre></div>
+<p>See also: <a href="#Array#truncate(start,count)"><code>#truncate</code></a>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1662">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1678">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15064,7 +15098,7 @@ If the array is empty, it returns <code>nil</code> without raising any error.</p
 <p>Returns an array with all the elements in the collection randomized
 using the given <em>random</em> number generator.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1668">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1684">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15076,7 +15110,7 @@ using the given <em>random</em> number generator.</p>  </div>
 <p>Modifies <code>self</code> by randomizing the order of elements in the collection
 using the given <em>random</em> number generator. Returns <code>self</code>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1674">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1690">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15120,7 +15154,7 @@ their comparison method <code>#&lt;=&gt;</code></p>
 <span class="n">a</span>      <span class="c1"># =&gt; [3, 1, 2]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1687">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1703">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15141,7 +15175,7 @@ The comparison operator <code>&lt;=&gt;</code> can be used for this.</p>
 <span class="n">a</span> <span class="c1"># =&gt; [3, 1, 2]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1705">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1721">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15157,7 +15191,7 @@ comparison method <code>#&lt;=&gt;</code></p>
 <span class="n">a</span> <span class="c1"># =&gt; [1, 2, 3]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1721">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1737">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15177,7 +15211,7 @@ The comparison operator <code>&lt;=&gt;</code> can be used for this.</p>
 <span class="n">a</span> <span class="c1"># =&gt; [3, 2, 1]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1739">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1755">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15195,7 +15229,7 @@ returned from the block to determine sort order.</p>
 <span class="n">a</span> <span class="c1"># =&gt; [&quot;apple&quot;, &quot;pear&quot;, &quot;fig&quot;]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1758">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1774">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15212,7 +15246,7 @@ returned from the block to determine sort order.</p>
 <span class="n">a</span> <span class="c1"># =&gt; [&quot;fig&quot;, &quot;pear&quot;, &quot;apple&quot;]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1771">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1787">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15231,7 +15265,7 @@ Raises an <a href="IndexError.html#IndexError"><code>IndexError</code></a> if ei
 <span class="n">a</span><span class="o">.</span><span class="n">swap</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># =&gt; raises &quot;Index out of bounds (IndexError)&quot;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1790">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1806">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15244,7 +15278,7 @@ Raises an <a href="IndexError.html#IndexError"><code>IndexError</code></a> if ei
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span><span class="o">.</span><span class="n">to_a</span> <span class="c1"># =&gt; [1, 2, 3]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1803">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1819">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15274,7 +15308,7 @@ which includes its class name and its object address.</p>
 <span class="n">Person</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span><span class="o">.</span><span class="n">to_s</span> <span class="c1"># =&gt; #&lt;Person:0x10a199f20&gt;</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1807">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1823">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15290,7 +15324,7 @@ not be that of <code>self</code> if the array grows and its internal buffer is r
 <span class="n">ary</span><span class="o">.</span><span class="n">to_unsafe</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="c1"># =&gt; 1</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1832">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1848">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15316,7 +15350,42 @@ not be that of <code>self</code> if the array grows and its internal buffer is r
 <span class="n">a</span>           <span class="c1"># =&gt; [[:a, :b], [:c, :d], [:e, :f]]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1843">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1859">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Array#truncate(start,count)" class="doc doc-heading">    <code>
+      #truncate<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">start</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <a href="Int.html#Int">Int</a><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
+    </code>
+<a href="#Array#truncate(start,count)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>Removes all elements except the <em>count</em> or less (if there aren't enough)
+elements starting at the given <em>start</em> index. Returns <code>self</code>.</p>
+<p>Negative values of <em>start</em> count from the end of the array.</p>
+<p>Raises <a href="IndexError.html#IndexError"><code>IndexError</code></a> if the <em>start</em> index is out of range.</p>
+<p>Raises <a href="ArgumentError.html#ArgumentError"><code>ArgumentError</code></a> if <em>count</em> is negative.</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="o">]</span>
+<span class="n">a</span><span class="o">.</span><span class="n">truncate</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># =&gt; [4, 9, 16]</span>
+<span class="n">a</span>                <span class="c1"># =&gt; [4, 9, 16]</span>
+</code></pre></div>
+<p>See also: <a href="#Array#pop"><code>#pop</code></a>, <a href="#Array#shift"><code>#shift</code></a>.</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1891">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Array#truncate(range)" class="doc doc-heading">    <code>
+      #truncate<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">range</span> <span class="p">:</span> <a href="Range.html#Range">Range</a><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
+    </code>
+<a href="#Array#truncate(range)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>Removes all elements except those within the given <em>range</em>. Returns <code>self</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="o">]</span>
+<span class="n">a</span><span class="o">.</span><span class="n">truncate</span><span class="p">(</span><span class="mi">1</span><span class="o">..-</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># =&gt; [1, 4, 9]</span>
+<span class="n">a</span>                 <span class="c1"># =&gt; [1, 4, 9]</span>
+</code></pre></div>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1918">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15331,7 +15400,7 @@ not be that of <code>self</code> if the array grows and its internal buffer is r
 <span class="n">a</span>      <span class="c1"># =&gt; [ &quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;b&quot;, &quot;c&quot; ]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1866">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1929">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15347,7 +15416,7 @@ value for comparison.</p>
 <span class="n">a</span>                   <span class="c1"># =&gt; [{&quot;student&quot;, &quot;sam&quot;}, {&quot;student&quot;, &quot;george&quot;}, {&quot;teacher&quot;, &quot;matz&quot;}]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1893">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1956">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15362,7 +15431,7 @@ value for comparison.</p>
 <span class="n">a</span>       <span class="c1"># =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1909">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1972">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15377,7 +15446,7 @@ value for comparison.</p>
 <span class="n">a</span>                    <span class="c1"># =&gt; [{&quot;student&quot;, &quot;sam&quot;}, {&quot;teacher&quot;, &quot;matz&quot;}]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1934">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1997">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15390,7 +15459,7 @@ value for comparison.</p>
 <p><a href="Indexable.html#Indexable"><code>Indexable</code></a> makes sure to invoke this method with <em>index</em> in <code>0...size</code>,
 so converting negative indices to positive ones is not needed here.</p>
 <p>Clients never invoke this method directly. Instead, they access
-elements with <a href="#Array#[](range)"><code>#[](index)</code></a> and <a href="#Array#[]?(start,count)"><code>#[]?(index)</code></a>.</p>
+elements with <a href="#Array#[](start,count)"><code>#[](index)</code></a> and <a href="#Array#[]?(range)"><code>#[]?(index)</code></a>.</p>
 <p>This method should only be directly invoked if you are absolutely
 sure the index is in bounds, to avoid a bounds check for a small boost
 of performance.</p>  </div>
@@ -15407,7 +15476,7 @@ of performance.</p>  </div>
 <p>Prepend. Adds <em>object</em> to the beginning of <code>self</code>, given that the type of the value is <em>T</em>
 (which might be a single type or a union of types).
 This method returns <code>self</code>, so several calls can be chained.
-See <a href="#Array#shift(n)"><code>shift</code></a> for the opposite effect.</p>
+See <a href="#Array#shift"><code>shift</code></a> for the opposite effect.</p>
 <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="o">]</span>
 <span class="n">a</span><span class="o">.</span><span class="n">unshift</span><span class="p">(</span><span class="s2">&quot;c&quot;</span><span class="p">)</span> <span class="c1"># =&gt; [&quot;c&quot;, &quot;a&quot;, &quot;b&quot;]</span>
 <span class="n">a</span><span class="o">.</span><span class="n">unshift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># Errors, because the array only accepts String.</span>
@@ -15417,7 +15486,7 @@ See <a href="#Array#shift(n)"><code>shift</code></a> for the opposite effect.</p
 <span class="n">a</span><span class="o">.</span><span class="n">unshift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># =&gt; [1, &quot;c&quot;, &quot;a&quot;, &quot;b&quot;]</span>
 </code></pre></div>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1974">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L2037">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15429,7 +15498,7 @@ See <a href="#Array#shift(n)"><code>shift</code></a> for the opposite effect.</p
 <p>Prepend multiple values. The same as <a href="#Array#unshift(object)"><code>unshift</code></a>, but takes an arbitrary number
 of values to add to the array. Returns <code>self</code>.</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L1995">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L2058">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15440,7 +15509,7 @@ of values to add to the array. Returns <code>self</code>.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L2002">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/array.cr#L2065">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">

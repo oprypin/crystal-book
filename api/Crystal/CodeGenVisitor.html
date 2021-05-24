@@ -9027,7 +9027,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#Crystal::CodeGenVisitor#abi_info(external)" class="md-nav__link">
+  <a href="#Crystal::CodeGenVisitor#abi_info(external,node)" class="md-nav__link">
     #abi_info
   </a>
   
@@ -10969,17 +10969,6 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 </div><h2 id="Crystal::CodeGenVisitor-methods">Methods<a href="#Crystal::CodeGenVisitor-methods" class="headerlink" title="Permanent link">&para;</a></h2>
 
 <div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#abi_info(external)" class="doc doc-heading">    <code>
-      #abi_info<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">external</span> <span class="p">:</span> <a href="Def.html#Crystal::Def">Def</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#abi_info(external)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/fun.cr#L382">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#abi_info(external,node)" class="doc doc-heading">    <code>
       #abi_info<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">external</span> <span class="p">:</span> <a href="Def.html#Crystal::Def">Def</a><span class="p">,</span> <span class="n">node</span> <span class="p">:</span> <a href="Call.html#Crystal::Call">Call</a><span class="p">)</span></code></span>
     </code>
@@ -10991,6 +10980,17 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#abi_info(external)" class="doc doc-heading">    <code>
+      #abi_info<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">external</span> <span class="p">:</span> <a href="Def.html#Crystal::Def">Def</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#abi_info(external)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/fun.cr#L382">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#accept(node)" class="doc doc-heading">    <code>
       #accept<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">node</span><span class="p">)</span></code></span>
     </code>
@@ -10998,7 +10998,7 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2210">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2203">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11020,7 +11020,7 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2143">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2136">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11097,7 +11097,7 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2004">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1997">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11108,7 +11108,7 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2008">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2001">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11168,39 +11168,6 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
-      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="NamedTupleInstanceType.html#Crystal::NamedTupleInstanceType">NamedTupleInstanceType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="NamedTupleInstanceType.html#Crystal::NamedTupleInstanceType">NamedTupleInstanceType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L247">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
-      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="TupleInstanceType.html#Crystal::TupleInstanceType">TupleInstanceType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="TupleInstanceType.html#Crystal::TupleInstanceType">TupleInstanceType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L235">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
-      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="ReferenceUnionType.html#Crystal::ReferenceUnionType">ReferenceUnionType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="VirtualType.html#Crystal::VirtualType">VirtualType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L97">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
       #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="NilableType.html#Crystal::NilableType">NilableType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
@@ -11223,13 +11190,13 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
-      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="NilableProcType.html#Crystal::NilableProcType">NilableProcType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="ProcInstanceType.html#Crystal::ProcInstanceType">ProcInstanceType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
+      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="ReferenceUnionType.html#Crystal::ReferenceUnionType">ReferenceUnionType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="VirtualType.html#Crystal::VirtualType">VirtualType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L227">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L97">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11267,6 +11234,50 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
+      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="NilableType.html#Crystal::NilableType">NilableType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L165">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
+      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="VoidType.html#Crystal::VoidType">VoidType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L169">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
+      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="NamedTupleInstanceType.html#Crystal::NamedTupleInstanceType">NamedTupleInstanceType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="NamedTupleInstanceType.html#Crystal::NamedTupleInstanceType">NamedTupleInstanceType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L247">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
+      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="NilableProcType.html#Crystal::NilableProcType">NilableProcType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="ProcInstanceType.html#Crystal::ProcInstanceType">ProcInstanceType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L227">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
       #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="NilableProcType.html#Crystal::NilableProcType">NilableProcType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="NilType.html#Crystal::NilType">NilType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
@@ -11274,17 +11285,6 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   </div>
 
     <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L222">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
-      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="VirtualMetaclassType.html#Crystal::VirtualMetaclassType">VirtualMetaclassType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="VirtualMetaclassType.html#Crystal::VirtualMetaclassType">VirtualMetaclassType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L211">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11300,13 +11300,13 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
-      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="VirtualType.html#Crystal::VirtualType">VirtualType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
+      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="VirtualMetaclassType.html#Crystal::VirtualMetaclassType">VirtualMetaclassType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="VirtualMetaclassType.html#Crystal::VirtualMetaclassType">VirtualMetaclassType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L203">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L211">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11322,6 +11322,17 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
+      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="VirtualType.html#Crystal::VirtualType">VirtualType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L203">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
       #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="VirtualType.html#Crystal::VirtualType">VirtualType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
@@ -11333,13 +11344,13 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
-      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
+      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="TupleInstanceType.html#Crystal::TupleInstanceType">TupleInstanceType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="TupleInstanceType.html#Crystal::TupleInstanceType">TupleInstanceType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L181">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L235">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11366,24 +11377,13 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
-      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="VoidType.html#Crystal::VoidType">VoidType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
+      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L169">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="doc doc-heading">    <code>
-      #assign_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target_pointer</span><span class="p">,</span> <span class="n">target_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">value_type</span> <span class="p">:</span> <a href="NilableType.html#Crystal::NilableType">NilableType</a><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#assign_distinct(target_pointer,target_type,value_type,value)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L165">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L181">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11482,7 +11482,7 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2181">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2174">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11504,7 +11504,7 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2070">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2063">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11515,7 +11515,7 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2084">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2077">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11537,7 +11537,7 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2065">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2058">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11548,7 +11548,7 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2079">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2072">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11718,17 +11718,6 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#codegen_binary_op(op,t1,t2,p1,p2)" class="doc doc-heading">    <code>
-      #codegen_binary_op<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">op</span><span class="p">,</span> <span class="n">t1</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">t2</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#codegen_binary_op(op,t1,t2,p1,p2)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L560">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#codegen_binary_op(op,t1,t2,p1,p2)" class="doc doc-heading">    <code>
       #codegen_binary_op<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">op</span><span class="p">,</span> <span class="n">t1</span> <span class="p">:</span> <a href="SymbolType.html#Crystal::SymbolType">SymbolType</a><span class="p">,</span> <span class="n">t2</span> <span class="p">:</span> <a href="SymbolType.html#Crystal::SymbolType">SymbolType</a><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#codegen_binary_op(op,t1,t2,p1,p2)" class="headerlink" title="Permanent link">&para;</a></h3>
@@ -11740,13 +11729,24 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#codegen_binary_op(op,t1,t2,p1,p2)" class="doc doc-heading">    <code>
-      #codegen_binary_op<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">op</span><span class="p">,</span> <span class="n">t1</span> <span class="p">:</span> <a href="CharType.html#Crystal::CharType">CharType</a><span class="p">,</span> <span class="n">t2</span> <span class="p">:</span> <a href="CharType.html#Crystal::CharType">CharType</a><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span></code></span>
+      #codegen_binary_op<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">op</span><span class="p">,</span> <span class="n">t1</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">t2</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#codegen_binary_op(op,t1,t2,p1,p2)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L101">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L121">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#codegen_binary_op(op,t1,t2,p1,p2)" class="doc doc-heading">    <code>
+      #codegen_binary_op<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">op</span><span class="p">,</span> <span class="n">t1</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">t2</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#codegen_binary_op(op,t1,t2,p1,p2)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L560">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11762,13 +11762,13 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#codegen_binary_op(op,t1,t2,p1,p2)" class="doc doc-heading">    <code>
-      #codegen_binary_op<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">op</span><span class="p">,</span> <span class="n">t1</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">t2</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span></code></span>
+      #codegen_binary_op<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">op</span><span class="p">,</span> <span class="n">t1</span> <span class="p">:</span> <a href="CharType.html#Crystal::CharType">CharType</a><span class="p">,</span> <span class="n">t2</span> <span class="p">:</span> <a href="CharType.html#Crystal::CharType">CharType</a><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#codegen_binary_op(op,t1,t2,p1,p2)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L121">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L101">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -11982,57 +11982,13 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
-      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="SymbolType.html#Crystal::SymbolType">SymbolType</a><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
+      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L678">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
-      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="TypeDefType.html#Crystal::TypeDefType">TypeDefType</a><span class="p">,</span> <span class="n">to_type</span><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L682">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
-      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span><span class="p">,</span> <span class="n">to_type</span><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L686">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
-      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L637">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
-      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="CharType.html#Crystal::CharType">CharType</a><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L674">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L655">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12048,24 +12004,24 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
-      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
+      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="CharType.html#Crystal::CharType">CharType</a><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L608">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L674">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
-      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
+      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="SymbolType.html#Crystal::SymbolType">SymbolType</a><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L655">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L678">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12077,6 +12033,50 @@ Later on we can implement LLDB Crystal type system so we can get official Langua
   </div>
 
     <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L647">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
+      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L637">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
+      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span><span class="p">,</span> <span class="n">to_type</span><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L686">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
+      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L608">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="doc doc-heading">    <code>
+      #codegen_convert<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">from_type</span> <span class="p">:</span> <a href="TypeDefType.html#Crystal::TypeDefType">TypeDefType</a><span class="p">,</span> <span class="n">to_type</span><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">checked</span> <span class="p">:</span> <a href="../Bool.html#Bool">Bool</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#codegen_convert(from_type,to_type,arg,*,checked)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L682">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12578,17 +12578,6 @@ because it was of higher rank</p>  </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#codegen_tuple_indexer(type,value,index)" class="doc doc-heading">    <code>
-      #codegen_tuple_indexer<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">index</span> <span class="p">:</span> <a href="../Range.html#Range">Range</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#codegen_tuple_indexer(type,value,index)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L1083">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#codegen_tuple_indexer(type,value,index)" class="doc doc-heading">    <code>
       #codegen_tuple_indexer<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">index</span> <span class="p">:</span> <a href="../Int32.html#Int32">Int32</a><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#codegen_tuple_indexer(type,value,index)" class="headerlink" title="Permanent link">&para;</a></h3>
@@ -12596,6 +12585,17 @@ because it was of higher rank</p>  </div>
   </div>
 
     <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L1103">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#codegen_tuple_indexer(type,value,index)" class="doc doc-heading">    <code>
+      #codegen_tuple_indexer<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">index</span> <span class="p">:</span> <a href="../Range.html#Range">Range</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#codegen_tuple_indexer(type,value,index)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/primitives.cr#L1083">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12655,6 +12655,39 @@ because it was of higher rank</p>  </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="InstanceVarContainer.html#Crystal::InstanceVarContainer">InstanceVarContainer</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L113">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="TupleInstanceType.html#Crystal::TupleInstanceType">TupleInstanceType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L220">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="NamedTupleInstanceType.html#Crystal::NamedTupleInstanceType">NamedTupleInstanceType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L248">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
       #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
@@ -12666,13 +12699,13 @@ because it was of higher rank</p>  </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="VoidType.html#Crystal::VoidType">VoidType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="NonGenericModuleType.html#Crystal::NonGenericModuleType">NonGenericModuleType</a> <span class="o">|</span> <a href="GenericClassInstanceMetaclassType.html#Crystal::GenericClassInstanceMetaclassType">GenericClassInstanceMetaclassType</a> <span class="o">|</span> <a href="MetaclassType.html#Crystal::MetaclassType">MetaclassType</a> <span class="o">|</span> <a href="NilableProcType.html#Crystal::NilableProcType">NilableProcType</a> <span class="o">|</span> <a href="VirtualMetaclassType.html#Crystal::VirtualMetaclassType">VirtualMetaclassType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
-  </div>
+<p>This is a sinkhole for debug types that most likely does not need to be implemented</p>  </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L75">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L280">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12684,28 +12717,6 @@ because it was of higher rank</p>  </div>
   </div>
 
     <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L216">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L83">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="NilType.html#Crystal::NilType">NilType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L71">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12732,116 +12743,6 @@ because it was of higher rank</p>  </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="NonGenericModuleType.html#Crystal::NonGenericModuleType">NonGenericModuleType</a> <span class="o">|</span> <a href="GenericClassInstanceMetaclassType.html#Crystal::GenericClassInstanceMetaclassType">GenericClassInstanceMetaclassType</a> <span class="o">|</span> <a href="MetaclassType.html#Crystal::MetaclassType">MetaclassType</a> <span class="o">|</span> <a href="NilableProcType.html#Crystal::NilableProcType">NilableProcType</a> <span class="o">|</span> <a href="VirtualMetaclassType.html#Crystal::VirtualMetaclassType">VirtualMetaclassType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>This is a sinkhole for debug types that most likely does not need to be implemented</p>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L280">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="TupleInstanceType.html#Crystal::TupleInstanceType">TupleInstanceType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L220">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="SymbolType.html#Crystal::SymbolType">SymbolType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L88">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L92">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="BoolType.html#Crystal::BoolType">BoolType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L96">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="InstanceVarContainer.html#Crystal::InstanceVarContainer">InstanceVarContainer</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L113">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="NamedTupleInstanceType.html#Crystal::NamedTupleInstanceType">NamedTupleInstanceType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L248">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="CharType.html#Crystal::CharType">CharType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L79">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L150">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
-      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="EnumType.html#Crystal::EnumType">EnumType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L100">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
       #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="StaticArrayInstanceType.html#Crystal::StaticArrayInstanceType">StaticArrayInstanceType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
@@ -12860,6 +12761,105 @@ because it was of higher rank</p>  </div>
   </div>
 
     <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L144">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="NilType.html#Crystal::NilType">NilType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L71">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L150">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="VoidType.html#Crystal::VoidType">VoidType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L75">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="CharType.html#Crystal::CharType">CharType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L79">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L83">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="EnumType.html#Crystal::EnumType">EnumType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L100">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="BoolType.html#Crystal::BoolType">BoolType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L96">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L92">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="doc doc-heading">    <code>
+      #create_debug_type<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <a href="SymbolType.html#Crystal::SymbolType">SymbolType</a><span class="p">,</span> <span class="n">original_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#create_debug_type(type,original_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/debug.cr#L88">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -12991,7 +12991,7 @@ because it was of higher rank</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2034">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2027">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13002,7 +13002,7 @@ because it was of higher rank</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2025">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2018">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13013,7 +13013,7 @@ because it was of higher rank</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2052">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2045">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13024,7 +13024,7 @@ because it was of higher rank</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2043">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2036">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13271,17 +13271,6 @@ allocate the arguments only if the message is to be generated.</p>
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#downcast(value,to_type,from_type,already_loaded)" class="doc doc-heading">    <code>
-      #downcast<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">already_loaded</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast(value,to_type,from_type,already_loaded)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L281">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast(value,to_type,from_type,already_loaded)" class="doc doc-heading">    <code>
       #downcast<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="VoidType.html#Crystal::VoidType">VoidType</a><span class="p">,</span> <span class="n">already_loaded</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#downcast(value,to_type,from_type,already_loaded)" class="headerlink" title="Permanent link">&para;</a></h3>
@@ -13292,113 +13281,25 @@ allocate the arguments only if the message is to be generated.</p>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast(value,to_type,from_type,already_loaded)" class="doc doc-heading">    <code>
+      #downcast<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">already_loaded</span><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast(value,to_type,from_type,already_loaded)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L281">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="NilableReferenceUnionType.html#Crystal::NilableReferenceUnionType">NilableReferenceUnionType</a><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L516">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="EnumType.html#Crystal::EnumType">EnumType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="SymbolType.html#Crystal::SymbolType">SymbolType</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>This is the case of the automatic cast between symbol and enum</p>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L499">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>This is the case of the automatic cast between float types</p>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L494">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>This is the case of the automatic cast between integer type and float type</p>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L489">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-<p>This is the case of the automatic cast between integer types</p>  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L484">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="NamedTupleInstanceType.html#Crystal::NamedTupleInstanceType">NamedTupleInstanceType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="NamedTupleInstanceType.html#Crystal::NamedTupleInstanceType">NamedTupleInstanceType</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L469">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="TupleInstanceType.html#Crystal::TupleInstanceType">TupleInstanceType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="TupleInstanceType.html#Crystal::TupleInstanceType">TupleInstanceType</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L454">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="ProcInstanceType.html#Crystal::ProcInstanceType">ProcInstanceType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="ProcInstanceType.html#Crystal::ProcInstanceType">ProcInstanceType</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L449">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L431">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="BoolType.html#Crystal::BoolType">BoolType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L424">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L371">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13414,13 +13315,112 @@ allocate the arguments only if the message is to be generated.</p>
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">)</span></code></span>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="BoolType.html#Crystal::BoolType">BoolType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L375">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L424">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L431">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="ProcInstanceType.html#Crystal::ProcInstanceType">ProcInstanceType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="ProcInstanceType.html#Crystal::ProcInstanceType">ProcInstanceType</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L449">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="TupleInstanceType.html#Crystal::TupleInstanceType">TupleInstanceType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="TupleInstanceType.html#Crystal::TupleInstanceType">TupleInstanceType</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L454">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="NamedTupleInstanceType.html#Crystal::NamedTupleInstanceType">NamedTupleInstanceType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="NamedTupleInstanceType.html#Crystal::NamedTupleInstanceType">NamedTupleInstanceType</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L469">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>This is the case of the automatic cast between integer types</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L484">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="IntegerType.html#Crystal::IntegerType">IntegerType</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>This is the case of the automatic cast between integer type and float type</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L489">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="FloatType.html#Crystal::FloatType">FloatType</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>This is the case of the automatic cast between float types</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L494">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="EnumType.html#Crystal::EnumType">EnumType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="SymbolType.html#Crystal::SymbolType">SymbolType</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+<p>This is the case of the automatic cast between symbol and enum</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L499">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L516">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13443,6 +13443,17 @@ allocate the arguments only if the message is to be generated.</p>
   </div>
 
     <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L363">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
+      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="MixedUnionType.html#Crystal::MixedUnionType">MixedUnionType</a><span class="p">)</span></code></span>
+    </code>
+<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
+  <div class="doc doc-contents ">
+  </div>
+
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L375">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13608,17 +13619,6 @@ allocate the arguments only if the message is to be generated.</p>
   </div>
 
     <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L359">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="doc doc-heading">    <code>
-      #downcast_distinct<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">to_type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">from_type</span> <span class="p">:</span> <a href="NilableReferenceUnionType.html#Crystal::NilableReferenceUnionType">NilableReferenceUnionType</a><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#downcast_distinct(value,to_type,from_type)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/cast.cr#L371">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13806,7 +13806,7 @@ required files.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2012">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2005">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -13817,7 +13817,7 @@ required files.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1992">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1985">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14040,7 +14040,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2147">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2140">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14183,7 +14183,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1984">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1977">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14194,7 +14194,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1988">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1981">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14238,7 +14238,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2111">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2104">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14249,7 +14249,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2093">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2086">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14414,7 +14414,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2175">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2168">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14546,7 +14546,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2127">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2120">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14557,7 +14557,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2200">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2193">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14573,7 +14573,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#run_instance_vars_initializers(real_type,type,type_ptr)" class="doc doc-heading">    <code>
-      #run_instance_vars_initializers<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">real_type</span><span class="p">,</span> <span class="k">type</span> <span class="p">:</span> <a href="GenericClassInstanceType.html#Crystal::GenericClassInstanceType">GenericClassInstanceType</a><span class="p">,</span> <span class="n">type_ptr</span><span class="p">)</span></code></span>
+      #run_instance_vars_initializers<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">real_type</span><span class="p">,</span> <span class="k">type</span> <span class="p">:</span> <a href="ClassType.html#Crystal::ClassType">ClassType</a> <span class="o">|</span> <a href="GenericClassInstanceType.html#Crystal::GenericClassInstanceType">GenericClassInstanceType</a><span class="p">,</span> <span class="n">type_ptr</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#run_instance_vars_initializers(real_type,type,type_ptr)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
@@ -14584,24 +14584,13 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
 <h3 id="Crystal::CodeGenVisitor#run_instance_vars_initializers(real_type,type,type_ptr)" class="doc doc-heading">    <code>
-      #run_instance_vars_initializers<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">real_type</span><span class="p">,</span> <span class="k">type</span> <span class="p">:</span> <a href="ClassType.html#Crystal::ClassType">ClassType</a> <span class="o">|</span> <a href="GenericClassType.html#Crystal::GenericClassType">GenericClassType</a><span class="p">,</span> <span class="n">type_ptr</span><span class="p">)</span></code></span>
-    </code>
-<a href="#Crystal::CodeGenVisitor#run_instance_vars_initializers(real_type,type,type_ptr)" class="headerlink" title="Permanent link">&para;</a></h3>
-  <div class="doc doc-contents ">
-  </div>
-
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1948">View source</a>
-</div>
-
-<div class="doc doc-object doc-method doc-instance_method">
-<h3 id="Crystal::CodeGenVisitor#run_instance_vars_initializers(real_type,type,type_ptr)" class="doc doc-heading">    <code>
       #run_instance_vars_initializers<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">real_type</span><span class="p">,</span> <span class="k">type</span> <span class="p">:</span> <a href="Type.html#Crystal::Type">Type</a><span class="p">,</span> <span class="n">type_ptr</span><span class="p">)</span></code></span>
     </code>
 <a href="#Crystal::CodeGenVisitor#run_instance_vars_initializers(real_type,type,type_ptr)" class="headerlink" title="Permanent link">&para;</a></h3>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1958">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1951">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14612,7 +14601,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1962">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L1955">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14832,7 +14821,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2135">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2128">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -14843,7 +14832,7 @@ that has simple values like 1, "foo" and other literals.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2139">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2132">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15487,7 +15476,7 @@ a program, so we must always inline these.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2214">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2207">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -15872,7 +15861,7 @@ a program, so we must always inline these.</p>  </div>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2218">View source</a>
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal/blob/1.0.0/src/compiler/crystal/codegen/codegen.cr#L2211">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
