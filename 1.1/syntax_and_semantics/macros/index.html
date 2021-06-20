@@ -1,0 +1,3257 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://crystal-lang.org/reference/latest/syntax_and_semantics/macros/index.html">
+      
+      <link rel="icon" href="https://crystal-lang.org/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+    
+    
+      
+        <title>Macros - Crystal</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f955dcd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/vendor/codemirror/codemirror.min.css">
+    
+      <link rel="stylesheet" href="../../assets/style.css">
+    
+      <link rel="stylesheet" href="../../assets/vendor/carcin-play/carcin-play.css">
+    
+      <link rel="stylesheet" href="../../assets/vendor/carcin-play/codemirror-theme.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-42353458-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#macros" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Crystal" class="md-header__button md-logo" aria-label="Crystal" data-md-component="logo">
+      
+  <img src="../../assets/crystal-circ.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Crystal
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Macros
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="https://crystal-lang.org/reference/" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="https://ja.crystal-lang.org/reference/" hreflang="ja" class="md-select__link">
+                    日本語
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/crystal-lang/crystal/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../index.html" class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link md-tabs__link--active">
+        Specification
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../guides/index.html" class="md-tabs__link">
+      Guides
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tutorials/basics/index.html" class="md-tabs__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Crystal" class="md-nav__button md-logo" aria-label="Crystal" data-md-component="logo">
+      
+  <img src="../../assets/crystal-circ.svg" alt="logo">
+
+    </a>
+    Crystal
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/crystal-lang/crystal/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Home
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Home
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" >
+      
+      <label class="md-nav__link" for="__nav_1_1">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../getting_started/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Getting started
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Getting started" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../getting_started/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Getting started
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/http_server.html" class="md-nav__link">
+        An HTTP Server
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/cli.html" class="md-nav__link">
+        A Command Line Application
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../using_the_compiler/index.html" class="md-nav__link">
+        Using the compiler
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../the_shards_command/index.html" class="md-nav__link">
+        The shards command
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conventions/coding_style.html" class="md-nav__link">
+        Coding style
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform_support.html" class="md-nav__link">
+        Platform Support
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance.html" class="md-nav__link">
+        Governance document
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          Specification
+        
+      </label>
+      <nav class="md-nav" aria-label="Specification" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            Specification
+          
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        About this guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comments.html" class="md-nav__link">
+        Comments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documenting_code.html" class="md-nav__link">
+        Documenting code
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../literals/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Literals
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Literals" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../literals/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Literals
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/nil.html" class="md-nav__link">
+        Nil
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/bool.html" class="md-nav__link">
+        Bool
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/integers.html" class="md-nav__link">
+        Integers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/floats.html" class="md-nav__link">
+        Floats
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/char.html" class="md-nav__link">
+        Char
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/string.html" class="md-nav__link">
+        String
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/symbol.html" class="md-nav__link">
+        Symbol
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/array.html" class="md-nav__link">
+        Array
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/hash.html" class="md-nav__link">
+        Hash
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/range.html" class="md-nav__link">
+        Range
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/regex.html" class="md-nav__link">
+        Regex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/tuple.html" class="md-nav__link">
+        Tuple
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/named_tuple.html" class="md-nav__link">
+        NamedTuple
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/proc.html" class="md-nav__link">
+        Proc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literals/command.html" class="md-nav__link">
+        Command
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assignment.html" class="md-nav__link">
+        Assignment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../local_variables.html" class="md-nav__link">
+        Local variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      <label class="md-nav__link" for="__nav_2_7">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../control_expressions.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Control expressions
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Control expressions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../control_expressions.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Control expressions
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../truthy_and_falsey_values.html" class="md-nav__link">
+        Truthy and falsey values
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_2" type="checkbox" id="__nav_2_7_2" >
+      
+      <label class="md-nav__link" for="__nav_2_7_2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../if.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          if
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="if" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../if.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            if
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../as_a_suffix.html" class="md-nav__link">
+        As a suffix
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../as_an_expression.html" class="md-nav__link">
+        As an expression
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ternary_if.html" class="md-nav__link">
+        Ternary if
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../if_var.html" class="md-nav__link">
+        if var
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../if_varis_a.html" class="md-nav__link">
+        if var.is_a?(...)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../if_varresponds_to.html" class="md-nav__link">
+        if var.responds_to?(...)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../if_var_nil.html" class="md-nav__link">
+        if var.nil?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../not.html" class="md-nav__link">
+        if !
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unless.html" class="md-nav__link">
+        unless
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case.html" class="md-nav__link">
+        case
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_5" type="checkbox" id="__nav_2_7_5" >
+      
+      <label class="md-nav__link" for="__nav_2_7_5">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../while.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          while
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="while" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_7_5">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../while.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            while
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../break.html" class="md-nav__link">
+        break
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../next.html" class="md-nav__link">
+        next
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../until.html" class="md-nav__link">
+        until
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../and.html" class="md-nav__link">
+        &&
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../or.html" class="md-nav__link">
+        ||
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requiring_files.html" class="md-nav__link">
+        Requiring files
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      <label class="md-nav__link" for="__nav_2_9">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../types_and_methods.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Types and methods
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Types and methods" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../types_and_methods.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Types and methods
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../everything_is_an_object.html" class="md-nav__link">
+        Everything is an object
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the_program.html" class="md-nav__link">
+        The Program
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_3" type="checkbox" id="__nav_2_9_3" >
+      
+      <label class="md-nav__link" for="__nav_2_9_3">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../classes_and_methods.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Classes and methods
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Classes and methods" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_9_3">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../classes_and_methods.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Classes and methods
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../new%2C_initialize_and_allocate.html" class="md-nav__link">
+        new, initialize and allocate
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../methods_and_instance_variables.html" class="md-nav__link">
+        Methods and instance variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type_inference.html" class="md-nav__link">
+        Type inference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../union_types.html" class="md-nav__link">
+        Union types
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overloading.html" class="md-nav__link">
+        Overloading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../default_and_named_arguments.html" class="md-nav__link">
+        Default parameter values and named arguments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../splats_and_tuples.html" class="md-nav__link">
+        Splats and tuples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type_restrictions.html" class="md-nav__link">
+        Type restrictions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../return_types.html" class="md-nav__link">
+        Return types
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../default_values_named_arguments_splats_tuples_and_overloading.html" class="md-nav__link">
+        Method arguments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operators.html" class="md-nav__link">
+        Operators
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visibility.html" class="md-nav__link">
+        Visibility
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_3_13" type="checkbox" id="__nav_2_9_3_13" >
+      
+      <label class="md-nav__link" for="__nav_2_9_3_13">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../inheritance.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Inheritance
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Inheritance" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_9_3_13">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../inheritance.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Inheritance
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../virtual_and_abstract_types.html" class="md-nav__link">
+        Virtual and abstract types
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_methods.html" class="md-nav__link">
+        Class methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_variables.html" class="md-nav__link">
+        Class variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../finalize.html" class="md-nav__link">
+        finalize
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules.html" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generics.html" class="md-nav__link">
+        Generics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structs.html" class="md-nav__link">
+        Structs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../constants.html" class="md-nav__link">
+        Constants
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enum.html" class="md-nav__link">
+        Enums
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_9" type="checkbox" id="__nav_2_9_9" >
+      
+      <label class="md-nav__link" for="__nav_2_9_9">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../blocks_and_procs.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Blocks and Procs
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Blocks and Procs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_9_9">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../blocks_and_procs.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Blocks and Procs
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capturing_blocks.html" class="md-nav__link">
+        Capturing blocks
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../proc_literal.html" class="md-nav__link">
+        Proc literal
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_forwarding.html" class="md-nav__link">
+        Block forwarding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../closures.html" class="md-nav__link">
+        Closures
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alias.html" class="md-nav__link">
+        alias
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exception_handling.html" class="md-nav__link">
+        Exception handling
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type_grammar.html" class="md-nav__link">
+        Type grammar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_12" type="checkbox" id="__nav_2_12" >
+      
+      <label class="md-nav__link" for="__nav_2_12">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../type_reflection.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Type reflection
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Type reflection" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_12">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../type_reflection.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Type reflection
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../is_a.html" class="md-nav__link">
+        is_a?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nil_question.html" class="md-nav__link">
+        nil?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responds_to.html" class="md-nav__link">
+        responds_to?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../as.html" class="md-nav__link">
+        as
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../as_question.html" class="md-nav__link">
+        as?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typeof.html" class="md-nav__link">
+        typeof
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_13" type="checkbox" id="__nav_2_13" checked>
+      
+      <label class="md-nav__link" for="__nav_2_13">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="index.html" class="md-nav__link md-nav__link--active"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Macros
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Macros" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_13">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="index.html" class="md-nav__link md-nav__link--active"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Macros
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="macro_methods.html" class="md-nav__link">
+        Macro methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hooks.html" class="md-nav__link">
+        Hooks
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fresh_variables.html" class="md-nav__link">
+        Fresh variables
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_14" type="checkbox" id="__nav_2_14" >
+      
+      <label class="md-nav__link" for="__nav_2_14">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../annotations/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Annotations
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Annotations" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_14">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../annotations/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Annotations
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../annotations/built_in_annotations.html" class="md-nav__link">
+        Built-in annotations
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_15" type="checkbox" id="__nav_2_15" >
+      
+      <label class="md-nav__link" for="__nav_2_15">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../low_level_primitives.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Low-level primitives
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Low-level primitives" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_15">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../low_level_primitives.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Low-level primitives
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pointerof.html" class="md-nav__link">
+        pointerof
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sizeof.html" class="md-nav__link">
+        sizeof
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instance_sizeof.html" class="md-nav__link">
+        instance_sizeof
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../offsetof.html" class="md-nav__link">
+        offsetof
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../declare_var.html" class="md-nav__link">
+        Uninitialized variable declaration
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_16" type="checkbox" id="__nav_2_16" >
+      
+      <label class="md-nav__link" for="__nav_2_16">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../compile_time_flags.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Compile-time flags
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Compile-time flags" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_16">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../compile_time_flags.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Compile-time flags
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cross-compilation.html" class="md-nav__link">
+        Cross-compilation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_17" type="checkbox" id="__nav_2_17" >
+      
+      <label class="md-nav__link" for="__nav_2_17">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../c_bindings/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          C bindings
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="C bindings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_17">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../c_bindings/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            C bindings
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/lib.html" class="md-nav__link">
+        lib
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_17_2" type="checkbox" id="__nav_2_17_2" >
+      
+      <label class="md-nav__link" for="__nav_2_17_2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../c_bindings/fun.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          fun
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="fun" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_17_2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../c_bindings/fun.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            fun
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/out.html" class="md-nav__link">
+        out
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/to_unsafe.html" class="md-nav__link">
+        to_unsafe
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/struct.html" class="md-nav__link">
+        struct
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/union.html" class="md-nav__link">
+        union
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/enum.html" class="md-nav__link">
+        enum
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/variables.html" class="md-nav__link">
+        Variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/constants.html" class="md-nav__link">
+        Constants
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/type.html" class="md-nav__link">
+        type
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/alias.html" class="md-nav__link">
+        alias
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c_bindings/callbacks.html" class="md-nav__link">
+        Callbacks
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unsafe.html" class="md-nav__link">
+        Unsafe code
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../guides/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Guides
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../guides/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Guides
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/performance.html" class="md-nav__link">
+        Performance
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/concurrency.html" class="md-nav__link">
+        Concurrency
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/testing.html" class="md-nav__link">
+        Testing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      <label class="md-nav__link" for="__nav_3_4">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../guides/writing_shards.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Writing Shards
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Writing Shards" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../guides/writing_shards.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Writing Shards
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/hosting/github.html" class="md-nav__link">
+        Hosting on GitHub
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/hosting/gitlab.html" class="md-nav__link">
+        Hosting on GitLab
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      <label class="md-nav__link" for="__nav_3_5">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../guides/ci/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Continuous Integration
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Continuous Integration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../guides/ci/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Continuous Integration
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/ci/gh-actions.html" class="md-nav__link">
+        GitHub Actions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/ci/travis.html" class="md-nav__link">
+        Travis CI
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/ci/circleci.html" class="md-nav__link">
+        CircleCI
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/static_linking.html" class="md-nav__link">
+        Static Linking
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      <label class="md-nav__link" for="__nav_3_7">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../database/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Database
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Database" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../database/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Database
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/connection.html" class="md-nav__link">
+        Connection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/connection_pool.html" class="md-nav__link">
+        Connection pool
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/transactions.html" class="md-nav__link">
+        Transactions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        <span class="md-nav__icon md-icon"></span>
+        
+          Tutorials
+        
+      </label>
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          
+            Tutorials
+          
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      <label class="md-nav__link" for="__nav_4_1">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../tutorials/basics/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Basics
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Basics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../tutorials/basics/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Basics
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/basics/10_hello_world.html" class="md-nav__link">
+        Hello World
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/basics/20_variables.html" class="md-nav__link">
+        Variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/basics/30_math.html" class="md-nav__link">
+        Math
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/basics/40_strings.html" class="md-nav__link">
+        Strings
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/basics/50_control_flow.html" class="md-nav__link">
+        Control Flow
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/basics/60_methods.html" class="md-nav__link">
+        Methods
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    Scope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpolation" class="md-nav__link">
+    Interpolation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macro-calls" class="md-nav__link">
+    Macro calls
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules-and-classes" class="md-nav__link">
+    Modules and classes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditionals" class="md-nav__link">
+    Conditionals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iteration" class="md-nav__link">
+    Iteration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variadic-arguments-and-splatting" class="md-nav__link">
+    Variadic arguments and splatting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-information" class="md-nav__link">
+    Type information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-top-level-module" class="md-nav__link">
+    The top level module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-information" class="md-nav__link">
+    Method information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    Constants
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-macros" class="md-nav__link">
+    Nested macros
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested macros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verbatim" class="md-nav__link">
+    verbatim
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    Comments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pitfalls" class="md-nav__link">
+    Pitfalls
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/syntax_and_semantics/macros/README.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="macros">Macros<a class="headerlink" href="#macros" title="Permanent link">&para;</a></h1>
+<p>Macros are methods that receive AST nodes at compile-time and produce
+code that is pasted into a program. For example:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_method</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+  <span class="k">def</span> <span class="si">{{</span><span class="n">name</span><span class="si">}}</span>
+    <span class="si">{{</span><span class="n">content</span><span class="si">}}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># This generates:</span>
+<span class="c1">#</span>
+<span class="c1">#     def foo</span>
+<span class="c1">#       1</span>
+<span class="c1">#     end</span>
+<span class="n">define_method</span> <span class="n">foo</span><span class="p">,</span> <span class="mi">1</span>
+
+<span class="n">foo</span> <span class="c1"># =&gt; 1</span>
+</code></pre></div>
+<p>A macro's definition body looks like regular Crystal code with extra syntax to manipulate the AST nodes. The generated code must be valid Crystal code, meaning that you can't for example generate a <code>def</code> without a matching <code>end</code>, or a single <code>when</code> expression of a <code>case</code>, since both of them are not complete valid expressions. Refer to <a href="#pitfalls">Pitfalls</a> for more information.</p>
+<h2 id="scope">Scope<a class="headerlink" href="#scope" title="Permanent link">&para;</a></h2>
+<p>Macros declared at the top-level are visible anywhere. If a top-level macro is marked as <code>private</code> it is only accessible in that file.</p>
+<p>They can also be defined in classes and modules, and are visible in those scopes. Macros are also looked-up in the ancestors chain (superclasses and included modules).</p>
+<p>For example, a block which is given an object to use as the default receiver by being invoked with <code>with ... yield</code> can access macros defined within that object's ancestors chain:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Foo</span>
+  <span class="k">macro</span> <span class="nf">emphasize</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="s2">&quot;***</span><span class="si">#{</span> <span class="si">{{</span><span class="n">value</span><span class="si">}}</span> <span class="si">}</span><span class="s2">***&quot;</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">yield_with_self</span>
+    <span class="k">with</span> <span class="k">self</span> <span class="k">yield</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">Foo</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">yield_with_self</span> <span class="p">{</span> <span class="n">emphasize</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">}</span> <span class="c1"># =&gt; &quot;***10***&quot;</span>
+</code></pre></div>
+<p>Macros defined in classes and modules can be invoked from outside of them too:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Foo</span>
+  <span class="k">macro</span> <span class="nf">emphasize</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="s2">&quot;***</span><span class="si">#{</span> <span class="si">{{</span><span class="n">value</span><span class="si">}}</span> <span class="si">}</span><span class="s2">***&quot;</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">Foo</span><span class="o">.</span><span class="n">emphasize</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># =&gt; &quot;***10***&quot;</span>
+</code></pre></div>
+<h2 id="interpolation">Interpolation<a class="headerlink" href="#interpolation" title="Permanent link">&para;</a></h2>
+<p>You use <code>{{...}}</code> to paste, or interpolate, an AST node, as in the above example.</p>
+<p>Note that the node is pasted as-is. If in the previous example we pass a symbol, the generated code becomes invalid:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="c1"># This generates:</span>
+<span class="c1">#</span>
+<span class="c1">#     def :foo</span>
+<span class="c1">#       1</span>
+<span class="c1">#     end</span>
+<span class="n">define_method</span> <span class="ss">:foo</span><span class="p">,</span> <span class="mi">1</span>
+</code></pre></div>
+<p>Note that <code>:foo</code> was the result of the interpolation, because that's what was passed to the macro. You can use the method <a href="https://crystal-lang.org/api/latest/Crystal/Macros/ASTNode.html#id%3AMacroId-instance-method"><code>ASTNode#id</code></a> in these cases, where you just need an identifier.</p>
+<h2 id="macro-calls">Macro calls<a class="headerlink" href="#macro-calls" title="Permanent link">&para;</a></h2>
+<p>You can invoke a <strong>fixed subset</strong> of methods on AST nodes at compile-time. These methods are documented in a fictitious <a href="https://crystal-lang.org/api/latest/Crystal/Macros.html">Crystal::Macros</a> module.</p>
+<p>For example, invoking <a href="https://crystal-lang.org/api/latest/Crystal/Macros/ASTNode.html#id%3AMacroId-instance-method"><code>ASTNode#id</code></a> in the above example solves the problem:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_method</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+  <span class="k">def</span> <span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
+    <span class="si">{{</span><span class="n">content</span><span class="si">}}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># This correctly generates:</span>
+<span class="c1">#</span>
+<span class="c1">#     def foo</span>
+<span class="c1">#       1</span>
+<span class="c1">#     end</span>
+<span class="n">define_method</span> <span class="ss">:foo</span><span class="p">,</span> <span class="mi">1</span>
+</code></pre></div>
+<h2 id="modules-and-classes">Modules and classes<a class="headerlink" href="#modules-and-classes" title="Permanent link">&para;</a></h2>
+<p>Modules, classes and structs can also be generated:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_class</span><span class="p">(</span><span class="n">module_name</span><span class="p">,</span> <span class="n">class_name</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+  <span class="n">module</span> <span class="si">{{</span><span class="n">module_name</span><span class="si">}}</span>
+    <span class="k">class</span> <span class="si">{{</span><span class="n">class_name</span><span class="si">}}</span>
+      <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="vi">@name</span> <span class="p">:</span> <span class="n">String</span><span class="p">)</span>
+      <span class="k">end</span>
+
+      <span class="k">def</span> <span class="si">{{</span><span class="n">method</span><span class="si">}}</span>
+        <span class="si">{{</span><span class="n">content</span><span class="si">}}</span> <span class="o">+</span> <span class="vi">@name</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># This generates:</span>
+<span class="c1">#     module Foo</span>
+<span class="c1">#       class Bar</span>
+<span class="c1">#         def initialize(@name : String)</span>
+<span class="c1">#         end</span>
+<span class="c1">#</span>
+<span class="c1">#         def say</span>
+<span class="c1">#           &quot;hi &quot; + @name</span>
+<span class="c1">#         end</span>
+<span class="c1">#       end</span>
+<span class="c1">#     end</span>
+<span class="n">define_class</span> <span class="n">Foo</span><span class="p">,</span> <span class="n">Bar</span><span class="p">,</span> <span class="n">say</span><span class="p">,</span> <span class="s2">&quot;hi &quot;</span>
+
+<span class="nb">p</span> <span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">say</span> <span class="c1"># =&gt; &quot;hi John&quot;</span>
+</code></pre></div>
+<h2 id="conditionals">Conditionals<a class="headerlink" href="#conditionals" title="Permanent link">&para;</a></h2>
+<p>You use <code>{% if condition %}</code> ... <code>{% end %}</code> to conditionally generate code:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_method</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+  <span class="k">def</span> <span class="si">{{</span><span class="n">name</span><span class="si">}}</span>
+    <span class="si">{%</span> <span class="k">if</span> <span class="n">content</span> <span class="o">==</span> <span class="mi">1</span> <span class="si">%}</span>
+      <span class="s2">&quot;one&quot;</span>
+    <span class="si">{%</span> <span class="k">elsif</span> <span class="n">content</span> <span class="o">==</span> <span class="mi">2</span> <span class="si">%}</span>
+      <span class="s2">&quot;two&quot;</span>
+    <span class="si">{%</span> <span class="k">else</span> <span class="si">%}</span>
+      <span class="si">{{</span><span class="n">content</span><span class="si">}}</span>
+    <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">define_method</span> <span class="n">foo</span><span class="p">,</span> <span class="mi">1</span>
+<span class="n">define_method</span> <span class="n">bar</span><span class="p">,</span> <span class="mi">2</span>
+<span class="n">define_method</span> <span class="n">baz</span><span class="p">,</span> <span class="mi">3</span>
+
+<span class="n">foo</span> <span class="c1"># =&gt; one</span>
+<span class="n">bar</span> <span class="c1"># =&gt; two</span>
+<span class="n">baz</span> <span class="c1"># =&gt; 3</span>
+</code></pre></div>
+<p>Similar to regular code, <a href="https://crystal-lang.org/api/latest/Crystal/Macros/Nop.html"><code>Nop</code></a>, <a href="https://crystal-lang.org/api/latest/Crystal/Macros/NilLiteral.html"><code>NilLiteral</code></a> and a false <a href="https://crystal-lang.org/api/latest/Crystal/Macros/BoolLiteral.html"><code>BoolLiteral</code></a> are considered <em>falsey</em>, while everything else is considered <em>truthy</em>.</p>
+<p>Macro conditionals can be used outside a macro definition:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="si">{%</span> <span class="k">if</span> <span class="n">env</span><span class="p">(</span><span class="s2">&quot;TEST&quot;</span><span class="p">)</span> <span class="si">%}</span>
+  <span class="nb">puts</span> <span class="s2">&quot;We are in test mode&quot;</span>
+<span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+</code></pre></div>
+<h2 id="iteration">Iteration<a class="headerlink" href="#iteration" title="Permanent link">&para;</a></h2>
+<p>You can iterate a finite amount of times:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_constants</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+  <span class="si">{%</span> <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="n">count</span><span class="p">)</span> <span class="si">%}</span>
+    <span class="no">PI_</span><span class="si">{{</span><span class="n">i</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span> <span class="o">=</span> <span class="n">Math</span><span class="o">::</span><span class="no">PI</span> <span class="o">*</span> <span class="si">{{</span><span class="n">i</span><span class="si">}}</span>
+  <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+<span class="k">end</span>
+
+<span class="n">define_constants</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">PI_1</span> <span class="c1"># =&gt; 3.14159...</span>
+<span class="n">PI_2</span> <span class="c1"># =&gt; 6.28318...</span>
+<span class="n">PI_3</span> <span class="c1"># =&gt; 9.42477...</span>
+</code></pre></div>
+<p>To iterate an <a href="https://crystal-lang.org/api/latest/Crystal/Macros/ArrayLiteral.html"><code>ArrayLiteral</code></a>:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_dummy_methods</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+  <span class="si">{%</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">index</span> <span class="k">in</span> <span class="n">names</span> <span class="si">%}</span>
+    <span class="k">def</span> <span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
+      <span class="si">{{</span><span class="n">index</span><span class="si">}}</span>
+    <span class="k">end</span>
+  <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+<span class="k">end</span>
+
+<span class="n">define_dummy_methods</span> <span class="o">[</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="o">]</span>
+
+<span class="n">foo</span> <span class="c1"># =&gt; 0</span>
+<span class="n">bar</span> <span class="c1"># =&gt; 1</span>
+<span class="n">baz</span> <span class="c1"># =&gt; 2</span>
+</code></pre></div>
+<p>The <code>index</code> variable in the above example is optional.</p>
+<p>To iterate a <a href="https://crystal-lang.org/api/latest/Crystal/Macros/HashLiteral.html"><code>HashLiteral</code></a>:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_dummy_methods</span><span class="p">(</span><span class="n">hash</span><span class="p">)</span>
+  <span class="si">{%</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="k">in</span> <span class="n">hash</span> <span class="si">%}</span>
+    <span class="k">def</span> <span class="si">{{</span><span class="n">key</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
+      <span class="si">{{</span><span class="n">value</span><span class="si">}}</span>
+    <span class="k">end</span>
+  <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+<span class="k">end</span>
+
+<span class="n">define_dummy_methods</span><span class="p">({</span><span class="ss">foo</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="ss">bar</span><span class="p">:</span> <span class="mi">20</span><span class="p">})</span>
+<span class="n">foo</span> <span class="c1"># =&gt; 10</span>
+<span class="n">bar</span> <span class="c1"># =&gt; 20</span>
+</code></pre></div>
+<p>Macro iterations can be used outside a macro definition:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="si">{%</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">index</span> <span class="k">in</span> <span class="o">[</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="o">]</span> <span class="si">%}</span>
+  <span class="k">def</span> <span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
+    <span class="si">{{</span><span class="n">index</span><span class="si">}}</span>
+  <span class="k">end</span>
+<span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+
+<span class="n">foo</span> <span class="c1"># =&gt; 0</span>
+<span class="n">bar</span> <span class="c1"># =&gt; 1</span>
+<span class="n">baz</span> <span class="c1"># =&gt; 2</span>
+</code></pre></div>
+<h2 id="variadic-arguments-and-splatting">Variadic arguments and splatting<a class="headerlink" href="#variadic-arguments-and-splatting" title="Permanent link">&para;</a></h2>
+<p>A macro can accept variadic arguments:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_dummy_methods</span><span class="p">(</span><span class="o">*</span><span class="n">names</span><span class="p">)</span>
+  <span class="si">{%</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">index</span> <span class="k">in</span> <span class="n">names</span> <span class="si">%}</span>
+    <span class="k">def</span> <span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
+      <span class="si">{{</span><span class="n">index</span><span class="si">}}</span>
+    <span class="k">end</span>
+  <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+<span class="k">end</span>
+
+<span class="n">define_dummy_methods</span> <span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">,</span> <span class="n">baz</span>
+
+<span class="n">foo</span> <span class="c1"># =&gt; 0</span>
+<span class="n">bar</span> <span class="c1"># =&gt; 1</span>
+<span class="n">baz</span> <span class="c1"># =&gt; 2</span>
+</code></pre></div>
+<p>The arguments are packed into a <a href="https://crystal-lang.org/api/latest/Crystal/Macros/TupleLiteral.html"><code>TupleLiteral</code></a> and passed to the macro.</p>
+<p>Additionally, using <code>*</code> when interpolating a <a href="https://crystal-lang.org/api/latest/Crystal/Macros/TupleLiteral.html"><code>TupleLiteral</code></a> interpolates the elements separated by commas:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">println</span><span class="p">(</span><span class="o">*</span><span class="n">values</span><span class="p">)</span>
+  <span class="nb">print</span> <span class="si">{{</span><span class="o">*</span><span class="n">values</span><span class="si">}}</span><span class="p">,</span> <span class="sc">&#39;\n&#39;</span>
+<span class="k">end</span>
+
+<span class="n">println</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="c1"># outputs 123\n</span>
+</code></pre></div>
+<h2 id="type-information">Type information<a class="headerlink" href="#type-information" title="Permanent link">&para;</a></h2>
+<p>When a macro is invoked you can access the current scope, or type, with a special instance variable: <code>@type</code>. The type of this variable is <a href="https://crystal-lang.org/api/latest/Crystal/Macros/TypeNode.html"><code>TypeNode</code></a>, which gives you access to type information at compile time.</p>
+<p>Note that <code>@type</code> is always the <em>instance</em> type, even when the macro is invoked in a class method.</p>
+<p>For example:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">add_describe_methods</span>
+  <span class="k">def</span> <span class="nf">describe</span>
+    <span class="s2">&quot;Class is: &quot;</span> <span class="o">+</span> <span class="si">{{</span> <span class="vi">@type</span><span class="o">.</span><span class="n">stringify</span> <span class="si">}}</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">describe</span>
+    <span class="s2">&quot;Class is: &quot;</span> <span class="o">+</span> <span class="si">{{</span> <span class="vi">@type</span><span class="o">.</span><span class="n">stringify</span> <span class="si">}}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">Foo</span>
+  <span class="n">add_describe_methods</span>
+<span class="k">end</span>
+
+<span class="n">Foo</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">describe</span> <span class="c1"># =&gt; &quot;Class is Foo&quot;</span>
+<span class="n">Foo</span><span class="o">.</span><span class="n">describe</span>     <span class="c1"># =&gt; &quot;Class is Foo&quot;</span>
+</code></pre></div>
+<h2 id="the-top-level-module">The top level module<a class="headerlink" href="#the-top-level-module" title="Permanent link">&para;</a></h2>
+<p>It is possible to access the top-level namespace, as a <a href="https://crystal-lang.org/api/latest/Crystal/Macros/TypeNode.html"><code>TypeNode</code></a>, with a special variable: <code>@top_level</code>. The following example shows its utility:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="no">A_CONSTANT</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="si">{%</span> <span class="k">if</span> <span class="vi">@top_level</span><span class="o">.</span><span class="n">has_constant?</span><span class="p">(</span><span class="s2">&quot;A_CONSTANT&quot;</span><span class="p">)</span> <span class="si">%}</span>
+  <span class="nb">puts</span> <span class="s2">&quot;this is printed&quot;</span>
+<span class="si">{%</span> <span class="k">else</span> <span class="si">%}</span>
+  <span class="nb">puts</span> <span class="s2">&quot;this is not printed&quot;</span>
+<span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+</code></pre></div>
+<h2 id="method-information">Method information<a class="headerlink" href="#method-information" title="Permanent link">&para;</a></h2>
+<p>When a macro is invoked you can access the method, the macro is in with a special instance variable: <code>@def</code>. The type of this variable is <a href="https://crystal-lang.org/api/latest/Crystal/Macros/Def.html"><code>Def</code></a> unless the macro is outside of a method, in this case it's <a href="https://crystal-lang.org/api/latest/Crystal/Macros/NilLiteral.html"><code>NilLiteral</code></a>.</p>
+<p>Example:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">module</span> <span class="nn">Foo</span>
+  <span class="k">def</span> <span class="nc">Foo</span><span class="o">.</span><span class="nf">boo</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">)</span>
+    <span class="si">{%</span> <span class="vi">@def</span><span class="o">.</span><span class="n">receiver</span> <span class="si">%}</span> <span class="c1"># =&gt; Foo</span>
+    <span class="si">{%</span> <span class="vi">@def</span><span class="o">.</span><span class="n">name</span> <span class="si">%}</span>     <span class="c1"># =&gt; boo</span>
+    <span class="si">{%</span> <span class="vi">@def</span><span class="o">.</span><span class="n">args</span> <span class="si">%}</span>     <span class="c1"># =&gt; [arg1, arg2]</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">Foo</span><span class="o">.</span><span class="n">boo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="constants">Constants<a class="headerlink" href="#constants" title="Permanent link">&para;</a></h2>
+<p>Macros can access constants. For example:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="no">VALUES</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span>
+
+<span class="si">{%</span> <span class="k">for</span> <span class="n">value</span> <span class="k">in</span> <span class="no">VALUES</span> <span class="si">%}</span>
+  <span class="nb">puts</span> <span class="si">{{</span><span class="n">value</span><span class="si">}}</span>
+<span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+</code></pre></div>
+<p>If the constant denotes a type, you get back a <a href="https://crystal-lang.org/api/latest/Crystal/Macros/TypeNode.html"><code>TypeNode</code></a>.</p>
+<h2 id="nested-macros">Nested macros<a class="headerlink" href="#nested-macros" title="Permanent link">&para;</a></h2>
+<p>It is possible to define a macro which generates one or more macro definitions. You must escape macro expressions of the inner macro by preceding them with a backslash character "\" to prevent them from being evaluated by the outer macro.</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_macros</span><span class="p">(</span><span class="o">*</span><span class="n">names</span><span class="p">)</span>
+  <span class="si">{%</span> <span class="k">for</span> <span class="n">name</span> <span class="k">in</span> <span class="n">names</span> <span class="si">%}</span>
+    <span class="k">macro</span> <span class="nf">greeting_for_</span><span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
+      <span class="p">\</span><span class="si">{%</span> <span class="k">if</span> <span class="n">greeting</span> <span class="o">==</span> <span class="s2">&quot;hola&quot;</span> <span class="si">%}</span>
+        <span class="s2">&quot;¡hola {{name.id}}!&quot;</span>
+      <span class="p">\</span><span class="si">{%</span> <span class="k">else</span> <span class="si">%}</span>
+        <span class="s2">&quot;\{{greeting.id}} {{name.id}}&quot;</span>
+      <span class="p">\</span><span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+    <span class="k">end</span>
+  <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+<span class="k">end</span>
+
+<span class="c1"># This generates:</span>
+<span class="c1">#</span>
+<span class="c1">#     macro greeting_for_alice</span>
+<span class="c1">#       {% if greeting == &quot;hola&quot; %}</span>
+<span class="c1">#         &quot;¡hola alice!&quot;</span>
+<span class="c1">#       {% else %}</span>
+<span class="c1">#         &quot;{{greeting.id}} alice&quot;</span>
+<span class="c1">#       {% end %}</span>
+<span class="c1">#     end</span>
+<span class="c1">#     macro greeting_for_bob</span>
+<span class="c1">#       {% if greeting == &quot;hola&quot; %}</span>
+<span class="c1">#         &quot;¡hola bob!&quot;</span>
+<span class="c1">#       {% else %}</span>
+<span class="c1">#         &quot;{{greeting.id}} bob&quot;</span>
+<span class="c1">#       {% end %}</span>
+<span class="c1">#     end</span>
+<span class="n">define_macros</span> <span class="n">alice</span><span class="p">,</span> <span class="n">bob</span>
+
+<span class="n">greeting_for_alice</span> <span class="s2">&quot;hello&quot;</span> <span class="c1"># =&gt; &quot;hello alice&quot;</span>
+<span class="n">greeting_for_bob</span> <span class="s2">&quot;hallo&quot;</span>   <span class="c1"># =&gt; &quot;hallo bob&quot;</span>
+<span class="n">greeting_for_alice</span> <span class="s2">&quot;hej&quot;</span>   <span class="c1"># =&gt; &quot;hej alice&quot;</span>
+<span class="n">greeting_for_bob</span> <span class="s2">&quot;hola&quot;</span>    <span class="c1"># =&gt; &quot;¡hola bob!&quot;</span>
+</code></pre></div>
+<h3 id="verbatim">verbatim<a class="headerlink" href="#verbatim" title="Permanent link">&para;</a></h3>
+<p>Another way to define a nested macro is by using the special <code>verbatim</code> call. Using this you will not be able to use any variable interpolation but will not need to escape the inner macro characters.</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">define_macros</span><span class="p">(</span><span class="o">*</span><span class="n">names</span><span class="p">)</span>
+  <span class="si">{%</span> <span class="k">for</span> <span class="n">name</span> <span class="k">in</span> <span class="n">names</span> <span class="si">%}</span>
+    <span class="k">macro</span> <span class="nf">greeting_for_</span><span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
+
+      <span class="c1"># name will not be available within the verbatim block</span>
+      <span class="p">\</span><span class="si">{%</span> <span class="n">name</span> <span class="o">=</span> <span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">stringify</span><span class="si">}}</span> <span class="si">%}</span>
+
+      <span class="si">{%</span> <span class="k">verbatim</span> <span class="k">do</span> <span class="si">%}</span>
+        <span class="si">{%</span> <span class="k">if</span> <span class="n">greeting</span> <span class="o">==</span> <span class="s2">&quot;hola&quot;</span> <span class="si">%}</span>
+          <span class="s2">&quot;¡hola {{name.id}}!&quot;</span>
+        <span class="si">{%</span> <span class="k">else</span> <span class="si">%}</span>
+          <span class="s2">&quot;{{greeting.id}} {{name.id}}&quot;</span>
+        <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+      <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+    <span class="k">end</span>
+  <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+<span class="k">end</span>
+
+<span class="c1"># This generates:</span>
+<span class="c1">#</span>
+<span class="c1">#     macro greeting_for_alice</span>
+<span class="c1">#       {% name = &quot;alice&quot; %}</span>
+<span class="c1">#       {% if greeting == &quot;hola&quot; %}</span>
+<span class="c1">#         &quot;¡hola alice!&quot;</span>
+<span class="c1">#       {% else %}</span>
+<span class="c1">#         &quot;{{greeting.id}} alice&quot;</span>
+<span class="c1">#       {% end %}</span>
+<span class="c1">#     end</span>
+<span class="c1">#     macro greeting_for_bob</span>
+<span class="c1">#       {% name = &quot;bob&quot; %}</span>
+<span class="c1">#       {% if greeting == &quot;hola&quot; %}</span>
+<span class="c1">#         &quot;¡hola bob!&quot;</span>
+<span class="c1">#       {% else %}</span>
+<span class="c1">#         &quot;{{greeting.id}} bob&quot;</span>
+<span class="c1">#       {% end %}</span>
+<span class="c1">#     end</span>
+<span class="n">define_macros</span> <span class="n">alice</span><span class="p">,</span> <span class="n">bob</span>
+
+<span class="n">greeting_for_alice</span> <span class="s2">&quot;hello&quot;</span> <span class="c1"># =&gt; &quot;hello alice&quot;</span>
+<span class="n">greeting_for_bob</span> <span class="s2">&quot;hallo&quot;</span>   <span class="c1"># =&gt; &quot;hallo bob&quot;</span>
+<span class="n">greeting_for_alice</span> <span class="s2">&quot;hej&quot;</span>   <span class="c1"># =&gt; &quot;hej alice&quot;</span>
+<span class="n">greeting_for_bob</span> <span class="s2">&quot;hola&quot;</span>    <span class="c1"># =&gt; &quot;¡hola bob!&quot;</span>
+</code></pre></div>
+<p>Notice the variables in the inner macro are not available within the <code>verbatim</code> block. The contents of the block are transferred "as is", essentially as a string, until re-examined by the compiler.</p>
+<h2 id="comments">Comments<a class="headerlink" href="#comments" title="Permanent link">&para;</a></h2>
+<p>Macro expressions are evaluated both within comments as well as compilable sections of code. This may be used to provide relevant documentation for expansions:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="si">{%</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">index</span> <span class="k">in</span> <span class="o">[</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="o">]</span> <span class="si">%}</span>
+  <span class="c1"># Provides a placeholder {{name.id}} method. Always returns {{index}}.</span>
+  <span class="k">def</span> <span class="si">{{</span><span class="n">name</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
+    <span class="si">{{</span><span class="n">index</span><span class="si">}}</span>
+  <span class="k">end</span>
+<span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+</code></pre></div>
+<p>This evaluation applies to both interpolation and directives. As a result of this, macros cannot be commented out.</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">macro</span> <span class="nf">a</span>
+  <span class="c1"># {% if false %}</span>
+  <span class="nb">puts</span> <span class="mi">42</span>
+  <span class="c1"># {% end %}</span>
+<span class="k">end</span>
+
+<span class="n">a</span>
+</code></pre></div>
+<p>The expression above will result in no output.</p>
+<h2 id="pitfalls">Pitfalls<a class="headerlink" href="#pitfalls" title="Permanent link">&para;</a></h2>
+<p>When writing macros (especially outside of a macro definition) it is important to remember that the generated code from the macro must be valid Crystal code by itself even before it is merged into the main program's code. This means, for example, a macro cannot generate a one or more <code>when</code> expressions of a <code>case</code> statement unless <code>case</code> was a part of the generated code.</p>
+<p>Here is an example of such an invalid macro:</p>
+<div class="highlight"><pre><span></span><code><span class="k">case</span> <span class="mi">42</span>
+<span class="si">{%</span> <span class="k">for</span> <span class="n">klass</span> <span class="k">in</span> <span class="o">[</span><span class="n">Int32</span><span class="p">,</span> <span class="n">String</span><span class="o">]</span> <span class="si">%}</span> <span class="c1"># Syntax Error: unexpected token: {% (expecting when, else or end)</span>
+  <span class="k">when</span> <span class="si">{{</span><span class="n">klass</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
+    <span class="nb">p</span> <span class="s2">&quot;is {{klass}}&quot;</span>
+<span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>Notice that <code>case</code> is not within the macro. The code generated by the macro consists solely of two <code>when</code> expressions which, by themselves, is not valid Crystal code. We must include <code>case</code> within the macro in order to make it valid by using <code>begin</code> and <code>end</code>:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="si">{%</span> <span class="k">begin</span> <span class="si">%}</span>
+  <span class="k">case</span> <span class="mi">42</span>
+  <span class="si">{%</span> <span class="k">for</span> <span class="n">klass</span> <span class="k">in</span> <span class="o">[</span><span class="n">Int32</span><span class="p">,</span> <span class="n">String</span><span class="o">]</span> <span class="si">%}</span>
+    <span class="k">when</span> <span class="si">{{</span><span class="n">klass</span><span class="o">.</span><span class="n">id</span><span class="si">}}</span>
+      <span class="nb">p</span> <span class="s2">&quot;is {{klass}}&quot;</span>
+  <span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+  <span class="k">end</span>
+<span class="si">{%</span> <span class="k">end</span> <span class="si">%}</span>
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../typeof.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              typeof
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="macro_methods.html" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Macro methods
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../../assets/vendor/codemirror/codemirror.min.js"></script>
+      
+        <script src="../../assets/vendor/codemirror/mode/crystal/crystal.min.js"></script>
+      
+        <script src="../../assets/vendor/carcin-play/carcin.js"></script>
+      
+        <script src="../../assets/vendor/carcin-play/carcin-play.js"></script>
+      
+        <script src="../../assets/vendor/ansi_up/ansi_up.min.js"></script>
+      
+        <script src="../../assets/crystal-play.js"></script>
+      
+        <script src="../../assets/script.js"></script>
+      
+    
+  </body>
+</html>
