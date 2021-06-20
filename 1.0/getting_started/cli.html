@@ -1,0 +1,3273 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://crystal-lang.org/reference/latest/getting_started/cli.html">
+      
+      <link rel="icon" href="https://crystal-lang.org/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+    
+    
+      
+        <title>A Command Line Application - Crystal</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f955dcd.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../assets/vendor/codemirror/codemirror.min.css">
+    
+      <link rel="stylesheet" href="../assets/style.css">
+    
+      <link rel="stylesheet" href="../assets/vendor/carcin-play/carcin-play.css">
+    
+      <link rel="stylesheet" href="../assets/vendor/carcin-play/codemirror-theme.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-42353458-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#command-line-interface-application" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Crystal" class="md-header__button md-logo" aria-label="Crystal" data-md-component="logo">
+      
+  <img src="../assets/crystal-circ.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Crystal
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              A Command Line Application
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="https://crystal-lang.org/reference/" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="https://ja.crystal-lang.org/reference/" hreflang="ja" class="md-select__link">
+                    日本語
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/crystal-lang/crystal/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../index.html" class="md-tabs__link md-tabs__link--active">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../syntax_and_semantics/index.html" class="md-tabs__link">
+        Specification
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../guides/index.html" class="md-tabs__link">
+      Guides
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tutorials/basics/index.html" class="md-tabs__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Crystal" class="md-nav__button md-logo" aria-label="Crystal" data-md-component="logo">
+      
+  <img src="../assets/crystal-circ.svg" alt="logo">
+
+    </a>
+    Crystal
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/crystal-lang/crystal/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      <label class="md-nav__link" for="__nav_1">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Home
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Home
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" checked>
+      
+      <label class="md-nav__link" for="__nav_1_1">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Getting started
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Getting started" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Getting started
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="http_server.html" class="md-nav__link">
+        An HTTP Server
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="cli.html" class="md-nav__link md-nav__link--active"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            A Command Line Application
+          </a>
+        </label>
+      
+      <a href="cli.html" class="md-nav__link md-nav__link--active">
+        A Command Line Application
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    Input
+  </a>
+  
+    <nav class="md-nav" aria-label="Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
+  </a>
+  
+    <nav class="md-nav" aria-label="Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameterized-options" class="md-nav__link">
+    Parameterized options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-my-cli-the-complete-application" class="md-nav__link">
+    All My CLI: The complete application!
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-for-user-input" class="md-nav__link">
+    Request for user input
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-readline-and-ncurses" class="md-nav__link">
+    Using Readline and NCurses
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using_the_compiler/index.html" class="md-nav__link">
+        Using the compiler
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the_shards_command/index.html" class="md-nav__link">
+        The shards command
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conventions/coding_style.html" class="md-nav__link">
+        Coding style
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../platform_support.html" class="md-nav__link">
+        Platform Support
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance.html" class="md-nav__link">
+        Governance document
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          Specification
+        
+      </label>
+      <nav class="md-nav" aria-label="Specification" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            Specification
+          
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/index.html" class="md-nav__link">
+        About this guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/comments.html" class="md-nav__link">
+        Comments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/documenting_code.html" class="md-nav__link">
+        Documenting code
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/literals/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Literals
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Literals" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/literals/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Literals
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/nil.html" class="md-nav__link">
+        Nil
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/bool.html" class="md-nav__link">
+        Bool
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/integers.html" class="md-nav__link">
+        Integers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/floats.html" class="md-nav__link">
+        Floats
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/char.html" class="md-nav__link">
+        Char
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/string.html" class="md-nav__link">
+        String
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/symbol.html" class="md-nav__link">
+        Symbol
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/array.html" class="md-nav__link">
+        Array
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/hash.html" class="md-nav__link">
+        Hash
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/range.html" class="md-nav__link">
+        Range
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/regex.html" class="md-nav__link">
+        Regex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/tuple.html" class="md-nav__link">
+        Tuple
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/named_tuple.html" class="md-nav__link">
+        NamedTuple
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/proc.html" class="md-nav__link">
+        Proc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/literals/command.html" class="md-nav__link">
+        Command
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/assignment.html" class="md-nav__link">
+        Assignment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/local_variables.html" class="md-nav__link">
+        Local variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      <label class="md-nav__link" for="__nav_2_7">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/control_expressions.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Control expressions
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Control expressions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/control_expressions.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Control expressions
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/truthy_and_falsey_values.html" class="md-nav__link">
+        Truthy and falsey values
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_2" type="checkbox" id="__nav_2_7_2" >
+      
+      <label class="md-nav__link" for="__nav_2_7_2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/if.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          if
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="if" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/if.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            if
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/as_a_suffix.html" class="md-nav__link">
+        As a suffix
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/as_an_expression.html" class="md-nav__link">
+        As an expression
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/ternary_if.html" class="md-nav__link">
+        Ternary if
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/if_var.html" class="md-nav__link">
+        if var
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/if_varis_a.html" class="md-nav__link">
+        if var.is_a?(...)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/if_varresponds_to.html" class="md-nav__link">
+        if var.responds_to?(...)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/if_var_nil.html" class="md-nav__link">
+        if var.nil?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/not.html" class="md-nav__link">
+        if !
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/unless.html" class="md-nav__link">
+        unless
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/case.html" class="md-nav__link">
+        case
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_5" type="checkbox" id="__nav_2_7_5" >
+      
+      <label class="md-nav__link" for="__nav_2_7_5">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/while.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          while
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="while" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_7_5">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/while.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            while
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/break.html" class="md-nav__link">
+        break
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/next.html" class="md-nav__link">
+        next
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/until.html" class="md-nav__link">
+        until
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/and.html" class="md-nav__link">
+        &&
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/or.html" class="md-nav__link">
+        ||
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/requiring_files.html" class="md-nav__link">
+        Requiring files
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      <label class="md-nav__link" for="__nav_2_9">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/types_and_methods.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Types and methods
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Types and methods" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/types_and_methods.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Types and methods
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/everything_is_an_object.html" class="md-nav__link">
+        Everything is an object
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/the_program.html" class="md-nav__link">
+        The Program
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_3" type="checkbox" id="__nav_2_9_3" >
+      
+      <label class="md-nav__link" for="__nav_2_9_3">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/classes_and_methods.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Classes and methods
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Classes and methods" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_9_3">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/classes_and_methods.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Classes and methods
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/new%2C_initialize_and_allocate.html" class="md-nav__link">
+        new, initialize and allocate
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/methods_and_instance_variables.html" class="md-nav__link">
+        Methods and instance variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/type_inference.html" class="md-nav__link">
+        Type inference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/union_types.html" class="md-nav__link">
+        Union types
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/overloading.html" class="md-nav__link">
+        Overloading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/default_and_named_arguments.html" class="md-nav__link">
+        Default parameter values and named arguments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/splats_and_tuples.html" class="md-nav__link">
+        Splats and tuples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/type_restrictions.html" class="md-nav__link">
+        Type restrictions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/return_types.html" class="md-nav__link">
+        Return types
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/default_values_named_arguments_splats_tuples_and_overloading.html" class="md-nav__link">
+        Method arguments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/operators.html" class="md-nav__link">
+        Operators
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/visibility.html" class="md-nav__link">
+        Visibility
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_3_13" type="checkbox" id="__nav_2_9_3_13" >
+      
+      <label class="md-nav__link" for="__nav_2_9_3_13">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/inheritance.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Inheritance
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Inheritance" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_9_3_13">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/inheritance.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Inheritance
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/virtual_and_abstract_types.html" class="md-nav__link">
+        Virtual and abstract types
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/class_methods.html" class="md-nav__link">
+        Class methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/class_variables.html" class="md-nav__link">
+        Class variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/finalize.html" class="md-nav__link">
+        finalize
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/modules.html" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/generics.html" class="md-nav__link">
+        Generics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/structs.html" class="md-nav__link">
+        Structs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/constants.html" class="md-nav__link">
+        Constants
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/enum.html" class="md-nav__link">
+        Enums
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_9" type="checkbox" id="__nav_2_9_9" >
+      
+      <label class="md-nav__link" for="__nav_2_9_9">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/blocks_and_procs.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Blocks and Procs
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Blocks and Procs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_9_9">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/blocks_and_procs.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Blocks and Procs
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/capturing_blocks.html" class="md-nav__link">
+        Capturing blocks
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/proc_literal.html" class="md-nav__link">
+        Proc literal
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/block_forwarding.html" class="md-nav__link">
+        Block forwarding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/closures.html" class="md-nav__link">
+        Closures
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/alias.html" class="md-nav__link">
+        alias
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/exception_handling.html" class="md-nav__link">
+        Exception handling
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/type_grammar.html" class="md-nav__link">
+        Type grammar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_12" type="checkbox" id="__nav_2_12" >
+      
+      <label class="md-nav__link" for="__nav_2_12">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/type_reflection.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Type reflection
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Type reflection" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_12">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/type_reflection.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Type reflection
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/is_a.html" class="md-nav__link">
+        is_a?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/nil_question.html" class="md-nav__link">
+        nil?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/responds_to.html" class="md-nav__link">
+        responds_to?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/as.html" class="md-nav__link">
+        as
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/as_question.html" class="md-nav__link">
+        as?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/typeof.html" class="md-nav__link">
+        typeof
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_13" type="checkbox" id="__nav_2_13" >
+      
+      <label class="md-nav__link" for="__nav_2_13">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/macros/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Macros
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Macros" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_13">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/macros/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Macros
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/macros/macro_methods.html" class="md-nav__link">
+        Macro methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/macros/hooks.html" class="md-nav__link">
+        Hooks
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/macros/fresh_variables.html" class="md-nav__link">
+        Fresh variables
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_14" type="checkbox" id="__nav_2_14" >
+      
+      <label class="md-nav__link" for="__nav_2_14">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/annotations/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Annotations
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Annotations" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_14">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/annotations/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Annotations
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/annotations/built_in_annotations.html" class="md-nav__link">
+        Built-in annotations
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_15" type="checkbox" id="__nav_2_15" >
+      
+      <label class="md-nav__link" for="__nav_2_15">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/low_level_primitives.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Low-level primitives
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Low-level primitives" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_15">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/low_level_primitives.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Low-level primitives
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/pointerof.html" class="md-nav__link">
+        pointerof
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/sizeof.html" class="md-nav__link">
+        sizeof
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/instance_sizeof.html" class="md-nav__link">
+        instance_sizeof
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/offsetof.html" class="md-nav__link">
+        offsetof
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/declare_var.html" class="md-nav__link">
+        Uninitialized variable declaration
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_16" type="checkbox" id="__nav_2_16" >
+      
+      <label class="md-nav__link" for="__nav_2_16">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/compile_time_flags.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Compile-time flags
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Compile-time flags" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_16">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/compile_time_flags.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Compile-time flags
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/cross-compilation.html" class="md-nav__link">
+        Cross-compilation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_17" type="checkbox" id="__nav_2_17" >
+      
+      <label class="md-nav__link" for="__nav_2_17">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/c_bindings/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          C bindings
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="C bindings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_17">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/c_bindings/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            C bindings
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/lib.html" class="md-nav__link">
+        lib
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_17_2" type="checkbox" id="__nav_2_17_2" >
+      
+      <label class="md-nav__link" for="__nav_2_17_2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../syntax_and_semantics/c_bindings/fun.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          fun
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="fun" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_17_2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../syntax_and_semantics/c_bindings/fun.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            fun
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/out.html" class="md-nav__link">
+        out
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/to_unsafe.html" class="md-nav__link">
+        to_unsafe
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/struct.html" class="md-nav__link">
+        struct
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/union.html" class="md-nav__link">
+        union
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/enum.html" class="md-nav__link">
+        enum
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/variables.html" class="md-nav__link">
+        Variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/constants.html" class="md-nav__link">
+        Constants
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/type.html" class="md-nav__link">
+        type
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/alias.html" class="md-nav__link">
+        alias
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/c_bindings/callbacks.html" class="md-nav__link">
+        Callbacks
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax_and_semantics/unsafe.html" class="md-nav__link">
+        Unsafe code
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../guides/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Guides
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../guides/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Guides
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/performance.html" class="md-nav__link">
+        Performance
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/concurrency.html" class="md-nav__link">
+        Concurrency
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/testing.html" class="md-nav__link">
+        Testing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      <label class="md-nav__link" for="__nav_3_4">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../guides/writing_shards.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Writing Shards
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Writing Shards" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../guides/writing_shards.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Writing Shards
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/hosting/github.html" class="md-nav__link">
+        Hosting on GitHub
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/hosting/gitlab.html" class="md-nav__link">
+        Hosting on GitLab
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      <label class="md-nav__link" for="__nav_3_5">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../guides/ci/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Continuous Integration
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Continuous Integration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../guides/ci/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Continuous Integration
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/ci/gh-actions.html" class="md-nav__link">
+        GitHub Actions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/ci/travis.html" class="md-nav__link">
+        Travis CI
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/ci/circleci.html" class="md-nav__link">
+        CircleCI
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/static_linking.html" class="md-nav__link">
+        Static Linking
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      <label class="md-nav__link" for="__nav_3_7">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../database/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Database
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Database" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../database/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Database
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database/connection.html" class="md-nav__link">
+        Connection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database/connection_pool.html" class="md-nav__link">
+        Connection pool
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database/transactions.html" class="md-nav__link">
+        Transactions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        <span class="md-nav__icon md-icon"></span>
+        
+          Tutorials
+        
+      </label>
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          
+            Tutorials
+          
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      <label class="md-nav__link" for="__nav_4_1">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../tutorials/basics/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Basics
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Basics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../tutorials/basics/index.html" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Basics
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/basics/10_hello_world.html" class="md-nav__link">
+        Hello World
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/basics/20_variables.html" class="md-nav__link">
+        Variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/basics/30_math.html" class="md-nav__link">
+        Math
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/basics/40_strings.html" class="md-nav__link">
+        Strings
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/basics/50_control_flow.html" class="md-nav__link">
+        Control Flow
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/basics/60_methods.html" class="md-nav__link">
+        Methods
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    Input
+  </a>
+  
+    <nav class="md-nav" aria-label="Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
+  </a>
+  
+    <nav class="md-nav" aria-label="Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameterized-options" class="md-nav__link">
+    Parameterized options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-my-cli-the-complete-application" class="md-nav__link">
+    All My CLI: The complete application!
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-for-user-input" class="md-nav__link">
+    Request for user input
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-readline-and-ncurses" class="md-nav__link">
+    Using Readline and NCurses
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/getting_started/cli.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="command-line-interface-application">Command Line Interface Application<a class="headerlink" href="#command-line-interface-application" title="Permanent link">&para;</a></h1>
+<p>Programming Command Line Interface applications (CLI applications) is one of the most entertaining tasks a developer may do. So let’s have some fun building our first CLI application in Crystal.</p>
+<p>There are two main topics when building a CLI application:</p>
+<ul>
+<li><a href="#input">input</a></li>
+<li><a href="#output">output</a></li>
+</ul>
+<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
+<p>This topic covers all things related to:</p>
+<ul>
+<li><a href="#options">options passed to the app</a></li>
+<li><a href="#request-for-user-input">request for user input</a></li>
+</ul>
+<h3 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
+<p>It is a very common practice to pass options to the application. For example, we may run <code>crystal -v</code> and Crystal will display:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>crystal -v
+<span class="go">Crystal 0.36.1 [c3a3c1823] (2021-02-02)</span>
+
+<span class="go">LLVM: 10.0.0</span>
+<span class="go">Default target: x86_64-apple-macosx</span>
+</code></pre></div>
+<p>and if we run: <code>crystal -h</code>, then Crystal will show all the accepted options and how to use them.</p>
+<p>So now the question would be: <strong>do we need to implement an options parser?</strong> No need to, Crystal got us covered with the class <code>OptionParser</code>. Let’s build an application using this parser!</p>
+<p>At the start our CLI application has two options:</p>
+<ul>
+<li><code>-v</code> / <code>--version</code>: it will display the application version.</li>
+<li><code>-h</code> / <code>--help</code>: it will display the application help.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">help.cr</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;option_parser&quot;</span>
+
+<span class="n">OptionParser</span><span class="o">.</span><span class="n">parse</span> <span class="k">do</span> <span class="o">|</span><span class="n">parser</span><span class="o">|</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">banner</span> <span class="o">=</span> <span class="s2">&quot;Welcome to The Beatles App!&quot;</span>
+
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-v&quot;</span><span class="p">,</span> <span class="s2">&quot;--version&quot;</span><span class="p">,</span> <span class="s2">&quot;Show version&quot;</span> <span class="k">do</span>
+    <span class="nb">puts</span> <span class="s2">&quot;version 1.0&quot;</span>
+    <span class="nb">exit</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-h&quot;</span><span class="p">,</span> <span class="s2">&quot;--help&quot;</span><span class="p">,</span> <span class="s2">&quot;Show help&quot;</span> <span class="k">do</span>
+    <span class="nb">puts</span> <span class="n">parser</span>
+    <span class="nb">exit</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+</div>
+<p>So, how does all this work? Well … magic! No, it’s not really magic! Just Crystal making our life easy.
+When our application starts, the block passed to <code>OptionParser#parse</code> gets executed. In that block we define all the options. After the block is executed, the parser will start consuming the arguments passed to the application, trying to match each one with the options defined by us. If an option matches then the block passed to <code>parser#on</code> gets executed!</p>
+<p>We can read all about <code>OptionParser</code> in <a href="https://crystal-lang.org/api/latest/OptionParser.html">the official API documentation</a>. And from there we are one click away from the source code ... the actual proof that it is not magic!</p>
+<p>Now, let's run our application. We have two ways <a href="../using_the_compiler/index.html">using the compiler</a>:</p>
+<ol>
+<li><a href="../using_the_compiler/index.html#crystal-build">Build the application</a> and then run it.</li>
+<li>Compile and <a href="../using_the_compiler/index.html#crystal-run">run the application</a>, all in one command.</li>
+</ol>
+<p>We are going to use the second way:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>crystal run ./help.cr -- -h
+
+<span class="go">Welcome to The Beatles App!</span>
+<span class="go">    -v, --version                    Show version</span>
+<span class="go">    -h, --help                       Show help</span>
+</code></pre></div>
+<p>Let's build another <em>fabulous</em> application with the following feature:</p>
+<p>By default (i.e. no options given) the application will display the names of the Fab Four. But, if we pass the option <code>-t</code> / <code>--twist</code> it will display the names in uppercase:</p>
+<div class="admonition example">
+<p class="admonition-title">twist_and_shout.cr</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;option_parser&quot;</span>
+
+<span class="n">the_beatles</span> <span class="o">=</span> <span class="o">[</span>
+  <span class="s2">&quot;John Lennon&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Paul McCartney&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;George Harrison&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Ringo Starr&quot;</span><span class="p">,</span>
+<span class="o">]</span>
+<span class="n">shout</span> <span class="o">=</span> <span class="kc">false</span>
+
+<span class="n">option_parser</span> <span class="o">=</span> <span class="n">OptionParser</span><span class="o">.</span><span class="n">parse</span> <span class="k">do</span> <span class="o">|</span><span class="n">parser</span><span class="o">|</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">banner</span> <span class="o">=</span> <span class="s2">&quot;Welcome to The Beatles App!&quot;</span>
+
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-v&quot;</span><span class="p">,</span> <span class="s2">&quot;--version&quot;</span><span class="p">,</span> <span class="s2">&quot;Show version&quot;</span> <span class="k">do</span>
+    <span class="nb">puts</span> <span class="s2">&quot;version 1.0&quot;</span>
+    <span class="nb">exit</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-h&quot;</span><span class="p">,</span> <span class="s2">&quot;--help&quot;</span><span class="p">,</span> <span class="s2">&quot;Show help&quot;</span> <span class="k">do</span>
+    <span class="nb">puts</span> <span class="n">parser</span>
+    <span class="nb">exit</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-t&quot;</span><span class="p">,</span> <span class="s2">&quot;--twist&quot;</span><span class="p">,</span> <span class="s2">&quot;Twist and SHOUT&quot;</span> <span class="k">do</span>
+    <span class="n">shout</span> <span class="o">=</span> <span class="kc">true</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">members</span> <span class="o">=</span> <span class="n">the_beatles</span>
+<span class="n">members</span> <span class="o">=</span> <span class="n">the_beatles</span><span class="o">.</span><span class="n">map</span> <span class="o">&amp;.</span><span class="n">upcase</span> <span class="k">if</span> <span class="n">shout</span>
+
+<span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;Group members:&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;==============&quot;</span>
+<span class="n">members</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">member</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="n">member</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>Running the application with the <code>-t</code> option will output:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>crystal run ./twist_and_shout.cr -- -t
+
+<span class="go">Group members:</span>
+<span class="go">==============</span>
+<span class="go">JOHN LENNON</span>
+<span class="go">PAUL MCCARTNEY</span>
+<span class="go">GEORGE HARRISON</span>
+<span class="go">RINGO STARR</span>
+</code></pre></div>
+</div>
+<h4 id="parameterized-options">Parameterized options<a class="headerlink" href="#parameterized-options" title="Permanent link">&para;</a></h4>
+<p>Let’s create another application: <em>when passing the option <code>-g</code> / <code>--goodbye_hello</code>, the application will say hello to a given name <strong>passed as a parameter to the option</strong></em>.</p>
+<div class="admonition example">
+<p class="admonition-title">hello_goodbye.cr</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;option_parser&quot;</span>
+
+<span class="n">the_beatles</span> <span class="o">=</span> <span class="o">[</span>
+  <span class="s2">&quot;John Lennon&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Paul McCartney&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;George Harrison&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Ringo Starr&quot;</span><span class="p">,</span>
+<span class="o">]</span>
+<span class="n">say_hi_to</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+<span class="n">option_parser</span> <span class="o">=</span> <span class="n">OptionParser</span><span class="o">.</span><span class="n">parse</span> <span class="k">do</span> <span class="o">|</span><span class="n">parser</span><span class="o">|</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">banner</span> <span class="o">=</span> <span class="s2">&quot;Welcome to The Beatles App!&quot;</span>
+
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-v&quot;</span><span class="p">,</span> <span class="s2">&quot;--version&quot;</span><span class="p">,</span> <span class="s2">&quot;Show version&quot;</span> <span class="k">do</span>
+    <span class="nb">puts</span> <span class="s2">&quot;version 1.0&quot;</span>
+    <span class="nb">exit</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-h&quot;</span><span class="p">,</span> <span class="s2">&quot;--help&quot;</span><span class="p">,</span> <span class="s2">&quot;Show help&quot;</span> <span class="k">do</span>
+    <span class="nb">puts</span> <span class="n">parser</span>
+    <span class="nb">exit</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-g NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;--goodbye_hello=NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;Say hello to whoever you want&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">name</span><span class="o">|</span>
+    <span class="n">say_hi_to</span> <span class="o">=</span> <span class="n">name</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">unless</span> <span class="n">say_hi_to</span><span class="o">.</span><span class="n">empty?</span>
+  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+  <span class="nb">puts</span> <span class="s2">&quot;You say goodbye, and </span><span class="si">#{</span><span class="n">the_beatles</span><span class="o">.</span><span class="n">sample</span><span class="si">}</span><span class="s2"> says hello to </span><span class="si">#{</span><span class="n">say_hi_to</span><span class="si">}</span><span class="s2">!&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+</div>
+<p>In this case, the block receives a parameter that represents the parameter passed to the option.</p>
+<p>Let’s try it!</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>crystal run ./hello_goodbye.cr -- -g <span class="s2">&quot;Penny Lane&quot;</span>
+
+<span class="go">You say goodbye, and Ringo Starr says hello to Penny Lane!</span>
+</code></pre></div>
+<p>Great! These applications look awesome! But, <strong>what happens when we pass an option that is not declared?</strong> For example -n</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>crystal run ./hello_goodbye.cr -- -n
+<span class="go">Unhandled exception: Invalid option: -n (OptionParser::InvalidOption)</span>
+<span class="go">  from ...</span>
+</code></pre></div>
+<p>Oh no! It’s broken: we need to handle <strong>invalid options</strong> and <strong>invalid parameters</strong> given to an option! For these two situations, the <code>OptionParser</code> class has two methods: <code>#invalid_option</code> and <code>#missing_option</code></p>
+<p>So, let's add this option handler and merge all these CLI applications into one fabulous CLI application!</p>
+<h4 id="all-my-cli-the-complete-application">All My CLI: The complete application!<a class="headerlink" href="#all-my-cli-the-complete-application" title="Permanent link">&para;</a></h4>
+<p>Here’s the final result, with invalid/missing options handling, plus other new options:</p>
+<div class="admonition example">
+<p class="admonition-title">all_my_cli.cr</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;option_parser&quot;</span>
+
+<span class="n">the_beatles</span> <span class="o">=</span> <span class="o">[</span>
+  <span class="s2">&quot;John Lennon&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Paul McCartney&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;George Harrison&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Ringo Starr&quot;</span><span class="p">,</span>
+<span class="o">]</span>
+<span class="n">shout</span> <span class="o">=</span> <span class="kc">false</span>
+<span class="n">say_hi_to</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">strawberry</span> <span class="o">=</span> <span class="kc">false</span>
+
+<span class="n">option_parser</span> <span class="o">=</span> <span class="n">OptionParser</span><span class="o">.</span><span class="n">parse</span> <span class="k">do</span> <span class="o">|</span><span class="n">parser</span><span class="o">|</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">banner</span> <span class="o">=</span> <span class="s2">&quot;Welcome to The Beatles App!&quot;</span>
+
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-v&quot;</span><span class="p">,</span> <span class="s2">&quot;--version&quot;</span><span class="p">,</span> <span class="s2">&quot;Show version&quot;</span> <span class="k">do</span>
+    <span class="nb">puts</span> <span class="s2">&quot;version 1.0&quot;</span>
+    <span class="nb">exit</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-h&quot;</span><span class="p">,</span> <span class="s2">&quot;--help&quot;</span><span class="p">,</span> <span class="s2">&quot;Show help&quot;</span> <span class="k">do</span>
+    <span class="nb">puts</span> <span class="n">parser</span>
+    <span class="nb">exit</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-t&quot;</span><span class="p">,</span> <span class="s2">&quot;--twist&quot;</span><span class="p">,</span> <span class="s2">&quot;Twist and SHOUT&quot;</span> <span class="k">do</span>
+    <span class="n">shout</span> <span class="o">=</span> <span class="kc">true</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-g NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;--goodbye_hello=NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;Say hello to whoever you want&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">name</span><span class="o">|</span>
+    <span class="n">say_hi_to</span> <span class="o">=</span> <span class="n">name</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-r&quot;</span><span class="p">,</span> <span class="s2">&quot;--random_goodbye_hello&quot;</span><span class="p">,</span> <span class="s2">&quot;Say hello to one random member&quot;</span> <span class="k">do</span>
+    <span class="n">say_hi_to</span> <span class="o">=</span> <span class="n">the_beatles</span><span class="o">.</span><span class="n">sample</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">on</span> <span class="s2">&quot;-s&quot;</span><span class="p">,</span> <span class="s2">&quot;--strawberry&quot;</span><span class="p">,</span> <span class="s2">&quot;Strawberry fields forever mode ON&quot;</span> <span class="k">do</span>
+    <span class="n">strawberry</span> <span class="o">=</span> <span class="kc">true</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">missing_option</span> <span class="k">do</span> <span class="o">|</span><span class="n">option_flag</span><span class="o">|</span>
+    <span class="n">STDERR</span><span class="o">.</span><span class="n">puts</span> <span class="s2">&quot;ERROR: </span><span class="si">#{</span><span class="n">option_flag</span><span class="si">}</span><span class="s2"> is missing something.&quot;</span>
+    <span class="n">STDERR</span><span class="o">.</span><span class="n">puts</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">STDERR</span><span class="o">.</span><span class="n">puts</span> <span class="n">parser</span>
+    <span class="nb">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">end</span>
+  <span class="n">parser</span><span class="o">.</span><span class="n">invalid_option</span> <span class="k">do</span> <span class="o">|</span><span class="n">option_flag</span><span class="o">|</span>
+    <span class="n">STDERR</span><span class="o">.</span><span class="n">puts</span> <span class="s2">&quot;ERROR: </span><span class="si">#{</span><span class="n">option_flag</span><span class="si">}</span><span class="s2"> is not a valid option.&quot;</span>
+    <span class="n">STDERR</span><span class="o">.</span><span class="n">puts</span> <span class="n">parser</span>
+    <span class="nb">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">members</span> <span class="o">=</span> <span class="n">the_beatles</span>
+<span class="n">members</span> <span class="o">=</span> <span class="n">the_beatles</span><span class="o">.</span><span class="n">map</span> <span class="o">&amp;.</span><span class="n">upcase</span> <span class="k">if</span> <span class="n">shout</span>
+
+<span class="nb">puts</span> <span class="s2">&quot;Strawberry fields forever mode ON&quot;</span> <span class="k">if</span> <span class="n">strawberry</span>
+
+<span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;Group members:&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;==============&quot;</span>
+<span class="n">members</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">member</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">strawberry</span> <span class="p">?</span> <span class="s2">&quot;🍓&quot;</span> <span class="p">:</span> <span class="s2">&quot;-&quot;</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">member</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+
+<span class="k">unless</span> <span class="n">say_hi_to</span><span class="o">.</span><span class="n">empty?</span>
+  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+  <span class="nb">puts</span> <span class="s2">&quot;You say goodbye, and I say hello to </span><span class="si">#{</span><span class="n">say_hi_to</span><span class="si">}</span><span class="s2">!&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+</div>
+<h3 id="request-for-user-input">Request for user input<a class="headerlink" href="#request-for-user-input" title="Permanent link">&para;</a></h3>
+<p>Sometimes, we may need the user to input a value. How do we <em>read</em> that value?
+Easy, peasy! Let’s create a new application: the Fab Four will sing with us any phrase we want. When running the application, it will request a phrase to the user and the magic will happen!</p>
+<div class="admonition example">
+<p class="admonition-title">let_it_cli.cr</p>
+<div class="crystal highlight"><pre><span></span><code><span class="nb">puts</span> <span class="s2">&quot;Welcome to The Beatles Sing-Along version 1.0!&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;Enter a phrase you want The Beatles to sing&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;&gt; &quot;</span>
+<span class="n">user_input</span> <span class="o">=</span> <span class="nb">gets</span>
+<span class="nb">puts</span> <span class="s2">&quot;The Beatles are singing: 🎵</span><span class="si">#{</span><span class="n">user_input</span><span class="si">}</span><span class="s2">🎶🎸🥁&quot;</span>
+</code></pre></div>
+</div>
+<p>The method <a href="https://crystal-lang.org/api/latest/toplevel.html#gets%28*args,**options%29-class-method"><code>gets</code></a> will <strong>pause</strong> the execution of the application until the user finishes entering the input (pressing the <code>Enter</code> key).
+When the user presses <code>Enter</code>, then the execution will continue and <code>user_input</code> will have the user value.</p>
+<p>But what happens if the user doesn’t enter any value? In that case, we would get an empty string (if the user only presses <code>Enter</code>) or maybe a <code>Nil</code> value (if the input stream is closed, e.g. by pressing <code>Ctrl+D</code>).
+To illustrate the problem let’s try the following: we want the input entered by the user to be sung loudly:</p>
+<div class="admonition example">
+<p class="admonition-title">let_it_cli.cr</p>
+<div class="crystal highlight"><pre><span></span><code><span class="nb">puts</span> <span class="s2">&quot;Welcome to The Beatles Sing-Along version 1.0!&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;Enter a phrase you want The Beatles to sing&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;&gt; &quot;</span>
+<span class="n">user_input</span> <span class="o">=</span> <span class="nb">gets</span>
+<span class="nb">puts</span> <span class="s2">&quot;The Beatles are singing: 🎵</span><span class="si">#{</span><span class="n">user_input</span><span class="o">.</span><span class="n">upcase</span><span class="si">}</span><span class="s2">🎶🎸🥁&quot;</span>
+</code></pre></div>
+</div>
+<p>When running the example, Crystal will reply:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>crystal run ./let_it_cli.cr
+<span class="go">Showing last frame. Use --error-trace for full trace.</span>
+
+<span class="go">In let_it_cli.cr:5:46</span>
+
+<span class="go"> 5 | puts &quot;The Beatles are singing: 🎵#{user_input.upper_case}</span>
+<span class="go">                                                  ^---------</span>
+<span class="go">Error: undefined method &#39;upper_case&#39; for Nil (compile-time type is (String | Nil))</span>
+</code></pre></div>
+<p>Ah! We should have known better: the type of the user input is the <a href="../syntax_and_semantics/type_grammar.html">union type</a> <code>String | Nil</code>.
+So, we have to test for <code>Nil</code> and for <code>empty</code> and act naturally for each case:</p>
+<div class="admonition example">
+<p class="admonition-title">let_it_cli.cr</p>
+<div class="crystal highlight"><pre><span></span><code><span class="nb">puts</span> <span class="s2">&quot;Welcome to The Beatles Sing-Along version 1.0!&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;Enter a phrase you want The Beatles to sing&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;&gt; &quot;</span>
+<span class="n">user_input</span> <span class="o">=</span> <span class="nb">gets</span>
+
+<span class="nb">exit</span> <span class="k">if</span> <span class="n">user_input</span><span class="kp">.nil?</span> <span class="c1"># Ctrl+D</span>
+
+<span class="n">default_lyrics</span> <span class="o">=</span> <span class="s2">&quot;Na, na, na, na-na-na na&quot;</span> <span class="p">\</span>
+                 <span class="s2">&quot; / &quot;</span> <span class="p">\</span>
+                 <span class="s2">&quot;Na-na-na na, hey Jude&quot;</span>
+
+<span class="n">lyrics</span> <span class="o">=</span> <span class="n">user_input</span><span class="o">.</span><span class="n">presence</span> <span class="o">||</span> <span class="n">default_lyrics</span>
+
+<span class="nb">puts</span> <span class="s2">&quot;The Beatles are singing: 🎵</span><span class="si">#{</span><span class="n">lyrics</span><span class="o">.</span><span class="n">upcase</span><span class="si">}</span><span class="s2">🎶🎸🥁&quot;</span>
+</code></pre></div>
+</div>
+<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<p>Now, we will focus on the second main topic: our application’s output.
+For starters, our applications already display information but (I think) we could do better. Let’s add more <em>life</em> (i.e. colors!) to the outputs.</p>
+<p>And to accomplish this, we will be using the <a href="https://crystal-lang.org/api/latest/Colorize.html"><code>Colorize</code></a> module.</p>
+<p>Let’s build a really simple application that shows a string with colors! We will use a yellow font on a black background:</p>
+<div class="admonition example">
+<p class="admonition-title">yellow_cli.cr</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;colorize&quot;</span>
+
+<span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="s2">&quot;The Beatles&quot;</span><span class="o">.</span><span class="n">colorize</span><span class="p">(</span><span class="ss">:yellow</span><span class="p">)</span><span class="o">.</span><span class="n">on</span><span class="p">(</span><span class="ss">:black</span><span class="p">)</span><span class="si">}</span><span class="s2"> App&quot;</span>
+</code></pre></div>
+</div>
+<p>Great! That was easy! Now imagine using this string as the banner for our All My CLI application, it's easy if you try:</p>
+<div class="crystal highlight"><pre><span></span><code><span class="n">parser</span><span class="o">.</span><span class="n">banner</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="s2">&quot;The Beatles&quot;</span><span class="o">.</span><span class="n">colorize</span><span class="p">(</span><span class="ss">:yellow</span><span class="p">)</span><span class="o">.</span><span class="n">on</span><span class="p">(</span><span class="ss">:black</span><span class="p">)</span><span class="si">}</span><span class="s2"> App&quot;</span>
+</code></pre></div>
+<p>For our second application, we will add a <em>text decoration</em> (<code>blink</code>in this case):</p>
+<div class="admonition example">
+<p class="admonition-title">let_it_cli.cr</p>
+<div class="crystal highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;colorize&quot;</span>
+
+<span class="nb">puts</span> <span class="s2">&quot;Welcome to The Beatles Sing-Along version 1.0!&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;Enter a phrase you want The Beatles to sing&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;&gt; &quot;</span>
+<span class="n">user_input</span> <span class="o">=</span> <span class="nb">gets</span>
+
+<span class="nb">exit</span> <span class="k">if</span> <span class="n">user_input</span><span class="kp">.nil?</span> <span class="c1"># Ctrl+D</span>
+
+<span class="n">default_lyrics</span> <span class="o">=</span> <span class="s2">&quot;Na, na, na, na-na-na na&quot;</span> <span class="p">\</span>
+                 <span class="s2">&quot; / &quot;</span> <span class="p">\</span>
+                 <span class="s2">&quot;Na-na-na na, hey Jude&quot;</span>
+
+<span class="n">lyrics</span> <span class="o">=</span> <span class="n">user_input</span><span class="o">.</span><span class="n">presence</span> <span class="o">||</span> <span class="n">default_lyrics</span>
+
+<span class="nb">puts</span> <span class="s2">&quot;The Beatles are singing: </span><span class="si">#{</span><span class="s2">&quot;🎵</span><span class="si">#{</span><span class="n">lyrics</span><span class="si">}</span><span class="s2">🎶🎸🥁&quot;</span><span class="o">.</span><span class="n">colorize</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="ss">:blink</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+</div>
+<p>Let’s try the renewed application … and <em>hear</em> the difference!!
+<strong>Now</strong> we have two fabulous apps!!</p>
+<p>You may find a list of <strong>available colors</strong> and <strong>text decorations</strong> in the <a href="https://crystal-lang.org/api/latest/Colorize.html">API documentation</a>.</p>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<p>As with any other application, at some point, we would like to <a href="../guides/testing.html">write tests</a> for the different features.</p>
+<p>Right now the code containing the logic of each of the applications always gets executed with the <code>OptionParser</code>, i.e. there is no way to include that file without running the whole application. So first we would need to refactor the code, separating the code necessary for parsing options from the logic. Once the refactoring is done, we could start testing the logic and including the file with the logic in the testing files we need. We leave this as an exercise for the reader.</p>
+<h2 id="using-readline-and-ncurses">Using <code>Readline</code> and <code>NCurses</code><a class="headerlink" href="#using-readline-and-ncurses" title="Permanent link">&para;</a></h2>
+<p>In case we want to build richer CLI applications, there are libraries that can help us. Here we will name two well-known libraries: <code>Readline</code> and <code>NCurses</code>.</p>
+<p>As stated in the documentation for the <a href="http://www.gnu.org/software/readline/">GNU Readline Library</a>, <code>Readline</code> is a library that provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
+<code>Readline</code> has some great features: filename autocompletion out of the box; custom auto-completion method; keybinding, just to mention a few. If we want to try it then the <a href="https://github.com/crystal-lang/crystal-readline">crystal-lang/crystal-readline</a> shard will give us an easy API to use <code>Readline</code>.</p>
+<p>On the other hand, we have <code>NCurses</code>(New Curses). This library allows developers to create <em>graphical</em> user interfaces in the terminal. As its name implies, it is an improved version of the library named <code>Curses</code>, which was developed to support a text-based dungeon-crawling adventure game called Rogue!
+As you can imagine, there are already <a href="https://crystalshards.org/shards/search?q=ncurses">a couple of shards</a> in the ecosystem that will allow us to use <code>NCurses</code> in Crystal!</p>
+<p>And so we have reached The End 😎🎶</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="http_server.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              An HTTP Server
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../using_the_compiler/index.html" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Using the compiler
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../assets/vendor/codemirror/codemirror.min.js"></script>
+      
+        <script src="../assets/vendor/codemirror/mode/crystal/crystal.min.js"></script>
+      
+        <script src="../assets/vendor/carcin-play/carcin.js"></script>
+      
+        <script src="../assets/vendor/carcin-play/carcin-play.js"></script>
+      
+        <script src="../assets/vendor/ansi_up/ansi_up.min.js"></script>
+      
+        <script src="../assets/crystal-play.js"></script>
+      
+        <script src="../assets/script.js"></script>
+      
+    
+  </body>
+</html>
